@@ -256,364 +256,330 @@
 }
 
 .primus-section h1 {
-            color: #821A52;
+  color: #821a52;
 
-            font-size: 90px;
-            font-weight: 700;
-           
-             font-family: "Unbounded", sans-serif;
-             margin-top: 82px;
-            
-           
-        }
-        .titlefont {
-            font-family: "Unbounded", sans-serif;
-            font-size: 96px;
-            font-weight: 300;
-            margin-top: 72px;
-        }
-        .primus-section-description p {
-            font-family: "Unbounded", sans-serif;
-            font-size: 24px;
-            font-weight: normal;
-            
-            margin-top: 82px;
-            margin-bottom: 82px;
-        }
+  font-size: 90px;
+  font-weight: 700;
 
+  font-family: "Unbounded", sans-serif;
+  margin-top: 82px;
+}
+.titlefont {
+  font-family: "Unbounded", sans-serif;
+  font-size: 96px;
+  font-weight: 300;
+  margin-top: 72px;
+}
+.primus-section-description p {
+  font-family: "Unbounded", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
 
+  margin-top: 82px;
+  margin-bottom: 82px;
+}
 
-         .lifestyle-section {
-      width: 100%;
-      padding: 40px 0 40px 100px;
-    }
+.lifestyle-section {
+  width: 100%;
+  padding: 40px 0 40px 100px;
+}
 
-    .cards-container {
-      display: flex;
-      gap: 20px;
-      overflow-x: auto;
-      overflow-y: hidden;
-      padding: 20px 0;
-      scroll-behavior: smooth;
-      padding-right: 0;
-      white-space: nowrap;
-    }
+.cards-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  padding-right: 0;
+  white-space: nowrap;
+}
 
-    .cards-container::-webkit-scrollbar {
-      height: 8px;
-    }
+.cards-container::-webkit-scrollbar {
+  height: 8px;
+}
 
-    .cards-container::-webkit-scrollbar-track {
-      background: rgba(177, 52, 121, 0.1);
-      border-radius: 10px;
-    }
+.cards-container::-webkit-scrollbar-track {
+  background: rgba(177, 52, 121, 0.1);
+  border-radius: 10px;
+}
 
-    .cards-container::-webkit-scrollbar-thumb {
-      background: #b13479;
-      border-radius: 10px;
-    }
+.cards-container::-webkit-scrollbar-thumb {
+  background: #b13479;
+  border-radius: 10px;
+}
 
-    .cards-container::-webkit-scrollbar-thumb:hover {
-      background: #9a2d6b;
-    }
+.cards-container::-webkit-scrollbar-thumb:hover {
+  background: #9a2d6b;
+}
 
-    .card {
-      position: relative;
-      width: 360px;
-      min-width: 360px;
-      height: 500px;
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-      flex-shrink: 0;
-      display: inline-block;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
+.card {
+  position: relative;
+  width: 360px;
+  min-width: 360px;
+  height: 500px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+.card:hover {
+  transform: translateY(-5px);
+}
 
-    .card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
-    .time-tag {
-      position: absolute;
-      bottom: 85px;
-      left: 28px;
-      background-color:  #C42785;
+.time-tag {
+  position: absolute;
+  bottom: 85px;
+  left: 28px;
+  background-color: #c42785;
 
-      color: white;
-      padding: 4px 12px;
-      border-radius: 12px;
-      font-weight: 600;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-      box-shadow: 0 4px 16px rgba(233, 30, 99, 0.4), 0 2px 4px rgba(0,0,0,0.2);
-    }
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 16px rgba(233, 30, 99, 0.4), 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
-    .card-title {
-      position: absolute;
-      bottom: 40px;
-      left: 28px;
-      right: 16px;
-      color: white;
-      font-size: 1.1rem;
-      font-weight: 600;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
-      line-height: 1.3;
-    }
+.card-title {
+  position: absolute;
+  bottom: 40px;
+  left: 28px;
+  right: 16px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  line-height: 1.3;
+}
 
-    .card::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 50%;
-      background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
-      pointer-events: none;
-    }
+.card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
 
-    @media (max-width: 768px) {
-      .lifestyle-section {
-        padding: 20px 0 20px 100px;
-      }
+@media (max-width: 768px) {
+  .lifestyle-section {
+    padding: 20px 0 20px 100px;
+  }
 
-      .card {
-        min-width: 250px;
-        height: 300px;
-      }
+  .card {
+    min-width: 250px;
+    height: 300px;
+  }
 
-      .cards-container {
-        gap: 15px;
-      }
-    }
-
-    #talkus{ 
+  .cards-container {
+    gap: 15px;
+  }
+}
+#talkus {
   margin-top: 61px;
   position: relative;
-
-
-
+}
+#talktous {
+  margin: 55px 0 96px 0;
+}
+.talkusrow {
+  background: #e7c7cf;
+  border-radius: 55px;
+  display: flex;
+}
+.talktous-para {
+  padding: 76px;
+}
+.talktous-para p {
+  font-weight: 300;
+  font-size: 22px;
+  color: #53103c;
+  margin-bottom: 76px;
+}
+.learn-button {
+  width: auto;
+  height: auto;
+  background: rgb(239, 223, 223);
+  box-shadow: none;
+  border: 2px solid rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: Bold;
+  padding: 8px 16px;
+  color: rgb(0, 0, 0);
+  font-family: Unbounded;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 52px;
+  font-size: 22px;
+  padding: 12px 38px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 5px 1px 0px;
 }
 
-.talkusrow {background: #E7C7CF;
-     border-radius: 55px;
-     display: flex;
-
+/* everyday-enjoy-section style */
+.everyday-enjoy-section {
+  background: rgb(239, 223, 223);
+  margin-bottom: 100px;
+  margin-top: 200px;
 }
 
-/* Living Well Hub Section Styles */
-.living-hub-section {
-    padding: 80px 0;
-    position: relative;
+.everyday-enjoy-col-one {
+  display: flex;
+  gap: 16px;
+}
+.everyday-enjoy-col-two {
+  padding: 76px;
+  position: relative;
+}
+.everyday-enjoy-col-one img,
+.everyday-enjoy-col-two img {
+  height: 800px;
+}
+.everyday-enjoy-col-two .everyday-enjoy-heading {
+  font-size: 65px;
+  font-weight: 300;
+  color: #821a52;
+  margin-bottom: 36px;
+}
+.everyday-enjoy-col-two .everyday-enjoy-heading span {
+  font-weight: 600;
+}
+.everyday-enjoy-col-two .everyday-enjoy-para {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  padding-right: 96px;
+}
+.everyday-enjoy-col-two .everyday-img-one {
+  position: absolute;
+  top: 148px;
+  right: 120px;
+  width: 48px;
+  height: 48px;
+}
+.everyday-enjoy-col-two .everyday-img-two {
+  position: absolute;
+  bottom: 224px;
+  left: 64px;
+  width: 85px;
+  height: 85px;
+}
+.everyday-enjoy-col-two .everyday-img-three {
+  position: absolute;
+  bottom: -185px;
+  left: -16px;
+  height: 320px;
+}
+/* our-celebration-section style */
+.our-celebration-section .our-celebration-section-container {
+  background-color: #821a52;
+  border-radius: 50px;
+  padding: 55px;
+  margin-bottom: 160px;
+}
+.our-celebration-head-section {
+  position: relative;
+}
+.our-celebration-head-section h1 {
+  font-size: 65px;
+  color: #ffffff;
+  font-weight: 300;
+}
+.our-celebration-head-section h1 span {
+  font-size: 65px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.our-celebration-head-section img {
+  position: absolute;
+  top: 64px;
+  left: 676px;
+  width: 56px;
+}
+.our-celebration-categories-section {
+  display: flex;
+  flex-direction: column;
+  gap: 96px !important;
+  position: relative;
+  margin-top: 96px;
+}
+.our-celebratation-divs {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-start;
+  gap: 128px;
+}
+.our-clebration-div {
+  display: flex;
+  gap: 36px;
+}
+.our-clebration-div .para-div p {
+  color: #ffffff;
+  font-size: 20px;
+}
+.our-celebration-center-bg {
+  position: absolute;
+  bottom: -180px;
+  width: 220px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.our-celebration-bg {
+  position: absolute;
+  bottom: 0;
+  width: 264px;
+  right: 0;
+  transform: translate(-50%, 0);
 }
 
-.living-hub-section .section-title {
-    font-family: "Unbounded", sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    line-height: 1.2;
-    color: #000;
+/* book-a-visit-section style */
+.book-a-visit-section {
+  margin-bottom: 130px;
 }
-
-.living-hub-section .highlight-text {
-    color: #821A52;
+.hear-it-from-head {
+  color: #000000;
+  font-size: 80px;
+  font-weight: 400;
+  margin-bottom: 70px;
 }
-
-.living-hub-section .section-description p {
-    font-family: "Unbounded", sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #333;
+.hear-it-from-head span{
+  color: #821A52;
 }
-
-.living-hub-features {
-    margin-top: 40px;
+.hear-it-from-container {
+  position: relative;
 }
+.hear-it-from-para {
+  font-weight: 300;
 
-.feature-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 25px;
 }
-
-.feature-icon {
-    width: 60px;
-    height: 60px;
-    background-color: #F8F0F4;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-    flex-shrink: 0;
+.hear-it-from-container .hear-it-from-cirlce-img{
+  position: absolute;
+  top: 0;
+  left: 43%;
 }
-
-.feature-icon img {
-    width: 30px;
-    height: 30px;
-}
-
-.feature-text h4 {
-    font-family: "Unbounded", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: #821A52;
-}
-
-.feature-text p {
-    font-family: "Unbounded", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    margin-bottom: 0;
-    color: #666;
-}
-
-.living-hub-image {
-    position: relative;
-    padding-left: 20px;
-}
-
-.main-image {
-    position: relative;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.main-image img {
-    border-radius: 25px;
-    width: 100%;
-}
-
-.floating-badge {
-    position: absolute;
-    bottom: -20px;
-    left: -20px;
-    z-index: 2;
-}
-
-.badge-icon {
-    width: 70px;
-    height: 70px;
-    background-color: #821A52;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 5px 15px rgba(130, 26, 82, 0.3);
-}
-
-.icon-letter {
-    font-family: "Unbounded", sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    color: white;
-}
-
-.secondary-image {
-    position: absolute;
-    top: 50%;
-    right: -30px;
-    width: 180px;
-    height: 180px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    z-index: 1;
-}
-
-.secondary-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Responsive styles for Living Hub section */
-@media (max-width: 1199px) {
-    .living-hub-section .section-title {
-        font-size: 48px;
-    }
-
-    .secondary-image {
-        width: 150px;
-        height: 150px;
-        right: -20px;
-    }
-}
-
-@media (max-width: 991px) {
-    .living-hub-section {
-        padding: 60px 0;
-    }
-
-    .living-hub-content {
-        margin-bottom: 60px;
-    }
-
-    .living-hub-image {
-        padding-left: 0;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .secondary-image {
-        width: 120px;
-        height: 120px;
-        right: -15px;
-    }
-}
-
-@media (max-width: 767px) {
-    .living-hub-section .section-title {
-        font-size: 36px;
-    }
-
-    .living-hub-section .section-description p {
-        font-size: 16px;
-    }
-
-    .feature-icon {
-        width: 50px;
-        height: 50px;
-    }
-
-    .feature-text h4 {
-        font-size: 16px;
-    }
-
-    .feature-text p {
-        font-size: 13px;
-    }
-
-    .living-hub-image {
-        max-width: 100%;
-    }
-
-    .secondary-image {
-        width: 100px;
-        height: 100px;
-        right: 0;
-    }
-
-    .badge-icon {
-        width: 60px;
-        height: 60px;
-    }
-
-    .icon-letter {
-        font-size: 24px;
-    }
+.hear-it-from-div-img {
+  width: 85%;
+  border-radius: 36px;
 }
