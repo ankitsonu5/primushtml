@@ -15,7 +15,7 @@
 
  <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
 
-<link rel="stylesheet" href="./assets/css/lifestyle.css" type="text/css" />
+<link rel="stylesheet" href="./assets/css/livinghub.css" type="text/css" />
 
 <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -84,7 +84,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./assets/img/Slider/living-hub.png" class="w-100 d-none d-md-flex" alt="Primus Senior Living ">
-                        <img src="./assets/img/Slider/mobile-slider-5.png" class="w-100 d-flex d-md-none" alt="Primus Senior Living ">
+                        <img src="./assets/img/Slider/mobile-slide-5.png" class="w-100 d-flex d-md-none" alt="Primus Senior Living ">
                         <div class="carousel-caption d-md-block">
                             <h1>
                              <span> A life full of chapters.</span>
@@ -99,78 +99,19 @@
     </div>
 </section>
 
- <section class="primus-section">
-    <div class="container">
-      <h1>
-       <span class="titlefont">A Day in the</span>  Life of</br>
-         an Primus Resident 
-      </h1>
-      <div class="primus-section-description">
-      <p> Every day at Primus is shaped by community, care, and curiosity.
-        Whether you're finding your rhythm in <br/>your 30s or reinventing yourself in your 60s, 
-        there's space for your story here.</p> 
-      </div>
-
-	  
-	    
-  </section>
-
-    <div class="lifestyle-section">
-    <div class="cards-container">
-      <div class="card">
-        <img src="./assets/img/the-rimus-lifestyle/1.png" alt="A Refreshing Start">
-        <div class="time-tag">5:00 AM - 7:00 AM</div>
-        <div class="card-title">A Refreshing Start</div>
-      </div>
-
-      <div class="card">
-        <img src="./assets/img/the-rimus-lifestyle/2.png" alt="The Most Important Meal">
-        <div class="time-tag">8:00 AM - 9:00 AM</div>
-        <div class="card-title">The Most Important Meal</div>
-      </div>
-
-      <div class="card">
-        <img src="./assets/img/the-rimus-lifestyle/3.png" alt="Leisure & Comfort">
-        <div class="time-tag">9:00 AM - 10:00 AM</div>
-        <div class="card-title">Leisure & Comfort</div>
-      </div>
-
-      <div class="card">
-        <img src="./assets/img/the-rimus-lifestyle/4.png" alt="Wellness Through Movement">
-        <div class="time-tag">10:00 AM - 11:00 AM</div>
-        <div class="card-title">Wellness Through Movement</div>
-      </div>
-
-      <div class="card">
-        <img src="./assets/img/the-rimus-lifestyle/5.png" alt="Community & Connection">
-        <div class="time-tag">11:00 AM - 12:00 PM</div>
-        <div class="card-title">Community & Connection</div>
-      </div>
-      <div class="card">
-        <img src="./assets/img/the-rimus-lifestyle/5.png" alt="Community & Connection">
-        <div class="time-tag">11:00 AM - 12:00 PM</div>
-        <div class="card-title">Community & Connection</div>
-      </div>
-    </div>
-  </div>
+<section id="livinghub">
+ <div class="container">
  
+    <div class="livinghub-box">
 
-  <section id="talktous">
-    <div class="container">
-		 
+        <div class="col-md-6">sdfsds</div>
+        <div class="col-md-6">sdfsds</div>
 
-			<div class="talkusrow">
-				<div class="col-md-6">
-					 <img src="./assets/img/the-rimus-lifestyle/img3.png" alt="Talk to Us" class="w-100">
-				</div>
-				<div class="col-md-6">
-					
-				</div>
-			</div>
-		</div>
-     
+    </div>
+
 </section>
 
+  
 
 	<footer class="main-footer bg-white">
 		<div class="bg-white menu-section">
@@ -331,68 +272,7 @@
   <script src="./assets/js/navigation.js"></script>
   <script src="./assets/js/customizer.js"></script>
 
-  <script>
-    // Enable horizontal scrolling and click-drag functionality
-    document.addEventListener('DOMContentLoaded', function() {
-      const cardsContainer = document.querySelector('.cards-container');
-      const cards = document.querySelectorAll('.card');
-
-      let isDown = false;
-      let startX;
-      let scrollLeft;
-
-      // Click and drag scrolling
-      cardsContainer.addEventListener('mousedown', function(e) {
-        isDown = true;
-        cardsContainer.style.cursor = 'grabbing';
-        cardsContainer.style.scrollBehavior = 'auto';
-        startX = e.pageX - cardsContainer.offsetLeft;
-        scrollLeft = cardsContainer.scrollLeft;
-      });
-
-      cardsContainer.addEventListener('mouseleave', function() {
-        isDown = false;
-        cardsContainer.style.cursor = 'grab';
-      });
-
-      cardsContainer.addEventListener('mouseup', function() {
-        isDown = false;
-        cardsContainer.style.cursor = 'grab';
-        cardsContainer.style.scrollBehavior = 'smooth';
-      });
-
-      cardsContainer.addEventListener('mousemove', function(e) {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - cardsContainer.offsetLeft;
-        const walk = (x - startX) * 2; // Scroll speed multiplier
-        cardsContainer.scrollLeft = scrollLeft - walk;
-      });
-
-      // Set initial cursor
-      cardsContainer.style.cursor = 'grab';
-
-      // Card hover effects
-      cards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-          if (!isDown) {
-            cardsContainer.style.scrollBehavior = 'smooth';
-          }
-        });
-
-        card.addEventListener('wheel', function(e) {
-          e.preventDefault();
-          cardsContainer.scrollLeft += e.deltaY;
-        });
-      });
-
-      // Also enable wheel scrolling on the container itself
-      cardsContainer.addEventListener('wheel', function(e) {
-        e.preventDefault();
-        this.scrollLeft += e.deltaY;
-      });
-    });
-  </script>
+  
  
 </body>
 </html>
