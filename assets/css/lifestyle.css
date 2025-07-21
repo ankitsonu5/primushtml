@@ -404,7 +404,8 @@
 
 }
 
-.talkus {background: #E7C7CF;
-     border-radius: 40px;
+.talkusrow {background: #E7C7CF;
+     border-radius: 55px;
+     display: flex;
     
-}
+}              
