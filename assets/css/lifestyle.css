@@ -1,0 +1,410 @@
+/***
+** Banner Section
+***/
+.main-slider {
+  padding-top: 10px;
+}
+.main-slider .container {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.main-slider .carousel .carousel-item img {
+  border-radius: 25px;
+}
+.main-slider .carousel .carousel-item .carousel-caption {
+  top: 18px;
+  left: 13px;
+  right: 0%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.main-slider .carousel .carousel-item .carousel-caption h1 {
+  font-family: Unbounded;
+  font-weight: 700;
+  font-size: 42px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+  width: 90%;
+}
+.main-slider .carousel .carousel-item .carousel-caption h1 span {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 42px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.main-slider .carousel .carousel-item .carousel-caption p {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+  width: 95%;
+}
+
+@media screen and (min-width: 767px) {
+  .main-slider .carousel .carousel-item .carousel-caption {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1179px) {
+  .main-slider .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main-slider .carousel .carousel-item img {
+    border-radius: 50px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption {
+    top: 130px;
+    left: 107px;
+    right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+    margin-bottom: 25px;
+    width: 55%;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 span {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+  }
+  .main-slider .carousel .carousel-item .carousel-caption p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .main-slider {
+    padding: 60px 22px 0;
+  }
+  .main-slider .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main-slider .carousel .carousel-item img {
+    border-radius: 50px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption {
+    top: 130px;
+    left: 107px;
+    right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+    margin-bottom: 25px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 span {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+  }
+  .main-slider .carousel .carousel-item .carousel-caption p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .main-slider {
+    padding: 121.34px 0 0;
+  }
+  .main-slider .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main-slider .carousel .carousel-item img {
+    border-radius: 50px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption {
+    top: 162px;
+    left: 107px;
+    right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 96px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+    margin-bottom: 25px;
+    width: 65%;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 span {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 96px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+  }
+  .main-slider .carousel .carousel-item .carousel-caption p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    width: 34%;
+  }
+}
+/*** About Page styles starts here ***/
+/** About Slider **/
+.main-slider .about-banner {
+  background-color: rgb(130, 26, 82);
+  border-radius: 25px;
+}
+.main-slider .about-banner .about-description {
+  padding: 56px 15px 92px;
+  display: grid;
+  gap: 17px;
+  position: relative;
+}
+.main-slider .about-banner .about-description p {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #fff;
+  line-height: 24px;
+}
+.main-slider .about-banner .about-description .big-star {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  max-width: 37.21px;
+}
+
+/*** How it began ***/
+.primus-section {
+  margin-top: 51px;
+}
+.primus-section .container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.primus-section .title-box {
+  position: relative;
+}
+.primus-section .title-box .section-title {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 42px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 41px;
+}
+.primus-section .title-box .section-title span {
+  font-weight: 700;
+  color: rgb(130, 26, 82);
+}
+.primus-section .title-box .section-title .star-icon {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  max-width: 71px;
+  width: 100%;
+}
+.primus-section .description p {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+.primus-section .description p.from-date {
+  font-size: 20px;
+  margin-bottom: 36px;
+}
+.primus-section .description p.from-date span {
+  font-size: 24px;
+  color: rgb(130, 26, 82);
+  font-weight: 600;
+}
+.primus-section .about-img img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.primus-section h1 {
+            color: #821A52;
+
+            font-size: 90px;
+            font-weight: 700;
+           
+             font-family: "Unbounded", sans-serif;
+             margin-top: 82px;
+            
+           
+        }
+        .titlefont {
+            font-family: "Unbounded", sans-serif;
+            font-size: 96px;
+            font-weight: 300;
+            margin-top: 72px;
+        }
+        .primus-section-description p {
+            font-family: "Unbounded", sans-serif;
+            font-size: 24px;
+            font-weight: normal;
+            
+            margin-top: 82px;
+            margin-bottom: 82px;
+        }
+
+
+
+         .lifestyle-section {
+      width: 100%;
+      padding: 40px 0 40px 100px;
+    }
+
+    .cards-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 20px 0;
+      scroll-behavior: smooth;
+      padding-right: 0;
+      white-space: nowrap;
+    }
+
+    .cards-container::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .cards-container::-webkit-scrollbar-track {
+      background: rgba(177, 52, 121, 0.1);
+      border-radius: 10px;
+    }
+
+    .cards-container::-webkit-scrollbar-thumb {
+      background: #b13479;
+      border-radius: 10px;
+    }
+
+    .cards-container::-webkit-scrollbar-thumb:hover {
+      background: #9a2d6b;
+    }
+
+    .card {
+      position: relative;
+      width: 360px;
+      min-width: 360px;
+      height: 500px;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      flex-shrink: 0;
+      display: inline-block;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .time-tag {
+      position: absolute;
+      bottom: 85px;
+      left: 28px;
+      background-color:  #C42785;
+
+      color: white;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      box-shadow: 0 4px 16px rgba(233, 30, 99, 0.4), 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .card-title {
+      position: absolute;
+      bottom: 40px;
+      left: 28px;
+      right: 16px;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+      line-height: 1.3;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+      pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+      .lifestyle-section {
+        padding: 20px 0 20px 100px;
+      }
+
+      .card {
+        min-width: 250px;
+        height: 300px;
+      }
+
+      .cards-container {
+        gap: 15px;
+      }
+    }
+
+    #talkus{ 
+  margin-top: 61px;
+  position: relative;
+
+
+
+}
+
+.talkus {background: #E7C7CF;
+     border-radius: 40px;
+    
+}

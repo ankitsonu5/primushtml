@@ -1,0 +1,2429 @@
+/*** Background Colors ***/
+/*** Colors ***/
+@font-face {
+  font-family: "Fira Sans Condensed";
+  src: url("../fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf") format("truetype"), url("../fonts/Fira_Sans_Condensed/FiraSansCondensed-Bold.ttf") format("truetype"), url("../fonts/Fira_Sans_Condensed/FiraSansCondensed-Italic.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Unbounded;
+  src: url("../fonts/Unbounded/Unbounded-VariableFont_wght.ttf") format("truetype"), url("../fonts/Unbounded/Unbounded-VariableFont_wght.woff2") format("woff2"), url("../fonts/Unbounded/Unbounded-VariableFont_wght.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Archivo;
+  src: url("../fonts/Archivo/Archivo-Medium.ttf") format("truetype"), url("../fonts/Archivo/Archivo-Regular.ttf") format("truetype"), url("../fonts/Archivo/Archivo-Light.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+body {
+  font-family: Unbounded;
+  background-color: rgb(239, 223, 223);
+}
+
+/*** General Styles ***/
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .container {
+    max-width: 1720px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 100px;
+  }
+}
+.primary-button {
+  width: 100%;
+  height: auto;
+  background: rgb(130, 26, 82);
+  box-shadow: none;
+  border: 1px solid rgb(130, 26, 82);
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 12px;
+  color: #FFF;
+  z-index: 1;
+  position: relative;
+}
+
+.learn-button {
+  width: auto;
+  height: auto;
+  background: rgb(239, 223, 223);
+  box-shadow: none;
+  border: 2px solid rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: Bold;
+  padding: 8px 16px;
+  color: rgb(0, 0, 0);
+  font-family: Unbounded;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 52px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 0%;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.image-box-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.image-box-grid .image-box {
+  background: rgb(231, 199, 207);
+  border-radius: 25px;
+}
+.image-box-grid .image-box .img-thumb {
+  max-width: 100px;
+  width: 100%;
+  min-height: 100%;
+  max-height: 325px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25px;
+  background-position-x: 35%;
+}
+.image-box-grid .image-box .image-desc {
+  padding: 20px 11px 24px;
+}
+.image-box-grid .image-box .image-desc h4 {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  color: rgb(130, 26, 82);
+  margin-bottom: 15px;
+}
+.image-box-grid .image-box .image-desc p {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  margin-bottom: 23px;
+}
+.image-box-grid .image-box .image-desc .learn-button {
+  font-family: Unbounded;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  padding: 6px 30px;
+  box-shadow: -2px 4px 1px rgb(83, 16, 60);
+}
+
+@media screen and (min-width: 1180px) {
+  .image-box-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 59px;
+  }
+  .image-box-grid .image-box {
+    border-radius: 50px;
+  }
+  .image-box-grid .image-box .img-thumb {
+    max-width: 220px;
+    max-height: 325px;
+    border-radius: 50px;
+    background-position-x: 35%;
+  }
+  .image-box-grid .image-box .image-desc {
+    padding: 60px 43px;
+  }
+  .image-box-grid .image-box .image-desc h4 {
+    font-size: 23px;
+    margin-bottom: 45px;
+  }
+  .image-box-grid .image-box .image-desc p {
+    font-size: 20px;
+    margin-bottom: 45px;
+    line-height: 30px;
+  }
+  .image-box-grid .image-box .image-desc .learn-button {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .image-box-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 79px;
+  }
+  .image-box-grid .image-box {
+    border-radius: 50px;
+  }
+  .image-box-grid .image-box .img-thumb {
+    max-width: 320px;
+    width: 100%;
+    max-height: 325px;
+  }
+  .image-box-grid .image-box .image-desc {
+    padding: 60px 43px;
+  }
+  .image-box-grid .image-box .image-desc h4 {
+    font-size: 32px;
+    margin-bottom: 45px;
+  }
+  .image-box-grid .image-box .image-desc p {
+    font-size: 20px;
+    margin-bottom: 45px;
+    line-height: 30px;
+  }
+  .image-box-grid .image-box .image-desc .learn-button {
+    font-size: 20px;
+  }
+}
+/*** 
+01) Banner Section
+***/
+.main-slider {
+  padding-top: 10px;
+}
+.main-slider .container {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.main-slider .carousel .carousel-item img {
+  border-radius: 25px;
+}
+.main-slider .carousel .carousel-item .carousel-caption {
+  top: 18px;
+  left: 13px;
+  right: 0%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.main-slider .carousel .carousel-item .carousel-caption h1 {
+  font-family: Unbounded;
+  font-weight: 700;
+  font-size: 42px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+  width: 90%;
+}
+.main-slider .carousel .carousel-item .carousel-caption h1 span {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 42px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.main-slider .carousel .carousel-item .carousel-caption p {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+  width: 95%;
+}
+
+@media screen and (min-width: 767px) {
+  .main-slider .carousel .carousel-item .carousel-caption {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1179px) {
+  .main-slider .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main-slider .carousel .carousel-item img {
+    border-radius: 50px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption {
+    top: 130px;
+    left: 107px;
+    right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+    margin-bottom: 25px;
+    width: 55%;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 span {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+  }
+  .main-slider .carousel .carousel-item .carousel-caption p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .main-slider {
+    padding: 60px 22px 0;
+  }
+  .main-slider .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main-slider .carousel .carousel-item img {
+    border-radius: 50px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption {
+    top: 130px;
+    left: 107px;
+    right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+    margin-bottom: 25px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 span {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+  }
+  .main-slider .carousel .carousel-item .carousel-caption p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .main-slider {
+    padding: 121.34px 0 0;
+  }
+  .main-slider .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main-slider .carousel .carousel-item img {
+    border-radius: 50px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption {
+    top: 162px;
+    left: 107px;
+    right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 96px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+    margin-bottom: 25px;
+    width: 65%;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 span {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 96px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+  }
+  .main-slider .carousel .carousel-item .carousel-caption p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    width: 34%;
+  }
+}
+/*** About Page styles starts here ***/
+/** About Slider **/
+.main-slider .about-banner {
+  background-color: rgb(130, 26, 82);
+  border-radius: 25px;
+}
+.main-slider .about-banner .about-description {
+  padding: 56px 15px 92px;
+  display: grid;
+  gap: 17px;
+  position: relative;
+}
+.main-slider .about-banner .about-description p {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #fff;
+  line-height: 24px;
+}
+.main-slider .about-banner .about-description .big-star {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  max-width: 37.21px;
+}
+
+/*** How it began ***/
+.how-it-began {
+  margin-top: 51px;
+}
+.how-it-began .container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.how-it-began .title-box {
+  position: relative;
+}
+.how-it-began .title-box .section-title {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 42px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 41px;
+}
+.how-it-began .title-box .section-title span {
+  font-weight: 700;
+  color: rgb(130, 26, 82);
+}
+.how-it-began .title-box .section-title .star-icon {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  max-width: 71px;
+  width: 100%;
+}
+.how-it-began .description p {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+.how-it-began .description p.from-date {
+  font-size: 20px;
+  margin-bottom: 36px;
+}
+.how-it-began .description p.from-date span {
+  font-size: 24px;
+  color: rgb(130, 26, 82);
+  font-weight: 600;
+}
+.how-it-began .about-img img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+/*** Award Section ***/
+.award-section {
+  margin-top: 78px;
+}
+.award-section .container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.award-section .title-box {
+  position: relative;
+}
+.award-section .title-box .sub-title {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 42px;
+  color: rgb(0, 0, 0);
+}
+.award-section .title-box .section-title {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 42px;
+  color: rgb(0, 0, 0);
+  color: rgb(130, 26, 82);
+  font-weight: 700;
+}
+.award-section .title-box .feather-icon {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+}
+.award-section .award-slider-block {
+  padding-bottom: 78px;
+}
+.award-section .award-slider-block h3 {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin: 46px 0 38px;
+}
+.award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block {
+  width: 220px;
+  height: 294px;
+  background: rgb(255, 255, 255);
+  position: relative;
+  background: transparent;
+  text-align: center;
+  background-image: url(../img/icons/triangle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block .award-image {
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block .awards-details {
+  padding: 20px 16px;
+}
+.award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block .awards-details h4 {
+  background: linear-gradient(90deg, #53103C 0%, #C42785 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Unbounded;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block .awards-details p {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(130, 26, 82);
+  margin-bottom: 0;
+}
+
+/*** Built Around You section styles starts here ***/
+.life-built {
+  margin-top: 61px;
+  position: relative;
+}
+.life-built .container {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.life-built .built-around {
+  height: 100%;
+  background: rgb(130, 26, 82);
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+  padding-bottom: 112px;
+}
+.life-built .built-around .section-thumbnail {
+  width: 100%;
+  min-width: 365px;
+  height: 100%;
+  max-height: 365px;
+  border-radius: 25px;
+}
+.life-built .built-around .title-box {
+  padding: 41px 15px 0;
+  position: relative;
+}
+.life-built .built-around .title-box .home-icon {
+  width: 100%;
+  position: absolute;
+  top: 26px;
+  right: 31px;
+  max-width: 46px;
+}
+.life-built .built-around .title-box .sub-title {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 42px;
+  color: rgb(255, 255, 255);
+  word-break: break-all;
+}
+.life-built .built-around .title-box .section-title {
+  font-family: Unbounded;
+  font-weight: 700;
+  font-size: 42px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 48px;
+}
+.life-built .built-around .title-box p {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 26px;
+  color: rgb(255, 255, 255);
+}
+.life-built .built-around .title-box p:last-child {
+  margin-bottom: 57px;
+}
+.life-built .built-around .second-block {
+  order: 2;
+}
+.life-built .built-around .lists-block .section-title {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 36px;
+  color: rgb(0, 0, 0);
+  padding-left: 15px;
+  padding-right: 15px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 37px;
+}
+.life-built .built-around .lists-block .section-title span {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 42px;
+  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.life-built .built-around .amenities-lists {
+  padding: 0 15px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  row-gap: 33px;
+}
+.life-built .built-around .amenities-lists .list {
+  gap: 46.29px;
+  margin-bottom: 19px;
+  align-items: flex-start;
+}
+.life-built .built-around .amenities-lists .list img {
+  margin-bottom: 13px;
+}
+.life-built .built-around .amenities-lists .list:last-child {
+  margin-bottom: 0;
+}
+.life-built .built-around .amenities-lists .list h4 {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  height: 48px;
+  margin-bottom: 15px;
+}
+.life-built .built-around .amenities-lists .list p {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+.life-built .built-around .amenities-lists .list p span {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 16px;
+}
+.life-built .built-around .amenities-ads {
+  position: relative;
+  margin-bottom: 47px;
+}
+.life-built .built-around .amenities-ads .ads-bg {
+  position: absolute;
+  z-index: 0;
+  left: 76px;
+  top: -65px;
+  max-width: 189.05px;
+}
+.life-built .built-around .amenities-ads img {
+  z-index: 2;
+  position: relative;
+}
+.life-built .shining-star {
+  position: absolute;
+  left: 50%;
+  bottom: -4.9%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.life-built .big-star {
+  position: absolute;
+  left: 12px;
+  bottom: 40px;
+}
+
+/*** Science Tells Us ***/
+.science-tells {
+  margin: 100px 0 58px;
+}
+.science-tells .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.science-tells .title-box {
+  position: relative;
+}
+.science-tells .title-box .sub-title {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 42px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 38px;
+}
+.science-tells .title-box .sub-title span {
+  color: rgb(130, 26, 82);
+}
+.science-tells .title-box .circle-icon {
+  position: absolute;
+  left: -18px;
+  width: 80%;
+  top: 46px;
+}
+.science-tells .title-box p {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 49px;
+}
+.science-tells .icon-box-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  row-gap: 30px;
+}
+.science-tells .icon-box-list .icon-box .known-icon {
+  margin-bottom: 22px;
+}
+.science-tells .icon-box-list .icon-box p {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.science-tells .special-word {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 32px;
+  word-break: break-all;
+  color: rgb(130, 26, 82);
+  margin: 97px 0 58px;
+}
+.science-tells .special-word span {
+  font-weight: 700;
+}
+
+/*** Happy Community Section Styles Starts ***/
+.happy-community {
+  background-color: rgb(130, 26, 82);
+  padding: 59px 15px 77px;
+}
+.happy-community .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.happy-community .title-box {
+  position: relative;
+}
+.happy-community .title-box .feather-icon {
+  position: absolute;
+  top: -35px;
+  right: 0px;
+}
+.happy-community .title-box .section-title {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 31px;
+}
+.happy-community .title-box .section-title span {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 42px;
+  color: rgb(255, 255, 255);
+}
+.happy-community .title-box p {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 47px;
+}
+
+.living-well {
+  padding: 34px 0 80px;
+}
+.living-well .container {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.living-well .title-box {
+  position: relative;
+}
+.living-well .title-box .down-icon {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.living-well .title-box .section-title {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 42px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 90px;
+}
+.living-well .title-box .section-title span {
+  color: rgb(130, 26, 82);
+}
+.living-well .secret-slider-block {
+  padding-left: 20px;
+}
+.living-well .secret-slider-block .secret-slider .secret-block {
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 28px 15px 90px;
+}
+.living-well .secret-slider-block .secret-slider .secret-block img {
+  margin-bottom: 12px;
+  margin-left: 5px;
+}
+.living-well .secret-slider-block .secret-slider .secret-block .secret-details h4 {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  color: rgb(130, 26, 82);
+  margin-bottom: 15px;
+  min-height: 60px;
+}
+.living-well .secret-slider-block .secret-slider .secret-block .secret-details p {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  margin-bottom: 0;
+  min-height: 105px;
+}
+
+/*** ageless stories Section Styles Starts ***/
+.ageless-story {
+  background-color: rgb(231, 199, 207);
+  padding: 46px 20px 84px;
+}
+.ageless-story .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.ageless-story .title-box {
+  position: relative;
+  display: inline-block;
+}
+.ageless-story .title-box .circle-icon {
+  top: 0px;
+  left: 0px;
+  width: auto;
+  max-width: 339px;
+  position: absolute;
+}
+.ageless-story .title-box .section-title {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 36px;
+  color: rgb(130, 26, 82);
+  margin-bottom: 25px;
+}
+.ageless-story .title-box .section-title span {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 36px;
+  color: rgb(130, 26, 82);
+}
+.ageless-story .title-box p {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 47px;
+}
+.ageless-story .image-box-grid .image-box {
+  background: rgb(239, 223, 223);
+}
+.ageless-story .image-box-grid .image-box .image-desc {
+  word-break: break-all;
+}
+
+/*** Primus Difference ***/
+.primus-difference {
+  margin-top: 116px;
+  margin-bottom: 43px;
+  position: relative;
+}
+.primus-difference .container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.primus-difference .built-around {
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 112px;
+  display: flex;
+  flex-direction: column;
+}
+.primus-difference .built-around .title-box {
+  position: relative;
+}
+.primus-difference .built-around .title-box .feather-icon {
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  max-width: 46px;
+}
+.primus-difference .built-around .title-box .sub-title {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 42px;
+  color: rgb(136, 42, 95);
+  word-break: break-all;
+  margin-bottom: 23px;
+}
+.primus-difference .built-around .title-box .sub-title span {
+  font-family: Unbounded;
+  font-weight: 700;
+  font-size: 42px;
+  color: rgb(136, 42, 95);
+}
+.primus-difference .built-around .title-box p {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 47px;
+  color: rgb(0, 0, 0);
+}
+.primus-difference .built-around .second-block {
+  display: flex;
+  flex-direction: column;
+}
+.primus-difference .built-around .lists-block .section-title {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 36px;
+  color: rgb(0, 0, 0);
+  padding-left: 15px;
+  padding-right: 15px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 37px;
+}
+.primus-difference .built-around .lists-block .section-title span {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 42px;
+  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.primus-difference .built-around .amenities-lists {
+  padding: 0 15px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  row-gap: 54px;
+}
+.primus-difference .built-around .amenities-lists .list {
+  gap: 46.29px;
+  margin-bottom: 19px;
+  align-items: flex-start;
+}
+.primus-difference .built-around .amenities-lists .list img {
+  margin-bottom: 20px;
+}
+.primus-difference .built-around .amenities-lists .list:last-child {
+  margin-bottom: 0;
+}
+.primus-difference .built-around .amenities-lists .list p {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0;
+}
+.primus-difference .built-around .amenities-lists .list p span {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 14px;
+}
+.primus-difference .built-around .amenities-ads {
+  position: relative;
+  margin-bottom: 47px;
+  order: 2;
+  margin-top: 64px;
+  display: grid;
+  gap: 10px;
+}
+.primus-difference .built-around .amenities-ads img {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  gap: 10px;
+  display: grid;
+}
+.primus-difference .shining-star {
+  position: absolute;
+  left: 50%;
+  bottom: -4.9%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.primus-difference .big-star {
+  position: absolute;
+  left: 12px;
+  bottom: 40px;
+}
+
+.ready-section {
+  margin: 60px 0;
+}
+.ready-section .container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ready-section .ready-block .ready-first {
+  margin-bottom: 33px;
+}
+.ready-section .ready-block .title-box {
+  position: relative;
+}
+.ready-section .ready-block .title-box .section-title {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 40px;
+  color: rgb(130, 26, 82);
+  margin-bottom: 64px;
+  font-weight: 700;
+}
+.ready-section .ready-block .title-box .down-lines {
+  max-width: 103.25px;
+  position: absolute;
+  right: 35px;
+  top: 55%;
+  transform: translateY(-50%);
+}
+.ready-section .ready-block .title-box p {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 14px;
+}
+
+/**** Ipad Styles ****/
+@media screen and (min-width: 767px) and (max-width: 1179px) {
+  .main-slider .about-banner {
+    border-radius: 50px;
+  }
+  .main-slider .about-banner .carousel .carousel-item .carousel-caption {
+    top: 50px;
+    left: 50px;
+  }
+  .main-slider .about-banner .carousel .carousel-item .carousel-caption h1 {
+    width: 100%;
+    font-size: 34px;
+  }
+  .main-slider .about-banner .carousel .carousel-item .carousel-caption h1 span {
+    font-size: 34px;
+  }
+  .how-it-began {
+    margin-top: 51px;
+  }
+  .how-it-began .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .how-it-began .about-img img {
+    border-radius: 50px;
+  }
+  .award-section .title-box .feather-icon {
+    position: absolute;
+    top: -10px;
+    right: 50%;
+  }
+  .life-built .big-star {
+    left: 52px;
+  }
+  .happy-community .title-box .feather-icon {
+    position: absolute;
+    top: -20px;
+    right: 36%;
+  }
+  .primus-difference .built-around .title-box .feather-icon {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    max-width: 46px;
+  }
+}
+/****  Desktop Styles  ****/
+@media screen and (min-width: 1180px) {
+  .main-slider .about-banner {
+    border-radius: 50px;
+  }
+  .main-slider .about-banner .carousel .carousel-item .carousel-caption {
+    top: 70px;
+    left: 130px;
+  }
+  .main-slider .about-banner .carousel .carousel-item .carousel-caption h1 {
+    width: 100%;
+  }
+  .main-slider .about-banner .about-description {
+    padding: 90px 145px 115px;
+    display: grid;
+    gap: 140px;
+    position: relative;
+    grid-template-columns: 2fr 2fr;
+  }
+  .main-slider .about-banner .about-description p {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #fff;
+    line-height: 24px;
+  }
+  .main-slider .about-banner .about-description .big-star {
+    position: absolute;
+    left: 50%;
+    bottom: 74.83px;
+    transform: translateX(-50%);
+    max-width: 37.21px;
+  }
+  .how-it-began {
+    margin-top: 120px;
+  }
+  .how-it-began .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .how-it-began .title-box {
+    position: relative;
+  }
+  .how-it-began .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 41px;
+  }
+  .how-it-began .title-box .section-title span {
+    font-weight: 700;
+    color: rgb(130, 26, 82);
+  }
+  .how-it-began .title-box .section-title .star-icon {
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    max-width: 71px;
+    width: 100%;
+  }
+  .how-it-began .description p {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 28px;
+  }
+  .how-it-began .description p.from-date {
+    font-size: 20px;
+    margin-bottom: 36px;
+  }
+  .how-it-began .description p.from-date span {
+    font-size: 24px;
+    color: rgb(130, 26, 82);
+    font-weight: 600;
+  }
+  .how-it-began .about-img {
+    text-align: end;
+  }
+  .how-it-began .about-img img {
+    border-radius: 50px;
+    width: 90%;
+  }
+  .award-section {
+    margin-top: 107px;
+  }
+  .award-section .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .award-section .title-box {
+    position: relative;
+    display: inline-block;
+  }
+  .award-section .title-box .sub-title {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+  }
+  .award-section .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    color: rgb(130, 26, 82);
+    font-weight: 700;
+  }
+  .award-section .title-box .feather-icon {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+  }
+  .award-section .award-slider-block {
+    padding-bottom: 78px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .award-section .award-slider-block h3 {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin: 46px 0 38px;
+  }
+  .award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block {
+    width: 330px;
+    height: 435px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  .award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block .award-image {
+    max-width: 415px;
+    max-height: 222px;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background: rgb(255, 255, 255);
+  }
+  .award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block .awards-details {
+    padding: 20px 16px;
+  }
+  .award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block .awards-details h4 {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block .awards-details p {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(130, 26, 82);
+    margin-bottom: 0;
+  }
+  .life-built {
+    margin: 80px 22px 0;
+    position: relative;
+  }
+  .life-built .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .life-built .built-around {
+    height: 100%;
+    background: rgb(130, 26, 82);
+    overflow: hidden;
+    border-radius: 50px;
+    position: relative;
+    padding-bottom: 130px;
+  }
+  .life-built .built-around .ads-bg {
+    position: absolute;
+    z-index: 0;
+    right: 90px;
+    bottom: 30px;
+    max-width: 189.05px;
+  }
+  .life-built .built-around .section-thumbnail {
+    width: 100%;
+    min-width: 365px;
+    height: 100%;
+    max-height: 830px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .life-built .built-around .title-box {
+    padding: 130px 50px 0;
+    position: relative;
+  }
+  .life-built .built-around .title-box .home-icon {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    right: 30%;
+    transform: translateX(-31%);
+    max-width: 86px;
+  }
+  .life-built .built-around .title-box .sub-title {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 54px;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    position: relative;
+  }
+  .life-built .built-around .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 54px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 66px;
+    z-index: 2;
+    position: relative;
+  }
+  .life-built .built-around .title-box p {
+    font-size: 24px;
+  }
+  .life-built .built-around .title-box p:last-child {
+    margin-bottom: 100px;
+  }
+  .life-built .built-around .second-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 49px;
+    padding: 0 50px;
+    align-items: center;
+  }
+  .life-built .built-around .amenities-lists {
+    padding: 0 15px 0px;
+    order: 2;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 60px;
+  }
+  .life-built .built-around .amenities-lists .lists-block .section-title {
+    margin-bottom: 73px;
+  }
+  .life-built .built-around .amenities-lists .list {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 14px;
+    row-gap: 0;
+    margin-bottom: 12px;
+    align-items: flex-start;
+    width: 48%;
+  }
+  .life-built .built-around .amenities-lists .list img {
+    max-width: 129px;
+    margin-bottom: 33px;
+  }
+  .life-built .built-around .amenities-lists .list:last-child {
+    margin-bottom: 0;
+  }
+  .life-built .built-around .amenities-lists .list h4 {
+    font-family: Unbounded;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 18px;
+    height: 30px;
+  }
+  .life-built .built-around .amenities-lists .list p {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    line-height: 22px;
+  }
+  .life-built .built-around .amenities-lists .list p span {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .life-built .built-around .amenities-ads {
+    position: relative;
+  }
+  .life-built .built-around .amenities-ads .img-box {
+    gap: 20px;
+  }
+  .life-built .built-around .amenities-ads .img-box .first-half {
+    max-width: 116px;
+  }
+  .life-built .built-around .amenities-ads .img-box .second-half {
+    max-width: 75%;
+  }
+  .life-built .built-around .amenities-ads img {
+    z-index: 2;
+    position: relative;
+  }
+  .life-built .built-around .amenities-desc {
+    margin-top: 96px;
+    padding: 0 15px;
+  }
+  .life-built .built-around .amenities-desc .list {
+    gap: 22px;
+  }
+  .life-built .built-around .amenities-desc .list p {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+  }
+  .life-built .built-around .amenities-desc img {
+    width: 100%;
+    max-width: 33px;
+  }
+  .life-built .shining-star {
+    position: absolute;
+    left: 50%;
+    bottom: -6.5%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  .life-built .big-star {
+    position: absolute;
+    left: 45px;
+    bottom: 40px;
+  }
+  /*** Science Tells Us ***/
+  .science-tells {
+    margin: 150px 22px 58px;
+  }
+  .science-tells .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .science-tells .title-box {
+    position: relative;
+  }
+  .science-tells .title-box .sub-title {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 38px;
+  }
+  .science-tells .title-box .sub-title span {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    color: rgb(130, 26, 82);
+    margin: 0 10px;
+  }
+  .science-tells .title-box .circle-icon {
+    position: absolute;
+    left: 160px;
+    width: 100%;
+    top: -15px;
+    max-width: 273px;
+    height: 99px;
+  }
+  .science-tells .title-box p {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 16px;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 65px;
+  }
+  .science-tells .icon-box-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 49px;
+    row-gap: 30px;
+  }
+  .science-tells .icon-box-list .icon-box .known-icon {
+    margin-bottom: 37px;
+  }
+  .science-tells .icon-box-list .icon-box p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .science-tells .special-word {
+    font-size: 40px;
+    margin: 84px 0 73px;
+  }
+  .science-tells .special-word span {
+    font-weight: 700;
+  }
+  /*** Happy Community Section Styles Starts ***/
+  .happy-community {
+    padding: 154px 22px 150px;
+  }
+  .happy-community .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .happy-community .title-box {
+    position: relative;
+    display: inline-block;
+  }
+  .happy-community .title-box .feather-icon {
+    position: absolute;
+    top: -30px;
+    right: 41%;
+  }
+  .happy-community .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 58px;
+  }
+  .happy-community .title-box .section-title span {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+  }
+  .happy-community .title-box p {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 97px;
+  }
+  .living-well {
+    padding: 150px 22px 80px;
+  }
+  .living-well .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .living-well .title-box {
+    position: relative;
+  }
+  .living-well .title-box .down-icon {
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    transform: translateX(-40%);
+  }
+  .living-well .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 68px;
+  }
+  .living-well .title-box .section-title span {
+    color: rgb(130, 26, 82);
+  }
+  .living-well .secret-slider-block {
+    padding-left: 0px;
+  }
+  .living-well .secret-slider-block .secret-slider .secret-block {
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 52px 20px 90px;
+  }
+  .living-well .secret-slider-block .secret-slider .secret-block img {
+    margin-bottom: 12px;
+    margin-left: 5px;
+  }
+  .living-well .secret-slider-block .secret-slider .secret-block .secret-details h4 {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    color: rgb(130, 26, 82);
+    margin-bottom: 15px;
+    min-height: 60px;
+  }
+  .living-well .secret-slider-block .secret-slider .secret-block .secret-details p {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    margin-bottom: 0;
+    min-height: 105px;
+  }
+  .ageless-story {
+    padding: 66px 22px 142px;
+  }
+  .ageless-story .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ageless-story .title-box {
+    position: relative;
+    display: inline-block;
+  }
+  .ageless-story .title-box .circle-icon {
+    top: 0px;
+    left: -18px;
+    width: auto;
+    max-width: 587px;
+    position: absolute;
+  }
+  .ageless-story .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 50px;
+    color: rgb(130, 26, 82);
+    margin-bottom: 48px;
+  }
+  .ageless-story .title-box .section-title span {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(130, 26, 82);
+  }
+  .ageless-story .title-box p {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 91px;
+  }
+  .ageless-story .image-box-grid .image-box {
+    background: rgb(239, 223, 223);
+  }
+  .ageless-story .image-box-grid .image-box .image-desc {
+    word-break: break-all;
+  }
+  .primus-difference {
+    margin: 80px 22px 0;
+    position: relative;
+  }
+  .primus-difference .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .primus-difference .built-around {
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+  }
+  .primus-difference .built-around .title-box {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+  }
+  .primus-difference .built-around .title-box .feather-icon {
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    right: 35%;
+    transform: translateX(-35%);
+    max-width: 70px;
+  }
+  .primus-difference .built-around .title-box .sub-title {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 50px;
+    color: rgb(136, 42, 95);
+    z-index: 2;
+    position: relative;
+  }
+  .primus-difference .built-around .title-box .sub-title span:first-child {
+    display: inline-flex;
+  }
+  .primus-difference .built-around .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(136, 42, 95);
+    margin-bottom: 66px;
+    z-index: 2;
+    position: relative;
+  }
+  .primus-difference .built-around .title-box p {
+    font-size: 18px;
+  }
+  .primus-difference .built-around .title-box p:last-child {
+    margin-bottom: 47px;
+  }
+  .primus-difference .built-around .second-block {
+    padding: 0px;
+    align-items: center;
+  }
+  .primus-difference .built-around .amenities-lists {
+    padding: 0 15px 0px;
+    gap: 71px;
+    row-gap: 30px;
+  }
+  .primus-difference .built-around .amenities-lists .lists-block .section-title {
+    margin-bottom: 73px;
+  }
+  .primus-difference .built-around .amenities-lists .list {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 14px;
+    row-gap: 0;
+    margin-bottom: 12px;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .primus-difference .built-around .amenities-lists .list img {
+    max-width: 129px;
+    margin-bottom: 33px;
+  }
+  .primus-difference .built-around .amenities-lists .list p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
+    line-height: 22px;
+  }
+  .primus-difference .built-around .amenities-lists .list p span {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .primus-difference .built-around .amenities-ads {
+    position: relative;
+    gap: 23px;
+    margin-top: 0;
+  }
+  .primus-difference .built-around .amenities-ads .img-box {
+    gap: 20px;
+  }
+  .primus-difference .built-around .amenities-ads .img-box .first-half {
+    max-width: 116px;
+  }
+  .primus-difference .built-around .amenities-ads .img-box .second-half {
+    max-width: 75%;
+  }
+  .primus-difference .built-around .amenities-ads img {
+    z-index: 2;
+    position: relative;
+  }
+  .primus-difference .built-around .amenities-desc {
+    margin-top: 96px;
+    padding: 0 15px;
+  }
+  .primus-difference .built-around .amenities-desc .list {
+    gap: 22px;
+  }
+  .primus-difference .built-around .amenities-desc .list p {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+  }
+  .primus-difference .built-around .amenities-desc img {
+    width: 100%;
+    max-width: 33px;
+  }
+  .ready-section {
+    margin: 60px 22px 0;
+  }
+  .ready-section .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .ready-section .ready-block .ready-first {
+    margin-bottom: 33px;
+  }
+  .ready-section .ready-block .title-box {
+    position: relative;
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 2fr 1fr;
+    padding: 28px 0 68px;
+  }
+  .ready-section .ready-block .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(130, 26, 82);
+    margin-bottom: 0;
+  }
+  .ready-section .ready-block .title-box .down-lines {
+    max-width: 203.25px;
+    position: absolute;
+    right: 30%;
+    top: 38%;
+    transform: rotateX(-180deg);
+  }
+  .ready-section .ready-block .title-box p {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+    width: 85%;
+  }
+  .ready-section .ready-block .ready-first-icon {
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .main-slider .about-banner .carousel .carousel-item .carousel-caption {
+    top: 88px;
+    left: 145px;
+  }
+  .main-slider .about-banner .carousel .carousel-item .carousel-caption h1 {
+    font-size: 80px;
+  }
+  .main-slider .about-banner .carousel .carousel-item .carousel-caption h1 span {
+    font-size: 80px;
+  }
+  .main-slider .about-banner .about-description {
+    padding: 90px 145px 115px;
+    gap: 220px;
+  }
+  .main-slider .about-banner .about-description p {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .main-slider .about-banner .about-description .big-star {
+    bottom: 74.83px;
+  }
+  .award-section {
+    margin-top: 147px;
+  }
+  .award-section .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .award-section .title-box {
+    position: relative;
+  }
+  .award-section .title-box .sub-title {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+  }
+  .award-section .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    color: rgb(130, 26, 82);
+    font-weight: 700;
+    font-size: 80px;
+  }
+  .award-section .title-box .feather-icon {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    max-width: 46px;
+  }
+  .award-section .award-slider-block {
+    padding-bottom: 78px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .award-section .award-slider-block h3 {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    margin: 46px 0 38px;
+  }
+  .award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block {
+    width: 415px;
+    height: 543px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  .award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block .award-image {
+    max-width: 415px;
+    max-height: 222px;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background: rgb(255, 255, 255);
+  }
+  .award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block .awards-details {
+    padding: 26px 50px;
+  }
+  .award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block .awards-details h4 {
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+  .award-section .award-slider-block .award-slides .swiper-wrapper .swiper-slide .awards-block .awards-details p {
+    font-size: 24px;
+  }
+  .life-built {
+    margin: 80px 0px 0;
+    position: relative;
+  }
+  .life-built .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .life-built .built-around {
+    height: 100%;
+    background: rgb(130, 26, 82);
+    overflow: hidden;
+    border-radius: 50px;
+    position: relative;
+    padding-bottom: 130px;
+  }
+  .life-built .built-around .ads-bg {
+    position: absolute;
+    z-index: 0;
+    right: 90px;
+    bottom: 30px;
+    max-width: 189.05px;
+  }
+  .life-built .built-around .title-box {
+    padding: 130px 50px 0;
+    position: relative;
+  }
+  .life-built .built-around .title-box .home-icon {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    right: 30%;
+    transform: translateX(-31%);
+    max-width: 86px;
+  }
+  .life-built .built-around .title-box .sub-title {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    position: relative;
+  }
+  .life-built .built-around .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 66px;
+    z-index: 2;
+    position: relative;
+  }
+  .life-built .built-around .title-box p {
+    font-size: 24px;
+  }
+  .life-built .built-around .title-box p:last-child {
+    margin-bottom: 100px;
+  }
+  .life-built .built-around .second-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 49px;
+    padding: 0 50px;
+    align-items: center;
+  }
+  .life-built .built-around .lists-block .section-title {
+    margin-bottom: 73px;
+    font-size: 65px;
+  }
+  .life-built .built-around .lists-block .section-title span {
+    font-size: 65px;
+  }
+  .life-built .built-around .amenities-lists {
+    padding: 0 15px 0px;
+    order: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+    row-gap: 80px;
+  }
+  .life-built .built-around .amenities-lists .list {
+    gap: 14px;
+    row-gap: 0;
+    margin-bottom: 12px;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .life-built .built-around .amenities-lists .list img {
+    min-width: 55px;
+    margin-bottom: 33px;
+  }
+  .life-built .built-around .amenities-lists .list:last-child {
+    margin-bottom: 0;
+  }
+  .life-built .built-around .amenities-lists .list h4 {
+    font-family: Unbounded;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 18px;
+    height: 30px;
+  }
+  .life-built .built-around .amenities-lists .list p {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    line-height: 22px;
+  }
+  .life-built .built-around .amenities-lists .list p span {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .life-built .built-around .amenities-ads {
+    position: relative;
+  }
+  .life-built .built-around .amenities-ads .img-box {
+    gap: 20px;
+  }
+  .life-built .built-around .amenities-ads .img-box .first-half {
+    max-width: 116px;
+  }
+  .life-built .built-around .amenities-ads .img-box .second-half {
+    max-width: 80%;
+  }
+  .life-built .built-around .amenities-ads img {
+    z-index: 2;
+    position: relative;
+  }
+  .life-built .built-around .amenities-desc {
+    margin-top: 96px;
+    padding: 0 15px;
+  }
+  .life-built .built-around .amenities-desc .list {
+    gap: 22px;
+  }
+  .life-built .built-around .amenities-desc .list p {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+  }
+  .life-built .built-around .amenities-desc img {
+    width: 100%;
+    max-width: 33px;
+  }
+  .life-built .shining-star {
+    position: absolute;
+    left: 50%;
+    bottom: -5.5%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  .life-built .big-star {
+    position: absolute;
+    left: 175px;
+    bottom: 40px;
+  }
+  /*** Science Tells Us ***/
+  .science-tells {
+    margin: 253px 0px 113px;
+  }
+  .science-tells .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .science-tells .title-box {
+    position: relative;
+  }
+  .science-tells .title-box .sub-title {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 38px;
+  }
+  .science-tells .title-box .sub-title span {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+    color: rgb(130, 26, 82);
+    margin: 0 10px;
+  }
+  .science-tells .title-box .circle-icon {
+    left: 220px;
+    width: 100%;
+    top: 0px;
+    max-width: 473px;
+  }
+  .science-tells .title-box p {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 16px;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 65px;
+  }
+  .science-tells .icon-box-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 49px;
+    row-gap: 30px;
+  }
+  .science-tells .icon-box-list .icon-box .known-icon {
+    margin-bottom: 37px;
+  }
+  .science-tells .icon-box-list .icon-box p {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .science-tells .special-word {
+    font-size: 40px;
+    margin: 84px 0 73px;
+    line-height: 60px;
+  }
+  .science-tells .special-word span {
+    font-weight: 700;
+  }
+  .happy-community {
+    padding: 154px 22px 150px;
+  }
+  .happy-community .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .happy-community .title-box {
+    position: relative;
+    display: inline-block;
+  }
+  .happy-community .title-box .feather-icon {
+    position: absolute;
+    top: -30px;
+    right: 41%;
+  }
+  .happy-community .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+  }
+  .happy-community .title-box .section-title span {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+  }
+  .living-well {
+    padding: 150px 22px 80px;
+  }
+  .living-well .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .living-well .title-box {
+    position: relative;
+  }
+  .living-well .title-box .down-icon {
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    transform: translateX(-40%);
+  }
+  .living-well .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 68px;
+  }
+  .living-well .title-box .section-title span {
+    color: rgb(130, 26, 82);
+  }
+  .living-well .secret-slider-block {
+    padding-left: 0px;
+  }
+  .living-well .secret-slider-block .secret-slider .secret-block {
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 62px 34px 90px;
+  }
+  .living-well .secret-slider-block .secret-slider .secret-block img {
+    margin-bottom: 12px;
+    margin-left: 5px;
+  }
+  .living-well .secret-slider-block .secret-slider .secret-block .secret-details h4 {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    color: rgb(130, 26, 82);
+    margin-bottom: 15px;
+    min-height: 60px;
+  }
+  .living-well .secret-slider-block .secret-slider .secret-block .secret-details p {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    margin-bottom: 0;
+    min-height: 105px;
+  }
+  .ageless-story {
+    padding: 66px 22px 142px;
+  }
+  .ageless-story .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ageless-story .title-box {
+    position: relative;
+    display: inline-block;
+  }
+  .ageless-story .title-box .circle-icon {
+    top: 0px;
+    left: -25px;
+    width: auto;
+    max-width: 787px;
+    position: absolute;
+  }
+  .ageless-story .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 80px;
+    color: rgb(130, 26, 82);
+    margin-bottom: 48px;
+  }
+  .ageless-story .title-box .section-title span {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 80px;
+    color: rgb(130, 26, 82);
+  }
+  .ageless-story .title-box p {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 91px;
+  }
+  .ageless-story .image-box-grid .image-box {
+    background: rgb(239, 223, 223);
+  }
+  .ageless-story .image-box-grid .image-box .image-desc {
+    word-break: break-all;
+  }
+  .primus-difference {
+    margin: 154px 0px 0;
+    position: relative;
+  }
+  .primus-difference .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .primus-difference .built-around {
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 107px;
+  }
+  .primus-difference .built-around .title-box {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+  }
+  .primus-difference .built-around .title-box .feather-icon {
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    right: 20%;
+    transform: translateX(-20%);
+    max-width: 80px;
+  }
+  .primus-difference .built-around .title-box .sub-title {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 80px;
+    color: rgb(136, 42, 95);
+    z-index: 2;
+    position: relative;
+  }
+  .primus-difference .built-around .title-box .sub-title span {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 80px;
+    color: rgb(136, 42, 95);
+  }
+  .primus-difference .built-around .title-box .sub-title span:first-child {
+    display: inline-flex;
+  }
+  .primus-difference .built-around .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(136, 42, 95);
+    margin-bottom: 66px;
+    z-index: 2;
+    position: relative;
+  }
+  .primus-difference .built-around .title-box p {
+    font-size: 20px;
+  }
+  .primus-difference .built-around .title-box p:last-child {
+    margin-bottom: 47px;
+  }
+  .primus-difference .built-around .second-block {
+    padding: 0px;
+    align-items: center;
+  }
+  .primus-difference .built-around .amenities-lists {
+    padding: 0 15px 0px;
+    gap: 71px;
+    row-gap: 30px;
+  }
+  .primus-difference .built-around .amenities-lists .lists-block .section-title {
+    margin-bottom: 73px;
+  }
+  .primus-difference .built-around .amenities-lists .list {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 14px;
+    row-gap: 0;
+    margin-bottom: 12px;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .primus-difference .built-around .amenities-lists .list img {
+    min-width: 80px;
+    margin-bottom: 33px;
+  }
+  .primus-difference .built-around .amenities-lists .list p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
+    line-height: 30px;
+  }
+  .primus-difference .built-around .amenities-ads {
+    position: relative;
+    gap: 23px;
+    margin-top: 0;
+  }
+  .primus-difference .built-around .amenities-ads .img-box {
+    gap: 20px;
+  }
+  .primus-difference .built-around .amenities-ads .img-box .first-half {
+    max-width: 116px;
+  }
+  .primus-difference .built-around .amenities-ads .img-box .second-half {
+    max-width: 75%;
+  }
+  .primus-difference .built-around .amenities-ads img {
+    z-index: 2;
+    position: relative;
+  }
+  .primus-difference .built-around .amenities-desc {
+    margin-top: 96px;
+    padding: 0 15px;
+  }
+  .primus-difference .built-around .amenities-desc .list {
+    gap: 22px;
+  }
+  .primus-difference .built-around .amenities-desc .list p {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+  }
+  .primus-difference .built-around .amenities-desc img {
+    width: 100%;
+    max-width: 33px;
+  }
+  .ready-section {
+    margin: 60px 0;
+  }
+  .ready-section .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .ready-section .ready-block .ready-first {
+    margin-bottom: 33px;
+  }
+  .ready-section .ready-block .title-box {
+    position: relative;
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 2fr 1fr;
+    padding: 28px 0 68px;
+  }
+  .ready-section .ready-block .title-box .section-title {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 80px;
+    color: rgb(130, 26, 82);
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+  .ready-section .ready-block .title-box .down-lines {
+    max-width: 203.25px;
+    position: absolute;
+    right: 30%;
+    top: 38%;
+    transform: rotateX(-180deg);
+  }
+  .ready-section .ready-block .title-box p {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+    width: 85%;
+  }
+  .ready-section .ready-block .ready-first-icon {
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */
