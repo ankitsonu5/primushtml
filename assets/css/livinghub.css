@@ -1,0 +1,184 @@
+/*** 
+01) Banner Section
+***/
+.main-slider {
+  padding-top: 10px;
+}
+.main-slider .container {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.main-slider .carousel .carousel-item img {
+  border-radius: 25px;
+}
+.main-slider .carousel .carousel-item .carousel-caption {
+  top: 18px;
+  left: 13px;
+  right: 0%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.main-slider .carousel .carousel-item .carousel-caption h1 {
+  font-family: Unbounded;
+  font-weight: 700;
+  font-size: 42px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+  width: 90%;
+}
+.main-slider .carousel .carousel-item .carousel-caption h1 span {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 42px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.main-slider .carousel .carousel-item .carousel-caption p {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+  width: 95%;
+}
+
+@media screen and (min-width: 767px) {
+  .main-slider .carousel .carousel-item .carousel-caption {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1179px) {
+  .main-slider .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main-slider .carousel .carousel-item img {
+    border-radius: 50px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption {
+    top: 130px;
+    left: 107px;
+    right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+    margin-bottom: 25px;
+    width: 55%;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 span {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+  }
+  .main-slider .carousel .carousel-item .carousel-caption p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .main-slider {
+    padding: 60px 22px 0;
+  }
+  .main-slider .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main-slider .carousel .carousel-item img {
+    border-radius: 50px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption {
+    top: 130px;
+    left: 107px;
+    right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+    margin-bottom: 25px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 span {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+  }
+  .main-slider .carousel .carousel-item .carousel-caption p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .main-slider {
+    padding: 121.34px 0 0;
+  }
+  .main-slider .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main-slider .carousel .carousel-item img {
+    border-radius: 50px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption {
+    top: 162px;
+    left: 107px;
+    right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 96px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+    margin-bottom: 25px;
+    width: 65%;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 span {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 96px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+  }
+  .main-slider .carousel .carousel-item .carousel-caption p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    width: 34%;
+  }
+}
+
+
+#livinghub {margin-top: 55px;}
+
+.livinghub-box {background: #fff; display: flex; flex-wrap: wrap; border-radius: 55px; }
