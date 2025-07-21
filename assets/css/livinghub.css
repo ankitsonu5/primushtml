@@ -1,0 +1,1142 @@
+
+/***
+01) Banner Section
+***/
+.main-slider {
+  padding-top: 10px;
+}
+.main-slider .container {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.main-slider .carousel .carousel-item img {
+  border-radius: 25px;
+}
+.main-slider .carousel .carousel-item .carousel-caption {
+  top: 18px;
+  left: 13px;
+  right: 0%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.main-slider .carousel .carousel-item .carousel-caption h1 {
+  font-family: Unbounded;
+  font-weight: 700;
+  font-size: 42px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+  width: 90%;
+}
+.main-slider .carousel .carousel-item .carousel-caption h1 span {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 42px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.main-slider .carousel .carousel-item .carousel-caption p {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+  width: 95%;
+}
+
+@media screen and (min-width: 767px) {
+  .main-slider .carousel .carousel-item .carousel-caption {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1179px) {
+  .main-slider .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main-slider .carousel .carousel-item img {
+    border-radius: 50px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption {
+    top: 130px;
+    left: 107px;
+    right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+    margin-bottom: 25px;
+    width: 55%;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 span {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+  }
+  .main-slider .carousel .carousel-item .carousel-caption p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .main-slider {
+    padding: 60px 22px 0;
+  }
+  .main-slider .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main-slider .carousel .carousel-item img {
+    border-radius: 50px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption {
+    top: 130px;
+    left: 107px;
+    right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+    margin-bottom: 25px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 span {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+  }
+  .main-slider .carousel .carousel-item .carousel-caption p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .main-slider {
+    padding: 121.34px 0 0;
+  }
+  .main-slider .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main-slider .carousel .carousel-item img {
+    border-radius: 50px;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption {
+    top: 162px;
+    left: 107px;
+    right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 96px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+    margin-bottom: 25px;
+    width: 65%;
+  }
+  .main-slider .carousel .carousel-item .carousel-caption h1 span {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 96px;
+    text-align: left;
+    color: rgb(239, 223, 223);
+  }
+  .main-slider .carousel .carousel-item .carousel-caption p {
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    width: 34%;
+  }
+}
+/*** About Page styles starts here ***/
+/** About Slider **/
+.main-slider .about-banner {
+  background-color: rgb(130, 26, 82);
+  border-radius: 25px;
+}
+.main-slider .about-banner .about-description {
+  padding: 56px 15px 92px;
+  display: grid;
+  gap: 17px;
+  position: relative;
+}
+.main-slider .about-banner .about-description p {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #fff;
+  line-height: 24px;
+}
+.main-slider .about-banner .about-description .big-star {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  max-width: 37.21px;
+}
+
+/* Living Hub Section - Using Classes Only */
+#living-hub .box1 {
+    background-color:rgba(245, 245, 245, 1);
+
+    border-radius: 55px;
+    height: 1035px;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    margin-top: 120px;
+}
+/* #livinghub .arrowicon{
+    position: relative;
+
+} */
+
+#living-hub .living-hub-content {
+    flex: 1;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+
+}
+
+/* Add arrow to the left box using pseudo-element */
+#living-hub .arrow-wrapper {
+  position: relative;
+}
+
+#living-hub .arrow-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 270px;     /* ⬅️ Arrow ko upar uthao second image se */
+  left: -370px;    /* ⬅️ Arrow ko left side lao text ki taraf */
+  width: 350px;
+  height: 300px;
+  background-image: url('../img/livinghub/icon/arrow.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+
+
+
+#living-hub .living-hub-content h2{
+padding-bottom: 100px;
+line-height: 100%;
+}
+
+#living-hub .living-hub-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+
+    line-height: 100px;
+
+    width:518px;
+    color: rgba(130, 26, 82, 1);
+
+}
+#living-hub .living-hub-title span {
+    font-family: "Unbounded", sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 100px;
+
+    width:518px;
+    color: rgba(130, 26, 82, 1);
+
+}
+#living-hub .fp{
+    margin-bottom: 90px;
+}
+
+#living-hub .living-hub-title .highlight-text {
+    color: #821A52;
+}
+
+#living-hub .living-hub-description {
+    font-family: "Unbounded", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    margin-bottom: 30px;
+    color: #212121;
+    width:539px;
+
+}
+
+
+#living-hub .living-hub-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    justify-content: center;
+}
+
+#living-hub .living-hub-image {
+    position: relative;
+    text-align: center;
+}
+
+#living-hub .living-hub-image img {
+    width: 100%;
+    max-width: 730px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+    #living-hub .living-hub-title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 991px) {
+   #living-hub  .box1 {
+        height: auto;
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+
+    #living-hub .living-hub-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+   #living-hub  .living-hub-images {
+        height: auto;
+    }
+
+    .badge-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-letter {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    #living-hub .living-hub-title {
+        font-size: 36px;
+    }
+
+    #living-hub .living-hub-description {
+        font-size: 16px;
+    }
+
+   #living-hub .box1 {
+        padding: 40px 20px;
+    }
+
+    #living-hub .floating-badge {
+        bottom: 10px;
+    }
+
+   #living-hub .badge-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    #living-hub .icon-letter {
+        font-size: 20px;
+    }
+}
+
+/* Third Box Section - Safety Features Grid */
+#livinghub2 .thirdbox {
+
+    border-radius: 55px;
+
+    margin-top: 120px ;
+    position: relative;
+}
+
+#livinghub2 .section-header {
+    text-align: left;
+   line-height: 110px;
+    width:1116px;
+    height:220px;
+}
+
+#livinghub2 .main-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 10px;
+     color: #821A52;
+}
+
+#livinghub2 .main-title .highlight {
+    color: #821A52;
+    font-weight: 700;
+}
+
+#livinghub2 .subtitle {
+    font-family: "Unbounded", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #821A52;
+    margin-bottom: 0;
+}
+
+#livinghub2 .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+#livinghub2 .feature-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 800px;
+    height: 330px;
+}
+
+#livinghub2 .feature-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #821A52;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#livinghub2 .feature-icon img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1);
+}
+
+#livinghub2 .feature-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#livinghub2 .feature-content h3 {
+    font-family: "Unbounded", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #821A52;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+#livinghub2 .feature-content p {
+    font-family: "Unbounded", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #666;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* Responsive Styles for Safety Features */
+@media (max-width: 1199px) {
+    #livinghub2 .main-title,
+    #livinghub2 .subtitle {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 991px) {
+    #livinghub2 .thirdbox {
+        padding: 60px 40px;
+    }
+
+    #livinghub2 .features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    #livinghub2 .main-title,
+    #livinghub2 .subtitle {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    #livinghub2 .thirdbox {
+        padding: 40px 20px;
+    }
+
+    #livinghub2 .main-title,
+    #livinghub2 .subtitle {
+        font-size: 28px;
+    }
+
+    #livinghub2 .feature-card {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    #livinghub2 .feature-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    #livinghub2 .feature-content h3 {
+        font-size: 16px;
+    }
+
+    #livinghub2 .feature-content p {
+        font-size: 13px;
+    }
+}
+
+/* Move Freely Live Fully Section */
+#livinghub3 .container {
+    background: rgba(130, 26, 82, 1);
+
+    border-radius: 55px;
+    padding: 80px 80px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    height: 920px;
+    max-width: 1718px;
+    width: 100%;
+    margin-top: 120px;
+}
+
+#livinghub3 .section-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    margin-bottom: 60px;
+    line-height: 1.1;
+}
+
+#livinghub3 .section-title .light {
+    font-weight: 700;
+}
+
+#livinghub3 .cards-container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    margin-top: 60px;
+    align-items: flex-start;
+
+}
+
+#livinghub3 .feature-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+#livinghub3 .card-image {
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+
+}
+
+#livinghub3 .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+
+#livinghub3 .card-content {
+    padding-bottom: 100;
+}
+
+#livinghub3 .card-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 40px;
+    text-align: left;
+    padding-top: 60px;
+}
+
+#livinghub3 .card-description {
+    font-family: "Unbounded", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+    line-height: 30px;
+    text-align: left;
+    padding-top: 40px;
+}
+
+/* ===== LIVINGHUB4 SECTION ===== */
+#livinghub4 {
+
+
+    position: relative;
+    overflow: hidden;
+}
+
+#livinghub4 .container {
+
+    margin: 0 auto;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+#livinghub4 .content-section {
+
+    max-width: 600px;
+    padding-right: 60px;
+}
+
+#livinghub4 .image-section {
+    flex: 1;
+    max-width: 730px;
+    height: 900px;
+    background-image: url('../img/livinghub/section4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#livinghub4 .section-title {
+    font-size: 80px;
+    font-weight: 300;
+    color:black;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    width:714px;
+    height: 220px;
+}
+
+#livinghub4 .section-title .highlight {
+  color:  rgba(130, 26, 82, 1);
+    font-weight: 700;
+}
+
+#livinghub4 .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    max-width: 800px;
+}
+
+#livinghub4 .features-grid .feature-item:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 350px;
+}
+
+#livinghub4 .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#livinghub4 .feature-icon {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#livinghub4 .feature-icon img {
+    width: 80px;
+    height: 80px;
+
+}
+
+#livinghub4 .featureS{
+margin-right: 90px;
+}
+
+#livinghub4 .featureL{
+    padding-right: 10px;
+    margin-top: 30px;
+
+}
+
+#livinghub4 .featureL p{
+    margin-bottom: 20px;
+}
+
+#livinghub4 .feature-title {
+    font-size: 36px;
+    font-weight: 500;
+    color:  rgba(130, 26, 82, 1);
+    margin-bottom: 8px;
+    width:321px;
+    height:90px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+#livinghub4 .feature-description {
+    font-size: 24px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+    width:368px;
+    height:114px;
+}
+
+/* Living Hub 5 Styles - Kitchens that Work For All */
+#livinghub5 {
+    padding: 80px 0;
+
+    margin-top: 120px;
+}
+
+#livinghub5 .container {
+
+    margin: 0 auto;
+
+}
+
+#livinghub5 .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    width: 1252px;
+    height:99px;
+}
+
+#livinghub5 .section-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+  color: rgba(130, 26, 82, 1);
+    line-height: 1.2;
+    margin: 0;
+}
+
+#livinghub5 .section-title .highlight {
+    color: #821A52;
+    font-weight: 700;
+    position: relative;
+}
+
+#livinghub5 .section-title .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #821A52;
+    border-radius: 50px;
+}
+
+#livinghub5 .cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+   
+    margin: 0 auto;
+}
+
+#livinghub5 .card {
+    width: 820px;
+    background-color: rgba(231, 199, 207, 1);
+    
+   border: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height:680px;
+    border-radius: 69px;
+}
+
+#livinghub5 .card-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#livinghub5 .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#livinghub5 .card-content {
+    padding: 25px 30px 30px 30px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+#livinghub5 .card-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #821A52;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    width: 593px;
+    height:50px;
+    margin-top:50px
+}
+
+#livinghub5 .card-description {
+    font-family: "Unbounded", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #171717;
+    line-height: 1.4;
+    margin: 0;
+    width: 627px;
+    height:70px;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+/* Decorative Elements */
+#livinghub3 .container::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    width: 40px;
+    height: 40px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>') no-repeat center;
+    background-size: contain;
+    opacity: 0.3;
+}
+
+/* Responsive Styles for Move Freely Section */
+@media (max-width: 1199px) {
+    #livinghub3 .section-title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 991px) {
+    #livinghub3 .container {
+        padding: 60px 40px;
+    }
+
+    #livinghub3 .cards-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #livinghub3 .section-title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #livinghub3 .card-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 767px) {
+    #livinghub3 .container {
+        padding: 40px 20px;
+    }
+
+    #livinghub3 .section-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    #livinghub3 .card-content {
+        padding: 20px;
+    }
+
+    #livinghub3 .card-title {
+        font-size: 18px;
+    }
+
+    #livinghub3 .card-description {
+        font-size: 13px;
+    }
+
+    #livinghub3 .card-image {
+        height: 150px;
+    }
+}
+
+
+
+
+
+/* ===== LIVINGHUB6 SECTION ===== */
+#livinghub6 {
+
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#livinghub6 .container {
+   background-color: rgba(130, 26, 82, 1);
+    margin: 0 auto;
+    padding: 100px 40px;
+    border-radius: 55px;
+}
+
+#livinghub6 .content-wrapper {
+    text-align: center;
+}
+
+#livinghub6 .section-title {
+    font-size: 80px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 80px;
+    line-height: 1.2;
+    text-align: left;
+    margin-left: 80px;
+    width: 915px;
+    height:198px;
+}
+
+#livinghub6 .section-title .star-icon {
+    color: #FFD700;
+    font-size: 48px;
+    margin-left: 20px;
+}
+
+#livinghub6 .section-title .highlight {
+    color: white;
+    font-weight: 700;
+}
+
+#livinghub6 .cards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+#livinghub6 .feature-card {
+    width: 478px;
+    height: 505px;
+    background: rgba(231, 199, 207, 1);
+    border-radius: 55px;
+    padding: 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+   
+   
+
+}
+
+
+
+#livinghub6 .card-icon {
+    width: 88px;
+    height: 100px;
+   margin-top: 20px;
+   margin-bottom: 80px;
+   margin-left: 20px;
+  
+   
+}
+
+#livinghub6 .card-icon img {
+    width: 100%;
+    height: 100px;
+    
+}
+
+#livinghub6 .card-title {
+    font-size: 40px;
+    font-weight: 600;
+   color:rgba(130, 26, 82, 1);
+    margin-bottom: 70px;
+    width:457px;
+    height:49px;
+    text-align: left;
+    line-height: 100%;
+    margin-left: 20px;}
+    
+#livinghub6 .card-description {
+    font-size: 24px;
+    color: #282727;
+    line-height: 30px;
+   font-weight: 400;
+    width:356px;
+    height:60px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+/* ===== LIVING-HUB7 SECTION ===== */
+#living-hub7 {
+    background-color: #fff;
+    padding: 120px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#living-hub7 .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+#living-hub7 .content-wrapper {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#living-hub7 .section-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 60px;
+    line-height: 1.2;
+}
+
+#living-hub7 .section-title .highlight {
+    color: #8B4A9C;
+    font-weight: 700;
+}
+
+#living-hub7 .decorative-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    gap: 20px;
+}
+
+#living-hub7 .decorative-line .line-left,
+#living-hub7 .decorative-line .line-right {
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #8B4A9C 50%, transparent 100%);
+    border-style: dotted;
+    border-width: 1px 0;
+    border-color: #8B4A9C;
+}
+
+#living-hub7 .decorative-line .star-icon {
+    color: #8B4A9C;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#living-hub7 .features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+#living-hub7 .feature-item {
+    flex: 1;
+    text-align: center;
+    max-width: 350px;
+}
+
+#living-hub7 .feature-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 30px;
+    background: #8B4A9C;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(139, 74, 156, 0.2);
+}
+
+#living-hub7 .feature-icon img {
+    width: 70px;
+    height: 70px;
+    filter: brightness(0) invert(1);
+}
+
+#living-hub7 .feature-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.4;
+    margin: 0;
+}
+    line-height: 1.3;
+}
+
+

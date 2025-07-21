@@ -407,5 +407,213 @@
 .talkusrow {background: #E7C7CF;
      border-radius: 55px;
      display: flex;
-    
-}              
+
+}
+
+/* Living Well Hub Section Styles */
+.living-hub-section {
+    padding: 80px 0;
+    position: relative;
+}
+
+.living-hub-section .section-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.living-hub-section .highlight-text {
+    color: #821A52;
+}
+
+.living-hub-section .section-description p {
+    font-family: "Unbounded", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.living-hub-features {
+    margin-top: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #F8F0F4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.feature-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.feature-text h4 {
+    font-family: "Unbounded", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #821A52;
+}
+
+.feature-text p {
+    font-family: "Unbounded", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #666;
+}
+
+.living-hub-image {
+    position: relative;
+    padding-left: 20px;
+}
+
+.main-image {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.main-image img {
+    border-radius: 25px;
+    width: 100%;
+}
+
+.floating-badge {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    z-index: 2;
+}
+
+.badge-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #821A52;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(130, 26, 82, 0.3);
+}
+
+.icon-letter {
+    font-family: "Unbounded", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.secondary-image {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+.secondary-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive styles for Living Hub section */
+@media (max-width: 1199px) {
+    .living-hub-section .section-title {
+        font-size: 48px;
+    }
+
+    .secondary-image {
+        width: 150px;
+        height: 150px;
+        right: -20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .living-hub-section {
+        padding: 60px 0;
+    }
+
+    .living-hub-content {
+        margin-bottom: 60px;
+    }
+
+    .living-hub-image {
+        padding-left: 0;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .secondary-image {
+        width: 120px;
+        height: 120px;
+        right: -15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .living-hub-section .section-title {
+        font-size: 36px;
+    }
+
+    .living-hub-section .section-description p {
+        font-size: 16px;
+    }
+
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .feature-text h4 {
+        font-size: 16px;
+    }
+
+    .feature-text p {
+        font-size: 13px;
+    }
+
+    .living-hub-image {
+        max-width: 100%;
+    }
+
+    .secondary-image {
+        width: 100px;
+        height: 100px;
+        right: 0;
+    }
+
+    .badge-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-letter {
+        font-size: 24px;
+    }
+}
