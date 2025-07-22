@@ -43,6 +43,23 @@
   margin-bottom: 0;
   width: 95%;
 }
+/* this is the code for desktop & mobile view control */
+.only-mobile {
+  display: none !important;
+}
+@media (max-width: 767px){
+  .only-mobile{
+    display: block !important;
+  }
+}
+.only-desktop {
+  display: block;
+}
+@media (max-width: 767px) {
+  .only-desktop {
+    display: none !important;
+  }
+}
 
 @media screen and (min-width: 767px) {
   .main-slider .carousel .carousel-item .carousel-caption {
@@ -386,16 +403,123 @@
   .lifestyle-section {
     padding: 20px 0 20px 100px;
   }
-
   .card {
     min-width: 250px;
-    height: 300px;
+    height: 500px;
+    padding-left: 0;
   }
-
   .cards-container {
     gap: 15px;
   }
+  .talktous-para {
+    padding: 24px !important;
+  }
+  .talktous-para p {
+    margin-bottom: 32px !important;                                  
+  }
+  .everyday-enjoy-section-row {
+  flex-direction: column-reverse;
 }
+.everyday-enjoy-col-one {
+  width: 36px;
+}
+.everyday-enjoy-col-two {
+  padding: 0px !important;
+}
+.everyday-enjoy-col-two .everyday-img-one {
+  position: absolute;
+  top: 100px !important;
+  right: 76px !important;
+  width: 48px;
+  height: 48px;
+}
+.everyday-img-two {
+  display: none;
+}
+.everyday-img-three {
+  display: none;
+}
+.everyday-enjoy-col-two .everyday-enjoy-para {
+  padding-right: 24px !important;
+}
+.everyday-enjoy-col-two .everyday-enjoy-heading {
+    font-size: 48px !important;
+}
+.everyday-enjoy-col-one {
+    display: flex;
+    flex-direction: column;
+    height: auto !important;
+}
+.everyday-enjoy-col-one div img{
+    width: 400px !important;
+    height: auto !important;
+    margin-left: 0;
+}
+.everyday-enjoy-col-two .everyday-enjoy-para {
+  font-weight: 300 !important;
+}
+.lifestyle-section {
+    width: 100%;
+    padding: 40px 0 40px 24px;
+}
+.primus-section h1 {
+    font-size: 56px !important;
+}
+.primus-section-description p {
+    font-size: 22px !important;
+    font-weight: 300 !important;
+    margin-bottom: 10px !important;
+    margin-top: 48px !important;
+}
+.our-celebration-section .our-celebration-section-container {
+    padding: 24px !important;
+}
+.our-celebration-head-section h1 {
+    font-size: 36px !important;
+}
+.our-celebration-head-section h1 span {
+    font-size: 44px !important;
+}
+.our-celebration-head-section img {
+    top: 64px !important;
+    left: 350px !important;
+}
+.our-celebration-categories-section {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 18px !important;
+}
+.our-clebration-div {
+    display: flex !important;
+    gap: 10px !important;
+    align-items: center;
+    align-items: center !important;
+}
+.our-clebration-div div img {
+  width: 48px !important;
+}
+.our-clebration-div .para-div p {
+    color: #ffffff;
+    font-size: 14px !important;
+}
+.our-celebration-center-bg {
+    bottom: -280px !important;
+    width: 160px !important;
+    left: 50% !important;
+    transform: translate(-50%, 0);
+}
+.our-celebration-bg {
+    position: absolute;
+    bottom: -114px !important;
+    width: 150px !important;
+    right: 120px;
+}
+.learn-button {
+    padding: 12px 76px !important;
+}
+}
+
+/* talkus style */
 #talkus {
   margin-top: 61px;
   position: relative;
@@ -405,7 +529,8 @@
 }
 .talkusrow {
   background: #e7c7cf;
-  border-radius: 55px;
+  border-radius: 48px;
+  margin: 10px;
   display: flex;
 }
 .talktous-para {
@@ -434,7 +559,7 @@
   text-transform: uppercase;
   border-radius: 52px;
   font-size: 22px;
-  padding: 12px 38px;
+  padding: 12px 48px;
   box-shadow: rgba(0, 0, 0, 1) 0px 5px 1px 0px;
 }
 
@@ -444,7 +569,11 @@
   margin-bottom: 100px;
   margin-top: 200px;
 }
-
+.everyday-enjoy-section-row {
+  display: flex;
+  justify-content: center !important;
+  gap: 48px;
+}
 .everyday-enjoy-col-one {
   display: flex;
   gap: 16px;
@@ -497,7 +626,9 @@
   background-color: #821a52;
   border-radius: 50px;
   padding: 55px;
+  padding-bottom: 150px;
   margin-bottom: 160px;
+  padding-bottom: 200px !important;
 }
 .our-celebration-head-section {
   position: relative;
@@ -520,20 +651,20 @@
 }
 .our-celebration-categories-section {
   display: flex;
-  flex-direction: column;
-  gap: 96px !important;
+  gap: 96px;
   position: relative;
   margin-top: 96px;
 }
 .our-celebratation-divs {
   display: flex;
-  /* flex-direction: row; */
   justify-content: flex-start;
-  gap: 128px;
+  gap: 85px;
+  flex-direction: column;
 }
 .our-clebration-div {
   display: flex;
   gap: 36px;
+  align-items: center;
 }
 .our-clebration-div .para-div p {
   color: #ffffff;
@@ -541,22 +672,26 @@
 }
 .our-celebration-center-bg {
   position: absolute;
-  bottom: -180px;
+  bottom: -320px;
   width: 220px;
   left: 50%;
   transform: translate(-50%, 0);
 }
 .our-celebration-bg {
   position: absolute;
-  bottom: 0;
+  bottom: -85px;
   width: 264px;
-  right: 0;
-  transform: translate(-50%, 0);
+  right: 120px;
 }
 
 /* book-a-visit-section style */
 .book-a-visit-section {
   margin-bottom: 130px;
+}
+
+/* hear it from heart style */
+.hear-it-from-section {
+  margin-bottom: 96px;
 }
 .hear-it-from-head {
   color: #000000;
@@ -564,22 +699,56 @@
   font-weight: 400;
   margin-bottom: 70px;
 }
-.hear-it-from-head span{
-  color: #821A52;
+.hear-it-from-head span {
+  color: #821a52;
 }
 .hear-it-from-container {
   position: relative;
 }
 .hear-it-from-para {
   font-weight: 300;
-
 }
-.hear-it-from-container .hear-it-from-cirlce-img{
+.hear-it-from-container .hear-it-from-cirlce-img {
   position: absolute;
   top: 0;
   left: 43%;
 }
-.hear-it-from-div-img {
-  width: 85%;
-  border-radius: 36px;
+
+.video-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 76px;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.video-box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 64px;
+}
+
+.video-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  background-color: rgba(128, 0, 64, 0.8);
+  padding: 12px 36px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
