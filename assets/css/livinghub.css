@@ -1,4 +1,5 @@
-/*** 
+
+/***
 01) Banner Section
 ***/
 .main-slider {
@@ -177,8 +178,1951 @@
     width: 34%;
   }
 }
+/*** About Page styles starts here ***/
+/** About Slider **/
+.main-slider .about-banner {
+  background-color: rgb(130, 26, 82);
+  border-radius: 25px;
+}
+.main-slider .about-banner .about-description {
+  padding: 56px 15px 92px;
+  display: grid;
+  gap: 17px;
+  position: relative;
+}
+.main-slider .about-banner .about-description p {
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #fff;
+  line-height: 24px;
+}
+.main-slider .about-banner .about-description .big-star {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  max-width: 37.21px;
+}
+
+/* Living Hub Section - Using Classes Only */
+#living-hub .box1 {
+    background-color:rgba(245, 245, 245, 1);
+
+    border-radius: 55px;
+    height: 1035px;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    margin-top: 120px;
+}
+/* #livinghub .arrowicon{
+    position: relative;
+
+} */
+
+#living-hub .living-hub-content {
+    flex: 1;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+
+}
+
+/* Add arrow to the left box using pseudo-element */
+#living-hub .arrow-wrapper {
+  position: relative;
+}
+
+#living-hub .arrow-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 270px;     /* ⬅️ Arrow ko upar uthao second image se */
+  left: -370px;    /* ⬅️ Arrow ko left side lao text ki taraf */
+  width: 350px;
+  height: 300px;
+  background-image: url('../img/livinghub/icon/arrow.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
 
 
-#livinghub {margin-top: 55px;}
 
-.livinghub-box {background: #fff; display: flex; flex-wrap: wrap; border-radius: 55px; }
+#living-hub .living-hub-content h2{
+padding-bottom: 100px;
+line-height: 100%;
+}
+
+#living-hub .living-hub-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+
+    line-height: 100px;
+
+    width:518px;
+    color: rgba(130, 26, 82, 1);
+
+}
+#living-hub .living-hub-title span {
+    font-family: "Unbounded", sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 100px;
+
+    width:518px;
+    color: rgba(130, 26, 82, 1);
+
+}
+#living-hub .fp{
+    margin-bottom: 90px;
+}
+
+#living-hub .living-hub-title .highlight-text {
+    color: #821A52;
+}
+
+#living-hub .living-hub-description {
+    font-family: "Unbounded", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    margin-bottom: 30px;
+    color: #212121;
+    width:539px;
+
+}
+
+
+#living-hub .living-hub-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    justify-content: center;
+}
+
+#living-hub .living-hub-image {
+    position: relative;
+    text-align: center;
+}
+
+#living-hub .living-hub-image img {
+    width: 100%;
+    max-width: 730px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+    #living-hub .living-hub-title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 991px) {
+   #living-hub  .box1 {
+        height: auto;
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+
+    #living-hub .living-hub-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+   #living-hub  .living-hub-images {
+        height: auto;
+    }
+
+    .badge-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-letter {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    #living-hub .living-hub-title {
+        font-size: 36px;
+    }
+
+    #living-hub .living-hub-description {
+        font-size: 16px;
+    }
+
+   #living-hub .box1 {
+        padding: 40px 20px;
+    }
+
+    #living-hub .floating-badge {
+        bottom: 10px;
+    }
+
+   #living-hub .badge-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    #living-hub .icon-letter {
+        font-size: 20px;
+    }
+}
+
+/* Third Box Section - Safety Features Grid */
+#livinghub2 .thirdbox {
+
+    border-radius: 55px;
+
+    margin-top: 120px ;
+    position: relative;
+}
+
+#livinghub2 .section-header {
+    text-align: left;
+   line-height: 110px;
+    width:1116px;
+    height:220px;
+}
+
+#livinghub2 .main-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 10px;
+     color: #821A52;
+}
+
+#livinghub2 .main-title .highlight {
+    color: #821A52;
+    font-weight: 700;
+}
+
+#livinghub2 .main-title:first-child .highlight:after {
+    content: "";
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-image: url('../img/livinghub/icon/supstart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 20px;
+    vertical-align: middle;
+    position: relative;
+    top:-40px;
+    left:-5px
+    
+}
+
+#livinghub2 .subtitle {
+    font-family: "Unbounded", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #821A52;
+    margin-bottom: 0;
+}
+
+#livinghub2 .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    position: relative;
+}
+
+#livinghub2 .feature-card {
+    background:rgba(245, 245, 245, 1);
+    border-radius: 55px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 800px;
+    height: 330px;
+}
+
+#livinghub2 .feature-align {
+      background:rgba(245, 245, 245, 1);
+    border-radius: 55px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+ 
+    width: 800px;
+    height: 330px;
+}
+
+#livinghub2 .feature-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#livinghub2 .feature-icon {
+    width: 118px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#livinghub2 .feature-icon img {
+    width: 100%;
+    height: 100px;
+}
+
+#livinghub2 .feature-header h3 {
+    font-family: "Unbounded", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #821A52;
+    margin: 0;
+    line-height: 1.3;
+}
+
+#livinghub2 .feature-card p {
+    font-family: "Unbounded", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color:rgba(0, 0, 0, 1);
+    margin: 0;
+    line-height: 40px;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+/* Center Star Icon Styling */
+#livinghub2 .center-star-icon {
+    position: absolute;
+    left: 49%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#livinghub2 .center-star-icon:nth-of-type(3) {
+    top: 180px; /* Between first and second row */
+}
+
+#livinghub2 .center-star-icon:nth-of-type(6) {
+    top: 555px; /* Between second and third row */
+}
+
+#livinghub2 .center-star-icon:nth-of-type(9) {
+    top: 922px; /* Between third and fourth row */
+}
+
+#livinghub2 .center-star-icon img {
+    width: 275px;
+    height: 320px;
+    object-fit: contain;
+}
+
+/* Responsive Styles for Safety Features */
+@media (max-width: 1199px) {
+    #livinghub2 .main-title,
+    #livinghub2 .subtitle {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 991px) {
+    #livinghub2 .thirdbox {
+        padding: 60px 40px;
+    }
+
+    #livinghub2 .features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    #livinghub2 .main-title,
+    #livinghub2 .subtitle {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    #livinghub2 .thirdbox {
+        padding: 40px 20px;
+    }
+
+    #livinghub2 .main-title,
+    #livinghub2 .subtitle {
+        font-size: 28px;
+    }
+
+    #livinghub2 .feature-card {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    #livinghub2 .feature-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    #livinghub2 .feature-content h3 {
+        font-size: 16px;
+    }
+
+    #livinghub2 .feature-content p {
+        font-size: 13px;
+    }
+
+    /* Hide center stars on mobile since grid becomes single column */
+    #livinghub2 .center-star-icon {
+        display: none;
+    }
+}
+
+/* Move Freely Live Fully Section */
+#livinghub3 .container {
+    background: rgba(130, 26, 82, 1);
+
+    border-radius: 55px;
+    padding: 80px 80px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    height: 920px;
+    max-width: 1718px;
+    width: 100%;
+    margin-top: 120px;
+}
+
+#livinghub3 .section-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    margin-bottom: 60px;
+    line-height: 1.1;
+}
+
+#livinghub3 .section-title .light {
+    font-weight: 700;
+}
+
+#livinghub3 .cards-container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    margin-top: 60px;
+    align-items: flex-start;
+    cursor: default;
+}
+
+#livinghub3 .feature-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: default;
+}
+
+#livinghub3 .card-image {
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+
+}
+
+#livinghub3 .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+
+#livinghub3 .card-content {
+    padding-bottom: 100;
+}
+
+#livinghub3 .card-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 40px;
+    text-align: left;
+    padding-top: 60px;
+}
+
+#livinghub3 .card-description {
+    font-family: "Unbounded", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+    line-height: 30px;
+    text-align: left;
+    padding-top: 40px;
+}
+
+/* ===== LIVINGHUB4 SECTION ===== */
+#livinghub4 {
+
+
+    position: relative;
+    overflow: hidden;
+}
+
+#livinghub4 .container {
+
+    margin: 0 auto;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+#livinghub4 .content-section {
+
+    max-width: 600px;
+    padding-right: 60px;
+}
+
+#livinghub4 .image-section {
+    flex: 1;
+    max-width: 730px;
+    height: 900px;
+    background-image: url('../img/livinghub/section4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#livinghub4 .section-title {
+    font-size: 80px;
+    font-weight: 300;
+    color:black;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    width:714px;
+    height: 220px;
+}
+
+#livinghub4 .section-title .highlight {
+  color:  rgba(130, 26, 82, 1);
+    font-weight: 700;
+}
+
+#livinghub4 .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    max-width: 800px;
+}
+
+#livinghub4 .features-grid .feature-item:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 350px;
+}
+
+#livinghub4 .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#livinghub4 .feature-icon {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#livinghub4 .feature-icon img {
+    width: 80px;
+    height: 80px;
+
+}
+
+#livinghub4 .featureS{
+margin-right: 90px;
+}
+
+#livinghub4 .featureL{
+    padding-right: 10px;
+    margin-top: 30px;
+
+}
+
+#livinghub4 .featureL p{
+    margin-bottom: 20px;
+}
+
+#livinghub4 .feature-title {
+    font-size: 36px;
+    font-weight: 500;
+    color:  rgba(130, 26, 82, 1);
+    margin-bottom: 8px;
+    width:321px;
+    height:90px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+#livinghub4 .feature-description {
+    font-size: 24px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+    width:368px;
+    height:114px;
+}
+
+/* Living Hub 5 Styles - Kitchens that Work For All */
+#livinghub5 {
+    padding: 80px 0;
+
+    margin-top: 120px;
+}
+
+#livinghub5 .container {
+
+    margin: 0 auto;
+
+}
+
+#livinghub5 .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    width: 1252px;
+    height:99px;
+    position: relative;
+}
+
+#livinghub5 .section-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+  color: rgba(130, 26, 82, 1);
+    line-height: 1.2;
+    margin: 0;
+}
+
+#livinghub5 .section-title .highlight {
+    color: #821A52;
+    font-weight: 700;
+    position: relative;
+}
+
+/* Underline removed for Work For All */
+
+/* Word Icon for Kitchen Section */
+#livinghub5 .section-header::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: -80px;
+    width: 719px;
+    height: 140px;
+    background: url('../img/livinghub/icon/word.png') no-repeat center;
+    background-size: contain;
+    z-index: 10;
+}
+
+#livinghub5 .cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+   
+    margin: 0 auto;
+}
+
+#livinghub5 .card {
+    width: 820px;
+    background-color: rgba(231, 199, 207, 1);
+    
+   border: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height:680px;
+    border-radius: 69px;
+}
+
+#livinghub5 .card-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#livinghub5 .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#livinghub5 .card-content {
+    padding: 25px 30px 30px 30px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+#livinghub5 .card-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #821A52;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    width: 593px;
+    height:50px;
+    margin-top:50px
+}
+
+#livinghub5 .card-description {
+    font-family: "Unbounded", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #171717;
+    line-height: 1.4;
+    margin: 0;
+    width: 627px;
+    height:70px;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+/* Decorative Elements */
+#livinghub3 .container::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    width: 40px;
+    height: 40px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>') no-repeat center;
+    background-size: contain;
+    opacity: 0.3;
+}
+
+/* Responsive Styles for Move Freely Section */
+@media (max-width: 1199px) {
+    #livinghub3 .section-title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 991px) {
+    #livinghub3 .container {
+        padding: 60px 40px;
+    }
+
+    #livinghub3 .cards-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #livinghub3 .section-title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #livinghub3 .card-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 767px) {
+    #livinghub3 .container {
+        padding: 40px 20px;
+    }
+
+    #livinghub3 .section-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    #livinghub3 .card-content {
+        padding: 20px;
+    }
+
+    #livinghub3 .card-title {
+        font-size: 18px;
+    }
+
+    #livinghub3 .card-description {
+        font-size: 13px;
+    }
+
+    #livinghub3 .card-image {
+        height: 150px;
+    }
+}
+
+
+
+
+
+/* ===== LIVINGHUB6 SECTION ===== */
+#livinghub6 {
+
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#livinghub6 .container {
+   background-color: rgba(130, 26, 82, 1);
+    margin: 0 auto;
+    padding: 100px 40px;
+    border-radius: 55px;
+}
+
+#livinghub6 .content-wrapper {
+    text-align: center;
+}
+
+#livinghub6 .section-title {
+    font-size: 80px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 80px;
+    line-height: 1.2;
+    text-align: left;
+    margin-left: 80px;
+    width: 915px;
+    height:198px;
+}
+
+#livinghub6 .section-title .star-icon {
+    color: #FFD700;
+    font-size: 48px;
+    margin-left: 20px;
+}
+
+#livinghub6 .section-title .highlight {
+    color: white;
+    font-weight: 700;
+}
+
+#livinghub6 .cards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+#livinghub6 .feature-card {
+    width: 478px;
+    height: 505px;
+    background: rgba(231, 199, 207, 1);
+    border-radius: 55px;
+    padding: 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+   
+   
+
+}
+
+
+
+#livinghub6 .card-icon {
+    width: 88px;
+    height: 100px;
+   margin-top: 20px;
+   margin-bottom: 80px;
+   margin-left: 20px;
+  
+   
+}
+
+#livinghub6 .card-icon img {
+    width: 100%;
+    height: 100px;
+    
+}
+
+#livinghub6 .card-title {
+    font-size: 40px;
+    font-weight: 600;
+   color:rgba(130, 26, 82, 1);
+    margin-bottom: 70px;
+    width:457px;
+    height:49px;
+    text-align: left;
+    line-height: 100%;
+    margin-left: 20px;}
+    
+#livinghub6 .card-description {
+    font-size: 24px;
+    color: #282727;
+    line-height: 30px;
+   font-weight: 400;
+    width:356px;
+    height:60px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+/* ===== LIVING-HUB7 SECTION ===== */
+#living-hub7 {
+    padding: 120px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#living-hub7 .container {
+  padding-top: 120px;
+    margin: 0 auto;
+    border-radius: 55px;;
+    background-color: rgba(245, 245, 245, 1);
+    padding-bottom: 120px;
+   
+}
+
+#living-hub7 .content-wrapper {
+    text-align: left;
+    
+    margin-left:90px;
+
+}
+
+#living-hub7 .section-title {
+    font-size: 80px;
+    font-weight: 300;
+    color: rgba(130, 26, 82, 1);
+    margin-bottom: 60px;
+    line-height: 1.2;
+    width:1070px;
+    height:198px;
+    text-align: left;
+    margin-bottom: 140px;
+}
+
+#living-hub7 .section-title .highlight {
+ 
+    font-weight: 700;
+}
+
+
+#living-hub7 .features-grid {
+    display: flex;
+    justify-content:start;
+    gap: 200px;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+#living-hub7 .feature-item {
+    flex: 1;
+    text-align: left;
+    max-width: 350px;
+}
+
+#living-hub7 .feature-icon {
+    width: 114px;
+    height: 100px;
+    margin: 0 auto 30px;
+    margin-left:8px;
+   
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+#living-hub7 .feature-icon img {
+    width: 100%;
+    height: 100px;
+ 
+  
+}
+
+#living-hub7 .feature-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #1a1a1a;
+    line-height: 36px;
+    margin: 0;
+    text-align: left;
+    width:447px;
+    height:150px;
+}
+
+#living-hub7 .p.btmtext
+{
+    color: #821A52;
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0;
+    margin-left: 40px;
+}
+    
+
+
+/* sir works */
+
+
+.livinghub8
+{
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.livinghub8contsec
+{
+    background: #F5F5F5;
+    padding: 85px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    margin-bottom: 50px;
+}
+.livinghub8contsec h2
+{
+    font-weight: 300;
+    font-size: 80px;
+    color: #821A52;
+}
+.livinghub8contsec h2 span
+{
+    display: block;
+    font-weight: bold;
+}
+.livinghub8contsec .col-xl-4
+{
+    margin-top: 100px;
+}
+.sglelivinghubiconsec
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+}
+.sglelivinghubiconsec p
+{
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+    font-weight: normal;
+}
+p.btmtext
+{
+    color: #821A52;
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0;
+}
+.livinghub9
+{
+    width: 100%;
+    overflow: hidden;
+}
+.livinghub9contbg
+{
+    width: 100%;
+    background: #E7C7CF;
+    padding: 85px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.livinghub9imgsec
+{
+    flex:0 0 48%;
+    max-width: 48%;
+}
+.livinghub9contsec
+{
+    flex:0 0 48%;
+    max-width: 48%;
+}
+.livinghub9contsec h2
+{
+    font-weight: 300;
+    font-size: 80px;
+    color: #821A52;
+    padding: 0 0 70px 0;
+}
+.livinghub9contsec h2 span
+{
+    display: block;
+    font-weight: bold;
+}
+.livinghub9contsec p
+{
+    font-size: 24px;
+    line-height: 36px;
+    color: #821A52;
+    font-weight: 300;
+}
+a.button
+{
+    background: #EFDFDF;
+    border-radius: 50px;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 9px solid #53103C;
+    border-left: 10px solid #53103C;
+    line-height: 55px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 40px;
+    margin-top: 100px;
+}
+.livinghub10
+{
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 0 0;
+}
+.livinghub10 h2
+{
+    font-weight: 300;
+    font-size: 80px;
+    color: #821A52;
+    padding: 0 0 70px 0;
+    margin: 0;
+}
+.livinghub10 h2 span
+{
+    font-weight: bold;
+}
+.sglediscovercontentsec
+{
+    background: #E7C7CF;
+    /* padding: 20px 20px 70px 20px; */
+    border-radius: 70px;
+    width: 100%;
+    overflow: hidden;
+    width:552px;
+    height:670px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.sglediscovercontentsec span
+{
+    font-size: 18px;
+    line-height: 40px;
+    background: #821A52;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0 20px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.sglediscovercontentsec h3
+{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #821A52;
+    padding: 24px 0;
+    margin: 0;
+}
+.sglediscovercontentsec p
+{
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    font-weight: normal;
+    margin: 0;
+}
+.livinghub11
+{
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 0 0;
+}
+.livinghubcont11
+{
+    background: #821A52;
+    border-radius: 70px;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    padding: 90px;
+}
+.livinghubcont11 h2
+{
+    font-weight: 300;
+    font-size: 80px;
+    color: #fff;
+    padding: 0 0 70px 0;
+    margin: 0;
+    position: relative;
+}
+.livinghubcont11 h2 span
+{
+    font-weight: bold;
+    display: block;
+}
+.livinghubcont11 h2 .star-icon
+{
+    position: absolute;
+    top: -30px;
+    right: 660px;
+    width: 232px;
+    height: 150px;
+    background-image: url('../img/livinghub/icon/icon4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.selectfield
+{
+    background: #EFDFDF;
+    border-radius: 80px;
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    border: 0;
+    outline: 0;
+    padding: 0 30px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+.selectfield:hover
+{
+    background-color: #E5D0D0;
+    transform: translateY(-2px);
+}
+.selectfield:focus
+{
+    background-color: #E5D0D0;
+    box-shadow: 0 0 0 3px rgba(130, 26, 82, 0.2);
+}
+.selectfield option
+{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 20px;
+    background: #EFDFDF;
+    color: #000;
+    border: none;
+    margin: 2px 0;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+}
+.selectfield option:hover,
+.selectfield option:focus,
+.selectfield option:checked
+{
+    background: #E5D0D0;
+    color: #000;
+    border-radius: 50px;
+}
+.selectfield option:first-child
+{
+    background: #4A90E2;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+/* Custom dropdown styling for better appearance */
+.selectfield::-webkit-scrollbar {
+    width: 8px;
+}
+
+.selectfield::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.selectfield::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.selectfield::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Firefox dropdown styling */
+.selectfield {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+/* Additional styling for dropdown options container */
+.selectfield:focus option,
+.selectfield:active option {
+    border-radius: 50px;
+    margin: 3px 5px;
+    padding: 12px 20px;
+}
+
+/* Webkit specific dropdown styling */
+.selectfield option {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Custom Dropdown Styling */
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-selected {
+    background: #EFDFDF;
+    border-radius: 80px;
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    border: 0;
+    outline: 0;
+    padding: 0 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown-selected::after {
+    content: '';
+    width: 60px;
+    height: 40px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-selected:hover {
+    background: #E5D0D0;
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    background: transparent;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000000;
+    padding: 10px;
+}
+
+/* .custom-dropdown.active .dropdown-options {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+} */
+
+.custom-dropdown.active .dropdown-selected::after {
+    transform: rotate(180deg);
+}
+
+.dropdown-option {
+    background: #EFDFDF;
+    border-radius: 50px;
+    padding: 20px 65px;
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropdown-option:hover {
+    background: #E5D0D0;
+    transform: scale(1.02);
+}
+
+.dropdown-option.active {
+    background: #4A90E2;
+    color: #fff;
+    font-weight: 500;
+}
+.searchbut
+{
+    background: #53103C;
+    border-radius: 80px;
+    height: 100px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.searchbut:hover
+{
+    background: #3d0c2d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(83, 16, 60, 0.3);
+}
+.searchbut:active
+{
+    transform: translateY(0);
+}
+.livinghub12
+{
+    width:100%;
+    overflow:hidden;
+    padding: 100px 0 0;
+}
+.livinghub12whtebg
+{
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 70px;
+    overflow: hidden;
+}
+.livinghubleftpanel, .livinghubrightpanel
+{
+    flex:0 0 50%;
+    max-width: 50%;
+}
+.livinghubleftpanel img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.livinghubrytcontpnl
+{
+    width: 100%;
+    padding: 0 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.livinghubrytcontpnl h2
+{
+    font-weight: 300;
+    font-size: 80px;
+    color: #821A52;
+    padding: 0 0 30px 0;
+    margin: 0;
+}
+.livinghubrytcontpnl h2 span
+{
+    font-weight: bold;
+}
+.livinghubrytcontpnl p
+{
+    font-size: 20px;
+    font-weight: 300;
+    color: #000;
+    padding: 0 0 40px 0;
+    margin: 0;
+}
+.emailfield
+{
+    width: 100%;
+    height: 100px;
+    background: #EFDFDF;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: normal;
+    border: 0;
+    outline: 0;
+    border-radius: 80px;
+}
+.submitbut
+{
+    background: #53103C;
+    border-radius: 80px;
+    height: 100px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+.livinghub13
+{
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 0 0;
+}
+.livinghub13contarea
+{
+    background: #E7C7CF;
+    padding: 60px;
+    width: 100%;
+    height: 100%;
+    border-radius: 57px;
+}
+.livinghub13contarea h2
+{
+    font-weight: 300;
+    font-size: 64px;
+    color: #821A52;
+    padding: 0 0 30px 0;
+    margin: 0;
+}
+.livinghub13contarea h2 span
+{
+    font-weight: bold;
+    display: block;
+}
+.livinghub13contarea p
+{
+    font-size: 24px;
+    font-weight: 300;
+    color: #53103C;
+}
+.livinghub13contarea a.button
+{
+    margin-top: 30px;
+}
+.livinghub13 img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 57px;
+}
+.livinghub14
+{
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 0 0;
+}
+.livinghub14contbg
+{
+    background:rgba(245, 245, 245, 1);
+    padding: 80px;
+    border-radius: 57px;
+}
+.livinghub14contbg img
+{
+    width: 100%;
+}
+.livinghub14contbg h2
+{
+    font-weight: 300;
+    font-size: 80px;
+    color: #821A52;
+    padding: 0 0 60px 0;
+    margin: 0;
+}
+.livinghub14contbg h2 span
+{
+    font-weight: bold;
+}
+.livinghub14contbg p
+{
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+    font-weight: 300;
+    width:633px;
+    height:416px;
+}
+.livinghub14contbg .head{
+    padding-left: 100px;
+    padding-top: 60px;
+}
+.tab {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+.tab button {
+  background: #878787;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 10px 85px;
+  transition: 0.3s;
+  line-height: 70px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 100px;
+  
+}
+.tab button:hover {
+  background: #821A52;
+}
+.tab button.active {
+  background: #821A52;
+}
+.tabcontent {
+  display: none;
+}
+
+/* Livinghub15 Section Styles */
+#livinghub15 {
+  padding: 120px 0;
+  
+  overflow: hidden;
+}
+
+
+
+#livinghub15 .container {
+
+  margin: 0 auto;
+
+border-radius:75px;
+background-color: rgba(255, 255, 255, 1);
+}
+
+#livinghub15 .content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+ 
+}
+
+#livinghub15 .text-content {
+  flex: 1;
+margin-left: 90px;
+}
+
+#livinghub15 .section-title {
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color:rgba(130, 26, 82, 1);
+ font-family: "Unbounded", sans-serif;
+  width:552px;
+  height:156px;
+}
+
+#livinghub15 .section-title .highlight {
+    color: #821A52;
+    font-weight: 700;;
+}
+
+
+/* #livinghub15 .section-title .highlight {
+  color: #8b4513;
+  position: relative;
+}
+
+#livinghub15 .section-title .highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #8b4513, #d2691e);
+  border-radius: 2px;
+} */
+
+#livinghub15 .section-description {
+  font-size: 20px;
+  line-height: 30px;
+  color:rgba(83, 16, 60, 1);
+  margin-bottom: 20px;
+  font-weight: 400;
+  width:494px;
+    height:192px;
+
+}
+
+#livighub15 a.button {
+    background: rgb(239, 223, 223);
+    border-radius: 50px;
+    border-width: 1px 1px 9px 2px !important;
+    border-style: solid;
+    border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(83, 16, 60) rgb(83, 16, 60);
+    line-height: 35px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0px 30px;
+    margin-top: 100px;
+}
+
+#livinghub15 a.button {
+    margin-top: 10px;
+}
+
+/* Livinghub16 - Live Webinars Section */
+#livinghub16 {
+    background: rgba(130, 26, 82, 1);
+    
+    min-height: 1025px;
+    display: flex;
+    align-items: center;
+}
+
+#livinghub16 .container {
+    width: 1920px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 60px;
+    height: 1025px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#livinghub16 .webinar-header {
+    text-align: left;
+   
+
+}
+
+#livinghub16 .webinar-header h2 {
+    color: white;
+    font-size: 80px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.2;
+   padding-bottom: 120px;
+   margin-left:25px;
+    
+}
+#livinghub16 .webinar-header h2 .highlight{
+    font-weight: 700;
+}
+
+#livinghub16 .star-icon {
+    color: #ff69b4;
+    font-size: 48px;
+    position: absolute;
+    top: -10px;
+    right: -60px;
+}
+
+#livinghub16 .webinar-cards {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#livinghub16 .webinar-card {
+    background: rgba(239, 223, 223, 1);
+    border-radius: 75px;
+    padding: 0;
+    width: 840px;
+    height: 570px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+#livinghub16 .card-image {
+    width: 320px;
+    height: 570px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+#livinghub16 .card-image img {
+    width: 320px;
+    height: 570px;
+    object-fit: cover;
+    display: block;
+}
+
+#livinghub16 .card-content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#livinghub16 .card-content h3 {
+    color: rgba(130, 26, 82, 1);
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    line-height: 1.3;
+    width:351px;
+    height:120px;
+    margin-top: 20px;
+}
+
+#livinghub16 .card-content p {
+    color:rgba(0, 0, 0, 1);
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0 0 30px 0;
+    flex-grow: 1;
+    width:409px;
+    height:128px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+#livinghub16 .date-info {
+    color: rgba(130, 26, 82, 1);
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    width:358px;
+    height:60px;
+}
+
+#livinghub16 .date-info strong {
+    color: black;
+    font-weight: bold;
+    
+}
+
+#livinghub16 .register-btn {
+    background: rgb(239, 223, 223);
+    border-radius: 50px;
+    border-width: 1px 1px 9px 10px !important;
+    border-style: solid;
+    border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(83, 16, 60) rgb(83, 16, 60);
+    line-height: 35px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    width:440px;
+    height:57px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+
+#livinghub15 .image-content {
+  flex: 1;
+ 
+  width:995px;
+  height:600px;
+}
+
+#livinghub15 .main-image {
+  width: 995px;
+ height:600px;
+ 
+  
+
+}
+
+
+
+/* Responsive Design for Livinghub15 */
+@media (max-width: 768px) {
+  #livinghub15 {
+    padding: 60px 0;
+  }
+
+  #livinghub15 .content-wrapper {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  #livinghub15 .section-title {
+    font-size: 2.5rem;
+  }
+
+  #livinghub15 .text-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #livinghub15 .section-title {
+    font-size: 2rem;
+  }
+
+  #livinghub15 .section-description {
+    font-size: 1rem;
+  }
+
+  #livinghub15 .partner-btn {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
