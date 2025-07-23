@@ -217,7 +217,9 @@
     display: flex;
     align-items: center;
     padding-left:  60px;
-    margin-top: 80px;
+    margin-top: 30px;
+    padding-bottom: 50px;
+ 
 }
 /* #livinghub .arrowicon{
     position: relative;
@@ -389,7 +391,7 @@ line-height: 100%;
 
     border-radius: 55px;
 
-    margin-top: 120px ;
+    margin-top: 80px ;
     position: relative;
 }
 
@@ -521,11 +523,11 @@ line-height: 100%;
 }
 
 #livinghub2 .center-star-icon:nth-of-type(3) {
-    top: 12%; /* Between first and second row */
+    top: 10%; /* Between first and second row */
 }
 
 #livinghub2 .center-star-icon:nth-of-type(6) {
-    top: 39%; /* Between second and third row */
+    top: 36%; /* Between second and third row */
 }
 
 #livinghub2 .center-star-icon:nth-of-type(9) {
@@ -697,25 +699,30 @@ line-height: 100%;
     margin: 0 auto;
     position: relative;
     padding-top: 80px;
+    max-width: 1200px;
+    width: 100%;
 }
 
 #livinghub4 .row {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 60px; /* Proper spacing between content and image */
+    display: flex !important;
+    align-items: flex-start !important;
+    flex-wrap: nowrap !important;
+    gap: 40px;
 }
 
 #livinghub4 .content-section {
-    flex: 0 0 58.33%; /* col-md-7 equivalent - fixed width */
+    flex: 0 0 58.33% !important;
+    max-width: 58.33% !important;
     padding-right: 20px;
 }
 
 #livinghub4 .image-section {
-    flex: 0 0 35%; /* Slightly smaller for better spacing */
+    flex: 0 0 41.67% !important;
+    max-width: 41.67% !important;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 60px;
 }
 
 #livinghub4 .image-section img {
@@ -742,35 +749,48 @@ line-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-        gap: 40px;
-    margin:20px ;}
-
-#livinghub4 .features-grid .feature-item:nth-child(3) {
-    grid-column: 1 / -1;
-    justify-self: center;
-
+    gap: 30px 40px;
+    margin: 20px 0;
 }
+
+
 
 #livinghub4 .feature-item {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 15px;
     flex-direction: column;
 }
 
-#livinghub4 .feature-icon {
-   
+#livinghub4 .feature-item:nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: 50%;
+}
 
+#livinghub4 .feature-icon {
+    width: 60px;
+    height: 60px;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    align-self: flex-start;
 }
 
 #livinghub4 .feature-icon img {
-  
+    width: 40px;
+    height: 40px;
     object-fit: contain;
+}
+
+#livinghub4 .feature-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+    width: 100%;
 }
 
 #livinghub4 .featureS{
@@ -788,13 +808,12 @@ margin-right: 30px;
 }
 
 #livinghub4 .feature-title {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 500;
-    color:  rgba(130, 26, 82, 1);
-    margin-bottom: 8px;
-   
+    color: rgba(130, 26, 82, 1);
+    margin: 0 0 8px 0;
     text-align: left;
-    margin-top: 15px;
+    line-height: 1.3;
 }
 
 #livinghub4 .feature-description {
@@ -806,9 +825,9 @@ margin-right: 30px;
 
 /* Living Hub 5 Styles - Kitchens that Work For All */
 #livinghub5 {
-    padding: 80px 0;
+    padding: 0px 0;
 
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 #livinghub5 .container {
@@ -818,7 +837,7 @@ margin-right: 30px;
 }
 
 #livinghub5 .section-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 60px;
    
     position: relative;
@@ -840,16 +859,20 @@ margin-right: 30px;
 
 /* Underline removed for Work For All */
 
-/* Word Icon for Kitchen Section */
-#livinghub5 .section-header::before {
-    content: '';
+/* Work For All Icon */
+#livinghub5 .work-for-all-icon {
     position: absolute;
-    top: -25px;
-    right: -80px;
-  
-    background: url('../img/livinghub/icon/word.png') no-repeat center;
-    background-size: contain;
+    top: -20px;
+    left:230px;
+    width:1000px;
+    height: 100px;
     z-index: 10;
+}
+
+#livinghub5 .work-for-all-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 #livinghub5 .cards-container {
@@ -875,15 +898,16 @@ margin-right: 30px;
 
 #livinghub5 .card-image {
     width: 100%;
-    height: 250px;
+    height: auto;
     overflow: hidden;
-    object-fit: cover;
+    border-radius: 69px 69px 0 0;
 }
 
 #livinghub5 .card-image img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
+    display: block;
 }
 
 #livinghub5 .card-content {
@@ -1001,6 +1025,7 @@ margin-right: 30px;
     margin: 0 auto;
     padding: 70px 40px;
     border-radius: 55px;
+    margin-top:80px;
 }
 
 #livinghub6 .content-wrapper {
@@ -1188,7 +1213,7 @@ margin-right: 30px;
 {
     width: 100%;
     overflow: hidden;
-    padding: 100px 0;
+    padding: 80px 0;
 }
 .livinghub8contsec
 {
@@ -1309,7 +1334,7 @@ a.button
 {
     width: 100%;
     overflow: hidden;
-    padding: 100px 0 0;
+    padding-top: 80px ;
 }
 .livinghub10 h2
 {
@@ -1339,13 +1364,13 @@ a.button
 
 
 .sglediscovercontentsec{
-  height: 670px; /* default fallback */
+  height:670px;
 }
 
 /* For screen width around 1366px */
 @media screen and (max-width: 1366px) {
   .sglediscovercontentsec {
-    height: 670px;
+    height: 60px;
   }
 }
 
@@ -1433,18 +1458,23 @@ a.button
 .livinghubcont11 h2 span
 {
     font-weight: bold;
-    display: block;
+    display: inline;
 }
 .livinghubcont11 h2 .star-icon
 {
     position: absolute;
-    top: -30px;
-    right: 60px;
-   
-    background-image: url('../img/livinghub/icon/icon4.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    top: -20px;
+    right: 500px;
+    width: 200px;
+    height: 100px;
+    z-index: 10;
+}
+
+.livinghubcont11 h2 .star-icon img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .selectfield
 {
@@ -1560,7 +1590,7 @@ a.button
     border-radius: 80px;
     width: 100%;
     height: 100px;
-    font-size: 20px;
+    
     font-weight: 500;
     color: #000;
     border: 0;
@@ -1815,15 +1845,14 @@ a.button
 }
 .livinghub14contbg p
 {
-    font-size: 24px;
+   
     line-height: 36px;
     color: #000;
     font-weight: 300;
-    width:633px;
-    height:416px;
+
 }
 .livinghub14contbg .head{
-    padding-left: 100px;
+    padding-left: 40px;
     padding-top: 60px;
 }
 .tab {
@@ -1861,7 +1890,7 @@ a.button
 
 /* Livinghub15 Section Styles */
 #livinghub15 {
-  padding: 120px 0;
+  padding-top: 80px;
   
   overflow: hidden;
 }
@@ -1869,23 +1898,40 @@ a.button
 
 
 #livinghub15 .container {
-
   margin: 0 auto;
-
-border-radius:75px;
-background-color: rgba(255, 255, 255, 1);
+  border-radius:75px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
 }
 
 #livinghub15 .content-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 60px;
- 
+  padding: 0;
 }
 
 #livinghub15 .text-content {
-  flex: 1;
-margin-left: 90px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#livinghub15 .col-md-6:last-child {
+  padding-right: 0 !important;
+}
+
+#livinghub15 .col-md-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#livinghub15 .col-md-7 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#livinghub15 .col-md-5 {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
 }
 
 #livinghub15 .section-title {
@@ -1894,9 +1940,7 @@ margin-left: 90px;
   line-height: 1.1;
   margin-bottom: 30px;
   color:rgba(130, 26, 82, 1);
- font-family: "Unbounded", sans-serif;
-  width:552px;
-  height:156px;
+  font-family: "Unbounded", sans-serif;
 }
 
 #livinghub15 .section-title .highlight {
@@ -1927,8 +1971,7 @@ margin-left: 90px;
   color:rgba(83, 16, 60, 1);
   margin-bottom: 20px;
   font-weight: 400;
-  width:494px;
-    height:192px;
+ 
 
 }
 
@@ -1956,17 +1999,16 @@ margin-left: 90px;
 #livinghub16 {
     background: rgba(130, 26, 82, 1);
     
-    min-height: 1025px;
+  margin-top: 80px;
     display: flex;
     align-items: center;
 }
 
 #livinghub16 .container {
-    width: 1920px;
-    max-width: 100%;
+
     margin: 0 auto;
-    padding: 0 60px;
-    height: 1025px;
+    padding: 80px 60px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1983,7 +2025,7 @@ margin-left: 90px;
     font-weight: 400;
     margin: 0;
     line-height: 1.2;
-   padding-bottom: 120px;
+   padding-bottom:30px;
    margin-left:25px;
     
 }
@@ -2001,80 +2043,86 @@ margin-left: 90px;
 
 #livinghub16 .webinar-cards {
     display: flex;
-    gap: 60px;
-    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    justify-content: space-between;
     align-items: stretch;
+}
+
+#livinghub16 .col-md-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 0 0 48%;
+    max-width: 48%;
 }
 
 #livinghub16 .webinar-card {
     background: rgba(239, 223, 223, 1);
     border-radius: 75px;
     padding: 0;
-    width: 840px;
-    height: 570px;
+    width: 100%;
+    height: 350px;
     display: flex;
+    flex-direction: row;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 #livinghub16 .card-image {
-    width: 320px;
-    height: 570px;
+    width: 40%;
+    height: 100%;
     overflow: hidden;
     flex-shrink: 0;
+    border-radius: 75px 0 0 75px;
 }
 
 #livinghub16 .card-image img {
-    width: 320px;
-    height: 570px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: center center;
+    border-radius: 75px 0 0 75px;  /* Match container radius for proper rounded corners */
     display: block;
 }
 
 #livinghub16 .card-content {
-    padding: 40px;
+    padding: 25px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 60%;
     flex: 1;
 }
 
 #livinghub16 .card-content h3 {
     color: rgba(130, 26, 82, 1);
-    font-size: 32px;
-    font-weight: 500;
-    margin: 0 0 20px 0;
-    line-height: 1.3;
-    width:351px;
-    height:120px;
-    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+    margin-top: 0;
 }
 
 #livinghub16 .card-content p {
-    color:rgba(0, 0, 0, 1);
-    font-size: 20px;
-    line-height: 32px;
-    margin: 0 0 30px 0;
-    flex-grow: 1;
-    width:409px;
-    height:128px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px 0;
     font-weight: 400;
-    padding-top: 20px;
+    padding: 0;
 }
 
 #livinghub16 .date-info {
     color: rgba(130, 26, 82, 1);
-    font-size: 20px;
-    margin-bottom: 30px;
-    line-height: 1.4;
-    width:358px;
-    height:60px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    font-weight: 500;
 }
 
 #livinghub16 .date-info strong {
     color: black;
     font-weight: bold;
-    
 }
 
 #livinghub16 .register-btn {
@@ -2083,34 +2131,40 @@ margin-left: 90px;
     border-width: 1px 1px 9px 10px !important;
     border-style: solid;
     border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(83, 16, 60) rgb(83, 16, 60);
-    line-height: 35px;
+    line-height: 24px;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     display: inline-block;
-    width:440px;
-    height:57px;
+    padding: 6px 12px;
     text-decoration: none;
     text-align: center;
     transition: all 0.3s ease;
     align-self: flex-start;
+   
 }
 
 
 #livinghub15 .image-content {
-  flex: 1;
- 
-  width:995px;
-  height:600px;
+
+  overflow: hidden;
+  border-radius: 0 75px 75px 0 !important;
+  position: relative;
+  background: transparent;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 #livinghub15 .main-image {
-  width: 995px;
- height:600px;
- 
-  
 
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 0 75px 75px 0 !important;
+  display: block;
+  min-width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 
@@ -2122,9 +2176,12 @@ margin-left: 90px;
   }
 
   #livinghub15 .content-wrapper {
-    flex-direction: column;
-    gap: 40px;
+    padding: 30px;
+  }
+
+  #livinghub15 .text-content {
     text-align: center;
+    margin-bottom: 30px;
   }
 
   #livinghub15 .section-title {
@@ -2154,23 +2211,47 @@ margin-left: 90px;
 /* Responsive fixes for livinghub4 section */
 @media (max-width: 768px) {
   #livinghub4 .row {
-    flex-direction: column;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
     gap: 40px;
   }
 
   #livinghub4 .content-section {
-    flex: 1;
-    max-width: 100%;
+    flex: 1 !important;
+    max-width: 100% !important;
     padding-right: 0;
   }
 
   #livinghub4 .image-section {
-    flex: 1;
-    max-width: 100%;
+    flex: 1 !important;
+    max-width: 100% !important;
   }
 
   #livinghub4 .section-title {
     font-size: 60px;
+  }
+
+  #livinghub4 .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #livinghub4 .feature-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #livinghub4 .feature-item:nth-child(3) {
+    grid-column: 1;
+    max-width: 100%;
+  }
+
+  #livinghub4 .feature-content {
+    text-align: left;
+  }
+
+  #livinghub4 .image-section {
+    padding-top: 20px;
   }
 }
 
@@ -2179,10 +2260,11 @@ margin-left: 90px;
     font-size: 45px;
   }
 
-  #livinghub5 .section-header::before {
-    width: 150px;
-    height: 45px;
-    right: -60px;
+  #livinghub5 .work-for-all-icon {
+    width: 180px;
+    height: 50px;
+    left: 200px;
+    top: -15px;
   }
 }
 
@@ -2246,8 +2328,19 @@ margin-left: 90px;
   #living-hub .living-hub-description, #livinghub3 .card-description, #livinghub4 .feature-description,
   #livinghub5 .card-description, #livinghub6 .card-description, .sglelivinghubiconsec p,
   .livinghub9contsec p, .sglediscovercontentsec p, .livinghubrytcontpnl p, .livinghub13contarea p,
-  #livinghub15 .section-description, #livinghub16 .card-content p, #livinghub2 .feature-card p {
+  #livinghub15 .section-description,  #livinghub2 .feature-card p, .livinghub14contbg p {
     font-size: 24px !important;
+  }
+}
+
+/* Media Query for 1366px screen size */
+@media screen and (max-width: 1366px) {
+  #livinghub16 .container {
+    max-width: 1200px;
+  }
+
+  #livinghub16 {
+    background: rgba(130, 26, 82, 1) !important;
   }
 }
 
@@ -2261,7 +2354,11 @@ margin-left: 90px;
   #living-hub .living-hub-description, #livinghub3 .card-description, #livinghub4 .feature-description,
   #livinghub5 .card-description, #livinghub6 .card-description, .sglelivinghubiconsec p,
   .livinghub9contsec p, .sglediscovercontentsec p, .livinghubrytcontpnl p, .livinghub13contarea p,
-  #livinghub15 .section-description, #livinghub16 .card-content p, #livinghub2 .feature-card p {
+  #livinghub15 .section-description,  #livinghub2 .feature-card p ,.livinghub14contbg p {
     font-size: 18px !important;
+  }
+
+  #livinghub16 {
+    background: rgba(130, 26, 82, 1) !important;
   }
 }
