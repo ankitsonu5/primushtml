@@ -2238,7 +2238,7 @@ margin-left: 90px;
 
 /* Media Query for 1920px screen size - All headings font-size 80px and p tags 24px */
 @media screen and (min-width: 1921px) {
-  h2,   .feature-title, .section-title, .main-title, .subtitle,
+  h2,    .section-title, .main-title, .subtitle,
   .livinghub10 h2, #living-hub .living-hub-content h2, #livinghub16 .webinar-header h2 {
     font-size: 80px !important;
   }
@@ -2253,7 +2253,7 @@ margin-left: 90px;
 
 /* Media Query for 1322px screen size - All headings font-size 60px and p tags 18px */
 @media screen and (max-width: 1920px) {
-  h2,   .feature-title, .section-title, .main-title, .subtitle,
+  h2,  .section-title, .main-title, .subtitle,
   .livinghub10 h2, #living-hub .living-hub-content h2, #livinghub16 .webinar-header h2 {
     font-size: 60px !important;
   }
