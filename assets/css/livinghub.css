@@ -1,5 +1,5 @@
 
-
+ 
 
 /***
 01) Banner Section
@@ -208,6 +208,8 @@
   max-width: 37.21px;
 }
 
+#living-hub {margin-top: 80px;
+}
 /* Living Hub Section - Using Classes Only */
 #living-hub .box1 {
     background-color:rgba(245, 245, 245, 1);
@@ -776,13 +778,7 @@ line-height: 100%;
     overflow: hidden;
 }
 
-#livinghub4 .container {
-    margin: 0 auto;
-    position: relative;
-    padding-top: 80px;
-   margin:20px;
-    width: 100%;
-}
+ 
 
 #livinghub4 .row {
     display: flex !important;
@@ -992,20 +988,22 @@ margin-right: 30px;
 }
 
 #livinghub5 .card-content {
-    padding: 25px 40px 30px 30px;
+    padding: 25px 40px 40px 40px;
     text-align: left;
+    min-height: 250px;
    
 }
 
 #livinghub5 .card-title {
     font-family: "Unbounded", sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
     color: #821A52;
-    margin-bottom: 12px;
+    
     line-height: 1.2;
    
-    margin-top:20px
+    margin-top:20px;
+    margin-bottom: 20px;
 }
 
 #livinghub5 .card-description {
@@ -1014,10 +1012,9 @@ margin-right: 30px;
     color: #171717;
     line-height: 1.4;
     margin: 0;
-    width: 627px;
-    height:70px;
+     
     line-height: 30px;
-    padding-top: 20px;
+     
 }
 
 /* Decorative Elements */
@@ -1320,7 +1317,7 @@ margin-right: 30px;
 .livinghub8contsec h2 .cursiveicon {
     position: absolute;
     top: 65px;
-    right: 380px;
+    right: 260px;
     width: 230px;
     height: 180px;
     z-index: 999;
@@ -1463,12 +1460,7 @@ a.button
   height:670px;
 }
 
-/* For screen width around 1366px */
-@media screen and (max-width: 1366px) {
-  .sglediscovercontentsec {
-    height: 60px;
-  }
-}
+ 
 
 /* For screen width around 1920px */
 @media screen and (min-width: 1367px) and (max-width: 1920px) {
@@ -1731,11 +1723,13 @@ a.button
     padding: 10px;
 }
 
-/* .custom-dropdown.active .dropdown-options {
+
+
+.custom-dropdown.active .dropdown-options {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-} */
+}
 
 .custom-dropdown.active .dropdown-selected::after {
     transform: rotate(180deg);
@@ -1758,11 +1752,11 @@ a.button
     transform: scale(1.02);
 }
 
-.dropdown-option.active {
+/* .dropdown-option.active {
     background: #4A90E2;
     color: #fff;
     font-weight: 500;
-}
+} */
 .searchbut
 {
     background: #53103C;
@@ -2031,7 +2025,7 @@ a.button
 }
 
 #livinghub15 .section-title {
-  font-size: 64px;
+  font-size: 55px!important;
   font-weight: 300;
   line-height: 1.1;
   margin-bottom: 30px;
@@ -2131,7 +2125,7 @@ a.button
 #livinghub16 .webinar-header .supstart {
     position: absolute;
     top: -20px;
-    right: 650px;
+    right: 490px;
     width: 80px;
     height: 80px;
     z-index: 999;
