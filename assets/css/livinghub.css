@@ -1984,12 +1984,8 @@ a.button
 /* Livinghub15 Section Styles */
 #livinghub15 {
   padding-top: 80px;
-  
   overflow: hidden;
 }
-
-
-
 #livinghub15 .container {
   margin: 0 auto;
   border-radius:75px;
@@ -2132,10 +2128,6 @@ a.button
     width: 80px;
     height: 80px;
     z-index: 999;
-   
- 
-   
- 
 }
 
 #livinghub16 .webinar-header .supstart img {
@@ -2147,9 +2139,6 @@ a.button
 #livinghub16 .webinar-header h2 .highlight{
     font-weight: 700;
 }
-
-
-
 #livinghub16 .webinar-cards {
     display: flex;
     flex-wrap: nowrap;
@@ -2253,10 +2242,7 @@ a.button
     align-self: flex-start;
    
 }
-
-
 #livinghub15 .image-content {
-
   overflow: hidden;
   border-radius: 0 75px 75px 0 !important;
   position: relative;
@@ -2280,41 +2266,62 @@ a.button
 
 /* Responsive Design for Livinghub15 */
 @media (max-width: 768px) {
-  #livinghub15 {
-    padding: 60px 0;
-  }
-
-  #livinghub15 .content-wrapper {
-    padding: 30px;
-  }
-
   #livinghub15 .text-content {
     text-align: center;
     margin-bottom: 30px;
   }
-
-  #livinghub15 .section-title {
-    font-size: 2.5rem;
-  }
-
   #livinghub15 .text-content {
     max-width: 100%;
   }
+    #livinghub15 .section-title {
+    font-size: 36px !important;
+    text-align: left;
+    }
+    #livinghub15 .col-md-5 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding: 24px 0 !important;
 }
-
-@media (max-width: 480px) {
-  #livinghub15 .section-title {
-    font-size: 2rem;
-  }
-
-  #livinghub15 .section-description {
-    font-size: 1rem;
-  }
-
-  #livinghub15 .partner-btn {
-    padding: 12px 25px;
-    font-size: 0.9rem;
-  }
+#livinghub15 .container {
+    margin: 0 auto;
+    border-radius: 36px;
+    padding-top: 24px !important;
+}
+#livinghub15 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+#livinghub15 .text-content {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+#livinghub15 .main-image {
+    object-fit: none;
+    border-radius: 0 36px 36px 0 !important;
+    display: block;
+    width: 65%;
+    height: 650px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.livinghub14contbg {
+    background: rgba(245, 245, 245, 1);
+    padding: 16px !important;
+    border-radius: 57px;
+}
+.livinghub14contbg .head {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 36px;
+}
+.livinghub14contbg h2 {
+    font-size: 42px !important;
+    padding-bottom: 12px !important;
+}
+#livinghub15 .section-description {
+    text-align: left;
+    line-height: 1.6 !important;
+}
 }
 
 /* Responsive fixes for livinghub4 section */
@@ -2541,10 +2548,11 @@ a.button
 
   /* Additional mobile fixes */
   #livinghub16 .container {
-    /* padding: 20px 20px !important; */
+    padding: 20px 20px !important;
+    display: flex;
   }
 
-  #livinghub16 .webinar-cards {
+  .webinar-cards {
     flex-direction: column !important;
     gap: 20px !important;
   }
