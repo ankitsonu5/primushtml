@@ -281,7 +281,7 @@
   display: flex;
 }
 .talktous-para {
-  padding: 76px;
+  padding: 42px;
 }
 .talktous-para p {
   font-weight: 300;
@@ -398,8 +398,9 @@
 }
 .our-celebration-categories-section {
   display: flex;
-  gap: 96px;
+  gap: 64px;
   position: relative;
+  align-items: baseline !important;
   margin-top: 96px;
 }
 .our-celebratation-divs {
@@ -458,7 +459,7 @@
 .hear-it-from-container .hear-it-from-cirlce-img {
   position: absolute;
   top: 0;
-  left: 43%;
+  left: 55%;
 }
 
 .video-section {
@@ -807,7 +808,7 @@
     gap: 24px;
 }
 .talktous-para {
-    padding: 24px;
+    padding: 24px !important;
 }
 .talktous-para p {
     margin-bottom: 48px;
