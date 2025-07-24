@@ -392,7 +392,10 @@ line-height: 100%;
     #living-hub {
         padding: 20px 15px;
         border-radius: 20px;
+        margin-top: 30px;
     }
+
+ 
 
     #living-hub .living-hub-title {
         font-size: 20px;
@@ -2158,7 +2161,7 @@ a.button
 #livinghub16 .col-md-6 {
     
     flex: 0 0 50%;
-    max-width: 60%;
+    min-width: 50%;
 }
 
 #livinghub16 .webinar-card {
