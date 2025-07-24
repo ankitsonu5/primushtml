@@ -209,9 +209,7 @@
 /* Living Hub Section - Using Classes Only */
 #living-hub .box1 {
     background-color:rgba(245, 245, 245, 1);
-
     border-radius: 55px;
-    height: 1035px;
     display: flex;
     align-items: center;
     padding: 0 60px;
