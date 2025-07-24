@@ -332,7 +332,7 @@ line-height: 100%;
     #living-hub .living-hub-content {
         padding-right: 0;
         margin-bottom: 40px;
-        text-align: center;
+        text-align: left;
     }
 
     #living-hub .living-hub-images {
@@ -1469,7 +1469,7 @@ a.button
 /* For screen width around 1366px */
 @media screen and (max-width: 1366px) {
   .sglediscovercontentsec {
-    height: 60px;
+    height: 670px;
   }
 }
 
@@ -1734,11 +1734,11 @@ a.button
     padding: 10px;
 }
 
-/* .custom-dropdown.active .dropdown-options {
+.custom-dropdown.active .dropdown-options {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-} */
+}
 
 .custom-dropdown.active .dropdown-selected::after {
     transform: rotate(180deg);
@@ -2507,17 +2507,24 @@ a.button
     width: 98% !important;
     max-width: 100% !important;
     margin: 0 auto !important;
-    padding: 10px !important;
+   
   }
 
   h1 {
     font-size: 24px !important;
     line-height: 1.3 !important;
   }
-
+/* 
   h2, .section-title, .main-title, .subtitle,
-  .livinghub10 h2, #living-hub .living-hub-content h2, #livinghub16 .webinar-header h2 {
+  .livinghub10 h2, #living-hub .living-hub-content h2, #livinghub16 .webinar-header h2 .living-hub .living-hub-title span{
     font-size: 20px !important;
+    line-height: 1.3 !important;
+   
+  } */
+
+
+   .living-hub-title h2{
+    font-size: px !important;
     line-height: 1.3 !important;
   }
 
@@ -2572,7 +2579,7 @@ a.button
 
   #living-hub .living-hub-content {
     width: 100% !important;
-    text-align: center !important;
+    text-align: left !important;
   }
 
   #living-hub .living-hub-images {
@@ -2585,6 +2592,17 @@ a.button
     height: auto !important;
     border-radius: 15px !important;
   }
+
+.living-hub .living-hub-title span {
+    font-family: "Unbounded", sans-serif;
+    font-size: 30px !important;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: rgba(130, 26, 82, 1);
+    max-width: 100%;
+}
+ 
 }
 
 
