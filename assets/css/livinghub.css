@@ -1,4 +1,6 @@
 
+
+
 /***
 01) Banner Section
 ***/
@@ -212,8 +214,6 @@
     border-radius: 55px;
     display: flex;
     align-items: center;
-    padding: 0 60px;
-    margin-top: 120px;
 }
 /* #livinghub .arrowicon{
     position: relative;
@@ -221,13 +221,10 @@
 } */
 
 #living-hub .living-hub-content {
-    flex: 1;
-    padding-right: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 40px;
-
+    padding-right: 30px;
 }
 
 /* Add arrow to the left box using pseudo-element */
@@ -238,10 +235,10 @@
 #living-hub .arrow-wrapper::before {
   content: '';
   position: absolute;
-  top: 270px;     /* ⬅️ Arrow ko upar uthao second image se */
-  left: -370px;    /* ⬅️ Arrow ko left side lao text ki taraf */
-  width: 350px;
-  height: 300px;
+  top: 180px;     /* ⬅️ Arrow ko upar uthao second image se */
+  left: -260px;    /* ⬅️ Arrow ko left side lao text ki taraf */
+  width: 40%;
+  height: 30%;
   background-image: url('../img/livinghub/icon/arrow.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -251,7 +248,7 @@
 
 
 #living-hub .living-hub-content h2{
-padding-bottom: 100px;
+padding-bottom: 60px;
 line-height: 100%;
 }
 
@@ -271,11 +268,9 @@ line-height: 100%;
     font-size: 80px;
     font-weight: 300;
     margin-bottom: 30px;
-    line-height: 100px;
-
-    width:518px;
+    line-height: 1.2;
     color: rgba(130, 26, 82, 1);
-
+    max-width: 100%;
 }
 #living-hub .fp{
     margin-bottom: 90px;
@@ -287,13 +282,11 @@ line-height: 100%;
 
 #living-hub .living-hub-description {
     font-family: "Unbounded", sans-serif;
-    font-size: 24px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 1.6;
     margin-bottom: 30px;
     color: #212121;
-    width:539px;
-
+    max-width: 100%;
 }
 
 
@@ -323,15 +316,14 @@ line-height: 100%;
 /* Responsive Styles */
 @media (max-width: 1199px) {
     #living-hub .living-hub-title {
-        font-size: 48px;
+        font-size: 30px;
     }
 }
 
 @media (max-width: 991px) {
-   #living-hub  .box1 {
-        height: auto;
-        flex-direction: column;
-        padding: 60px 40px;
+    #living-hub {
+        padding: 40px 30px;
+        min-height: auto;
     }
 
     #living-hub .living-hub-content {
@@ -340,8 +332,8 @@ line-height: 100%;
         text-align: center;
     }
 
-   #living-hub  .living-hub-images {
-        height: auto;
+    #living-hub .living-hub-images {
+        text-align: center;
     }
 
     .badge-icon {
@@ -355,23 +347,36 @@ line-height: 100%;
 }
 
 @media (max-width: 767px) {
+    #living-hub {
+        padding: 30px 20px;
+        border-radius: 25px;
+    }
+
     #living-hub .living-hub-title {
-        font-size: 36px;
+        font-size: 24px;
+        line-height: 1.0;
+        margin-bottom: 15px;
+        width: 100% !important;
+        max-width: 100% !important;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     #living-hub .living-hub-description {
-        font-size: 16px;
+        font-size: 15px;
+        line-height: 1.3;
+        margin-bottom: 15px;
     }
 
-   #living-hub .box1 {
-        padding: 40px 20px;
+    #living-hub .fp {
+        margin-bottom: 20px;
     }
 
     #living-hub .floating-badge {
         bottom: 10px;
     }
 
-   #living-hub .badge-icon {
+    #living-hub .badge-icon {
         width: 50px;
         height: 50px;
     }
@@ -381,12 +386,92 @@ line-height: 100%;
     }
 }
 
+@media (max-width: 480px) {
+    #living-hub {
+        padding: 20px 15px;
+        border-radius: 20px;
+    }
+
+    #living-hub .living-hub-title {
+        font-size: 20px;
+        line-height: 0.95;
+        margin-bottom: 12px;
+        width: 100% !important;
+        max-width: 100% !important;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    #living-hub .living-hub-description {
+        font-size: 13px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    #living-hub .fp {
+        margin-bottom: 15px;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 375px) {
+    #living-hub .living-hub-title {
+        font-size: 18px !important;
+        line-height: 0.9 !important;
+        margin-bottom: 8px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        hyphens: auto !important;
+    }
+
+    #living-hub .living-hub-title span {
+        font-size: 18px !important;
+        line-height: 0.9 !important;
+    }
+
+    #living-hub .living-hub-description {
+        font-size: 12px !important;
+        line-height: 1.1 !important;
+        margin-bottom: 8px !important;
+    }
+
+    #living-hub .fp {
+        margin-bottom: 12px !important;
+    }
+}
+
+/* Very small mobile devices */
+@media (max-width: 320px) {
+    #living-hub .living-hub-title {
+        font-size: 16px !important;
+        line-height: 0.85 !important;
+        margin-bottom: 6px !important;
+    }
+
+    #living-hub .living-hub-title span {
+        font-size: 16px !important;
+        line-height: 0.85 !important;
+    }
+
+    #living-hub .living-hub-description {
+        font-size: 11px !important;
+        line-height: 1.0 !important;
+        margin-bottom: 6px !important;
+    }
+
+    #living-hub .fp {
+        margin-bottom: 10px !important;
+    }
+}
+
 /* Third Box Section - Safety Features Grid */
 #livinghub2 .thirdbox {
 
     border-radius: 55px;
 
-    margin-top: 120px ;
+    margin-top: 80px ;
     position: relative;
 }
 
@@ -399,7 +484,6 @@ line-height: 100%;
 
 #livinghub2 .main-title {
     font-family: "Unbounded", sans-serif;
-    font-size: 80px;
     font-weight: 300;
     line-height: 1.2;
     margin-bottom: 10px;
@@ -414,8 +498,8 @@ line-height: 100%;
 #livinghub2 .main-title:first-child .highlight:after {
     content: "";
     display: inline-block;
-    width: 90px;
-    height: 90px;
+    width: 9%;
+    height: 9%;
     background-image: url('../img/livinghub/icon/supstart.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -448,12 +532,12 @@ line-height: 100%;
 #livinghub2 .feature-card {
     background:rgba(245, 245, 245, 1);
     border-radius: 55px;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    width: 800px;
-    height: 330px;
+    
+    
+   
 }
 
 #livinghub2 .feature-align {
@@ -463,10 +547,8 @@ line-height: 100%;
     display: flex;
     align-items: flex-start;
     gap: 20px;
- 
-    width: 800px;
-    height: 330px;
 }
+   
 
 #livinghub2 .feature-header {
     display: flex;
@@ -475,8 +557,7 @@ line-height: 100%;
 }
 
 #livinghub2 .feature-icon {
-    width: 118px;
-    height: 100px;
+  
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -486,7 +567,7 @@ line-height: 100%;
 
 #livinghub2 .feature-icon img {
     width: 100%;
-    height: 100px;
+    
 }
 
 #livinghub2 .feature-header h3 {
@@ -506,13 +587,13 @@ line-height: 100%;
     margin: 0;
     line-height: 40px;
     padding-left: 20px;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 /* Center Star Icon Styling */
 #livinghub2 .center-star-icon {
     position: absolute;
-    left: 49%;
+    left: 50%;
     transform: translateX(-50%);
     z-index: 10;
     display: flex;
@@ -522,20 +603,19 @@ line-height: 100%;
 }
 
 #livinghub2 .center-star-icon:nth-of-type(3) {
-    top: 180px; /* Between first and second row */
+    top: 10%; /* Between first and second row */
 }
 
 #livinghub2 .center-star-icon:nth-of-type(6) {
-    top: 555px; /* Between second and third row */
+    top: 36%; /* Between second and third row */
 }
 
 #livinghub2 .center-star-icon:nth-of-type(9) {
-    top: 922px; /* Between third and fourth row */
+    top: 62%; /* Between third and fourth row */
 }
 
 #livinghub2 .center-star-icon img {
-    width: 275px;
-    height: 320px;
+  
     object-fit: contain;
 }
 
@@ -602,24 +682,24 @@ line-height: 100%;
     background: rgba(130, 26, 82, 1);
 
     border-radius: 55px;
-    padding: 80px 80px;
+  
     margin: 40px auto;
     position: relative;
     overflow: hidden;
-    height: 920px;
-    max-width: 1718px;
-    width: 100%;
-    margin-top: 120px;
+  
+  padding-left:40px;
+  padding-right:40px;
+    margin-top: 80px;
 }
 
 #livinghub3 .section-title {
     font-family: "Unbounded", sans-serif;
-    font-size: 80px;
     font-weight: 300;
     color: white;
     text-align: left;
     margin-bottom: 60px;
     line-height: 1.1;
+    padding-top: 40px;
 }
 
 #livinghub3 .section-title .light {
@@ -644,8 +724,7 @@ line-height: 100%;
 }
 
 #livinghub3 .card-image {
-    width: 450px;
-    height: 300px;
+  
     overflow: hidden;
     border-radius: 45px;
     background: rgba(255, 255, 255, 0.1);
@@ -675,18 +754,18 @@ line-height: 100%;
     margin-bottom: 15px;
     line-height: 40px;
     text-align: left;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 #livinghub3 .card-description {
     font-family: "Unbounded", sans-serif;
-    font-size: 24px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 0;
     line-height: 30px;
     text-align: left;
-    padding-top: 40px;
+    padding-top: 20px;
+    margin-bottom: 40px;
 }
 
 /* ===== LIVINGHUB4 SECTION ===== */
@@ -698,41 +777,48 @@ line-height: 100%;
 }
 
 #livinghub4 .container {
-
     margin: 0 auto;
-
     position: relative;
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
     padding-top: 80px;
+   margin:20px;
+    width: 100%;
+}
+
+#livinghub4 .row {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+   
 }
 
 #livinghub4 .content-section {
-
-    max-width: 600px;
-    padding-right: 60px;
+    flex: 0 0 58.33% !important;
+    max-width: 58.33% !important;
+    padding-right: 20px;
 }
 
 #livinghub4 .image-section {
-    flex: 1;
-    max-width: 730px;
-    height: 900px;
-    background-image: url('../img/livinghub/section4.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    flex: 0 0 41.67% !important;
+    max-width: 41.67% !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+#livinghub4 .image-section img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
 }
 
 #livinghub4 .section-title {
-    font-size: 80px;
     font-weight: 300;
     color:black;
     margin-bottom: 40px;
     line-height: 1.2;
-    width:714px;
-    height: 220px;
 }
 
 #livinghub4 .section-title .highlight {
@@ -744,42 +830,52 @@ line-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    gap: 40px;
-    max-width: 800px;
+    gap: 30px 40px;
+    margin: 20px 0;
 }
 
-#livinghub4 .features-grid .feature-item:nth-child(3) {
-    grid-column: 1 / -1;
-    justify-self: center;
-    max-width: 350px;
-}
+
 
 #livinghub4 .feature-item {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 15px;
     flex-direction: column;
+}
+
+#livinghub4 .feature-item:nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: 50%;
 }
 
 #livinghub4 .feature-icon {
     width: 60px;
     height: 60px;
-
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    align-self: flex-start;
 }
 
 #livinghub4 .feature-icon img {
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
 
+#livinghub4 .feature-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+    width: 100%;
 }
 
 #livinghub4 .featureS{
-margin-right: 90px;
+margin-right: 30px;
 }
 
 #livinghub4 .featureL{
@@ -793,30 +889,26 @@ margin-right: 90px;
 }
 
 #livinghub4 .feature-title {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 500;
-    color:  rgba(130, 26, 82, 1);
-    margin-bottom: 8px;
-    width:321px;
-    height:90px;
+    color: rgba(130, 26, 82, 1);
+    margin: 0 0 8px 0;
     text-align: left;
-    margin-top: 15px;
+    line-height: 1.3;
 }
 
 #livinghub4 .feature-description {
-    font-size: 24px;
     color: #666;
     line-height: 1.5;
     margin: 0;
-    width:368px;
-    height:114px;
+
 }
 
 /* Living Hub 5 Styles - Kitchens that Work For All */
 #livinghub5 {
-    padding: 80px 0;
+    padding: 0px 0;
 
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 #livinghub5 .container {
@@ -826,16 +918,14 @@ margin-right: 90px;
 }
 
 #livinghub5 .section-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 60px;
-    width: 1252px;
-    height:99px;
+   
     position: relative;
 }
 
 #livinghub5 .section-title {
     font-family: "Unbounded", sans-serif;
-    font-size: 80px;
     font-weight: 300;
   color: rgba(130, 26, 82, 1);
     line-height: 1.2;
@@ -850,17 +940,20 @@ margin-right: 90px;
 
 /* Underline removed for Work For All */
 
-/* Word Icon for Kitchen Section */
-#livinghub5 .section-header::before {
-    content: '';
+/* Work For All Icon */
+#livinghub5 .work-for-all-icon {
     position: absolute;
-    top: -25px;
-    right: -80px;
-    width: 719px;
-    height: 140px;
-    background: url('../img/livinghub/icon/word.png') no-repeat center;
-    background-size: contain;
+    top: -20px;
+    left:230px;
+    width:1000px;
+    height: 100px;
     z-index: 10;
+}
+
+#livinghub5 .work-for-all-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 #livinghub5 .cards-container {
@@ -873,34 +966,35 @@ margin-right: 90px;
 }
 
 #livinghub5 .card {
-    width: 820px;
+ 
     background-color: rgba(231, 199, 207, 1);
     
    border: none;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height:680px;
+  
     border-radius: 69px;
 }
 
 #livinghub5 .card-image {
     width: 100%;
-    height: 400px;
+    height: auto;
     overflow: hidden;
-    object-fit: cover;
+    border-radius: 69px 69px 0 0;
 }
 
 #livinghub5 .card-image img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
+    display: block;
 }
 
 #livinghub5 .card-content {
-    padding: 25px 30px 30px 30px;
+    padding: 25px 40px 30px 30px;
     text-align: left;
-    margin-left: 40px;
+   
 }
 
 #livinghub5 .card-title {
@@ -910,14 +1004,12 @@ margin-right: 90px;
     color: #821A52;
     margin-bottom: 12px;
     line-height: 1.2;
-    width: 593px;
-    height:50px;
-    margin-top:50px
+   
+    margin-top:20px
 }
 
 #livinghub5 .card-description {
     font-family: "Unbounded", sans-serif;
-    font-size: 24px;
     font-weight: 400;
     color: #171717;
     line-height: 1.4;
@@ -1012,8 +1104,9 @@ margin-right: 90px;
 #livinghub6 .container {
    background-color: rgba(130, 26, 82, 1);
     margin: 0 auto;
-    padding: 100px 40px;
+    padding: 70px 40px;
     border-radius: 55px;
+    margin-top:80px;
 }
 
 #livinghub6 .content-wrapper {
@@ -1028,8 +1121,7 @@ margin-right: 90px;
     line-height: 1.2;
     text-align: left;
     margin-left: 80px;
-    width: 915px;
-    height:198px;
+  
 }
 
 #livinghub6 .section-title .star-icon {
@@ -1045,63 +1137,56 @@ margin-right: 90px;
 
 #livinghub6 .cards-grid {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #livinghub6 .feature-card {
-    width: 478px;
-    height: 505px;
+    flex: 0 0 calc(33.33% - 20px); /* col-md-4 equivalent */
     background: rgba(231, 199, 207, 1);
     border-radius: 55px;
-    padding: 20px 20px;
+    padding: 40px 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
-   
-   
-
+    min-height: 400px;
+    justify-content: flex-start;
 }
 
 
 
 #livinghub6 .card-icon {
-    width: 88px;
-    height: 100px;
-   margin-top: 20px;
-   margin-bottom: 80px;
-   margin-left: 20px;
-  
-   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 80px;
 }
 
 #livinghub6 .card-icon img {
-    width: 100%;
-    height: 100px;
-    
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
 #livinghub6 .card-title {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
-   color:rgba(130, 26, 82, 1);
-    margin-bottom: 70px;
-    width:457px;
-    height:49px;
+    color: rgba(130, 26, 82, 1);
+    margin-bottom: 20px;
     text-align: left;
-    line-height: 100%;
-    margin-left: 20px;}
-    
+    line-height: 1.2;
+}
+
 #livinghub6 .card-description {
-    font-size: 24px;
+    font-size: 18px;
     color: #282727;
-    line-height: 30px;
-   font-weight: 400;
-    width:356px;
-    height:60px;
+    line-height: 1.4;
+    font-weight: 400;
     text-align: left;
-    margin-left: 20px;
+    flex-grow: 1;
 }
 
 
@@ -1209,7 +1294,7 @@ margin-right: 90px;
 {
     width: 100%;
     overflow: hidden;
-    padding: 100px 0;
+    padding: 80px 0;
 }
 .livinghub8contsec
 {
@@ -1225,11 +1310,26 @@ margin-right: 90px;
     font-weight: 300;
     font-size: 80px;
     color: #821A52;
+    position: relative;
 }
 .livinghub8contsec h2 span
 {
     display: block;
     font-weight: bold;
+}
+.livinghub8contsec h2 .cursiveicon {
+    position: absolute;
+    top: 65px;
+    right: 380px;
+    width: 230px;
+    height: 180px;
+    z-index: 999;
+}
+
+.livinghub8contsec h2 .cursiveicon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .livinghub8contsec .col-xl-4
 {
@@ -1244,7 +1344,6 @@ margin-right: 90px;
 }
 .sglelivinghubiconsec p
 {
-    font-size: 24px;
     line-height: 36px;
     color: #000;
     font-weight: normal;
@@ -1273,23 +1372,31 @@ p.btmtext
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
 }
 .livinghub9imgsec
 {
-    flex:0 0 48%;
-    max-width: 48%;
+    flex:0 0 45%;
+    max-width: 45%;
+}
+.livinghub9imgsec img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 .livinghub9contsec
 {
-    flex:0 0 48%;
-    max-width: 48%;
+    flex:0 0 50%;
+    max-width: 50%;
+  
 }
 .livinghub9contsec h2
 {
     font-weight: 300;
     font-size: 80px;
     color: #821A52;
-    padding: 0 0 70px 0;
+    padding: 0 0 10px 0;
 }
 .livinghub9contsec h2 span
 {
@@ -1298,7 +1405,6 @@ p.btmtext
 }
 .livinghub9contsec p
 {
-    font-size: 24px;
     line-height: 36px;
     color: #821A52;
     font-weight: 300;
@@ -1318,20 +1424,20 @@ a.button
     text-transform: uppercase;
     display: inline-block;
     padding: 0 40px;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .livinghub10
 {
     width: 100%;
     overflow: hidden;
-    padding: 100px 0 0;
+    padding-top: 80px ;
 }
 .livinghub10 h2
 {
     font-weight: 300;
     font-size: 80px;
     color: #821A52;
-    padding: 0 0 70px 0;
+    padding: 0 0 50px 0;
     margin: 0;
 }
 .livinghub10 h2 span
@@ -1342,13 +1448,55 @@ a.button
 {
     background: #E7C7CF;
     /* padding: 20px 20px 70px 20px; */
-    border-radius: 70px;
+    border-radius: 55px;
     width: 100%;
     overflow: hidden;
-    width:552px;
-    height:670px;
-    padding-top: 20px;
-    padding-left: 20px;
+    max-width: 100%;
+    padding-bottom: 70px;
+}
+.sglediscovercontentsec .cardimg{
+    margin:10px;
+}
+
+
+.sglediscovercontentsec{
+  height:670px;
+}
+
+/* For screen width around 1366px */
+@media screen and (max-width: 1366px) {
+  .sglediscovercontentsec {
+    height: 60px;
+  }
+}
+
+/* For screen width around 1920px */
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+  .sglediscovercontentsec {
+    height: 670px;
+  }
+}
+
+
+
+.discrepction{
+    padding: 15px;
+}
+
+.discrepction h3{
+    margin-bottom: 10px;
+}
+
+.discrepction p{
+    margin-bottom: 0;
+}
+
+.discreption{
+    padding: 20px;
+}
+
+.sglediscovercontentsec.discreption{
+    padding:20px;
 }
 .sglediscovercontentsec span
 {
@@ -1406,19 +1554,23 @@ a.button
 .livinghubcont11 h2 span
 {
     font-weight: bold;
-    display: block;
+    display: inline;
 }
 .livinghubcont11 h2 .star-icon
 {
     position: absolute;
-    top: -30px;
-    right: 660px;
-    width: 232px;
-    height: 150px;
-    background-image: url('../img/livinghub/icon/icon4.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    top: -20px;
+    right: 500px;
+    width: 200px;
+    height: 100px;
+    z-index: 10;
+}
+
+.livinghubcont11 h2 .star-icon img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .selectfield
 {
@@ -1534,7 +1686,7 @@ a.button
     border-radius: 80px;
     width: 100%;
     height: 100px;
-    font-size: 20px;
+    
     font-weight: 500;
     color: #000;
     border: 0;
@@ -1551,8 +1703,8 @@ a.button
 
 .dropdown-selected::after {
     content: '';
-    width: 60px;
-    height: 40px;
+    width: 30px;
+    height: 20px;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-size: contain;
@@ -1789,15 +1941,14 @@ a.button
 }
 .livinghub14contbg p
 {
-    font-size: 24px;
+   
     line-height: 36px;
     color: #000;
     font-weight: 300;
-    width:633px;
-    height:416px;
+
 }
 .livinghub14contbg .head{
-    padding-left: 100px;
+    padding-left: 40px;
     padding-top: 60px;
 }
 .tab {
@@ -1813,14 +1964,15 @@ a.button
   border: 0;
   outline: 0;
   cursor: pointer;
-  padding: 10px 85px;
+  padding: 10px 50px;
   transition: 0.3s;
-  line-height: 70px;
-  font-size: 24px;
+  line-height: 50px;
+  font-size: 18px;
   font-weight: 500;
   color: #fff;
   border-radius: 100px;
-  
+  margin: 0 5px;
+
 }
 .tab button:hover {
   background: #821A52;
@@ -1834,7 +1986,7 @@ a.button
 
 /* Livinghub15 Section Styles */
 #livinghub15 {
-  padding: 120px 0;
+  padding-top: 80px;
   
   overflow: hidden;
 }
@@ -1842,23 +1994,40 @@ a.button
 
 
 #livinghub15 .container {
-
   margin: 0 auto;
-
-border-radius:75px;
-background-color: rgba(255, 255, 255, 1);
+  border-radius:75px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
 }
 
 #livinghub15 .content-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 60px;
- 
+  padding: 0;
 }
 
 #livinghub15 .text-content {
-  flex: 1;
-margin-left: 90px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#livinghub15 .col-md-6:last-child {
+  padding-right: 0 !important;
+}
+
+#livinghub15 .col-md-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#livinghub15 .col-md-7 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#livinghub15 .col-md-5 {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
 }
 
 #livinghub15 .section-title {
@@ -1867,9 +2036,7 @@ margin-left: 90px;
   line-height: 1.1;
   margin-bottom: 30px;
   color:rgba(130, 26, 82, 1);
- font-family: "Unbounded", sans-serif;
-  width:552px;
-  height:156px;
+  font-family: "Unbounded", sans-serif;
 }
 
 #livinghub15 .section-title .highlight {
@@ -1900,8 +2067,7 @@ margin-left: 90px;
   color:rgba(83, 16, 60, 1);
   margin-bottom: 20px;
   font-weight: 400;
-  width:494px;
-    height:192px;
+ 
 
 }
 
@@ -1929,126 +2095,146 @@ margin-left: 90px;
 #livinghub16 {
     background: rgba(130, 26, 82, 1);
     
-    min-height: 1025px;
+  margin-top: 80px;
     display: flex;
     align-items: center;
 }
 
 #livinghub16 .container {
-    width: 1920px;
-    max-width: 100%;
     margin: 0 auto;
-    padding: 0 60px;
-    height: 1025px;
+    padding: 80px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    overflow: visible;
 }
 
 #livinghub16 .webinar-header {
     text-align: left;
-   
-
+    position: relative;
+    overflow: visible;
+    width: 100%;
 }
 
 #livinghub16 .webinar-header h2 {
     color: white;
-    font-size: 80px;
     font-weight: 400;
     margin: 0;
     line-height: 1.2;
-   padding-bottom: 120px;
+   padding-bottom:30px;
    margin-left:25px;
+   position: relative;
     
+}
+
+#livinghub16 .webinar-header .supstart {
+    position: absolute;
+    top: -20px;
+    right: 650px;
+    width: 80px;
+    height: 80px;
+    z-index: 999;
+   
+ 
+   
+ 
+}
+
+#livinghub16 .webinar-header .supstart img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    filter: brightness(1.2);
 }
 #livinghub16 .webinar-header h2 .highlight{
     font-weight: 700;
 }
 
-#livinghub16 .star-icon {
-    color: #ff69b4;
-    font-size: 48px;
-    position: absolute;
-    top: -10px;
-    right: -60px;
-}
+
 
 #livinghub16 .webinar-cards {
     display: flex;
-    gap: 60px;
-    justify-content: center;
+    flex-wrap: nowrap;
+    
+    justify-content: space-between;
     align-items: stretch;
+}
+
+#livinghub16 .col-md-6 {
+    
+    flex: 0 0 50%;
+    max-width: 60%;
 }
 
 #livinghub16 .webinar-card {
     background: rgba(239, 223, 223, 1);
-    border-radius: 75px;
+    border-radius: 45px;
     padding: 0;
-    width: 840px;
-    height: 570px;
+    width: 100%;
+   
     display: flex;
+    flex-direction: row;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 #livinghub16 .card-image {
-    width: 320px;
-    height: 570px;
+    width: 30%;
+   /* Set fixed height for proper image display */
     overflow: hidden;
     flex-shrink: 0;
+    border-radius: 5px;
 }
 
+    
 #livinghub16 .card-image img {
-    width: 320px;
-    height: 570px;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Fill the container properly */
+    object-position: center top;  /* Show top portion of image */
+    border-radius: 5px;  /* Match container radius */
     display: block;
 }
 
 #livinghub16 .card-content {
-    padding: 40px;
+    padding: 25px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 70%;
     flex: 1;
 }
 
 #livinghub16 .card-content h3 {
     color: rgba(130, 26, 82, 1);
-    font-size: 32px;
-    font-weight: 500;
-    margin: 0 0 20px 0;
-    line-height: 1.3;
-    width:351px;
-    height:120px;
-    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+    margin-top: 0;
 }
 
 #livinghub16 .card-content p {
-    color:rgba(0, 0, 0, 1);
-    font-size: 20px;
-    line-height: 32px;
-    margin: 0 0 30px 0;
-    flex-grow: 1;
-    width:409px;
-    height:128px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px 0;
     font-weight: 400;
-    padding-top: 20px;
+    padding: 0;
 }
 
 #livinghub16 .date-info {
     color: rgba(130, 26, 82, 1);
-    font-size: 20px;
-    margin-bottom: 30px;
-    line-height: 1.4;
-    width:358px;
-    height:60px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    font-weight: 500;
 }
 
 #livinghub16 .date-info strong {
     color: black;
     font-weight: bold;
-    
 }
 
 #livinghub16 .register-btn {
@@ -2057,34 +2243,40 @@ margin-left: 90px;
     border-width: 1px 1px 9px 10px !important;
     border-style: solid;
     border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(83, 16, 60) rgb(83, 16, 60);
-    line-height: 35px;
+    line-height: 24px;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     display: inline-block;
-    width:440px;
-    height:57px;
+    padding: 6px 12px;
     text-decoration: none;
     text-align: center;
     transition: all 0.3s ease;
     align-self: flex-start;
+   
 }
 
 
 #livinghub15 .image-content {
-  flex: 1;
- 
-  width:995px;
-  height:600px;
+
+  overflow: hidden;
+  border-radius: 0 75px 75px 0 !important;
+  position: relative;
+  background: transparent;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 #livinghub15 .main-image {
-  width: 995px;
- height:600px;
- 
-  
 
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 0 75px 75px 0 !important;
+  display: block;
+  min-width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 
@@ -2096,9 +2288,12 @@ margin-left: 90px;
   }
 
   #livinghub15 .content-wrapper {
-    flex-direction: column;
-    gap: 40px;
+    padding: 30px;
+  }
+
+  #livinghub15 .text-content {
     text-align: center;
+    margin-bottom: 30px;
   }
 
   #livinghub15 .section-title {
@@ -2123,4 +2318,318 @@ margin-left: 90px;
     padding: 12px 25px;
     font-size: 0.9rem;
   }
+}
+
+/* Responsive fixes for livinghub4 section */
+@media (max-width: 768px) {
+  #livinghub4 .row {
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+    gap: 40px;
+  }
+
+  #livinghub4 .content-section {
+    flex: 1 !important;
+    max-width: 100% !important;
+    padding-right: 0;
+  }
+
+  #livinghub4 .image-section {
+    flex: 1 !important;
+    max-width: 100% !important;
+  }
+
+  #livinghub4 .section-title {
+    font-size: 60px;
+  }
+
+  #livinghub4 .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #livinghub4 .feature-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #livinghub4 .feature-item:nth-child(3) {
+    grid-column: 1;
+    max-width: 100%;
+  }
+
+  #livinghub4 .feature-content {
+    text-align: left;
+  }
+
+  #livinghub4 .image-section {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #livinghub4 .section-title {
+    font-size: 45px;
+  }
+
+  #livinghub5 .work-for-all-icon {
+    width: 180px;
+    height: 50px;
+    left: 200px;
+    top: -15px;
+  }
+}
+
+/* Responsive fixes for livinghub6 section */
+@media (max-width: 768px) {
+  #livinghub6 .cards-grid {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100%;
+  }
+
+  #livinghub6 .feature-card {
+    flex: 1;
+    max-width: 100%;
+    min-height: auto;
+    padding: 30px 25px;
+  }
+
+  #livinghub6 .section-title {
+    font-size: 60px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+  }
+
+  #livinghub6 .container {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #livinghub6 .section-title {
+    font-size: 45px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  #livinghub6 .feature-card {
+    padding: 25px 20px;
+  }
+
+  #livinghub6 .card-title {
+    font-size: 28px;
+  }
+
+  #livinghub6 .card-description {
+    font-size: 16px;
+  }
+
+  #livinghub6 .container {
+    padding: 40px 20px;
+  }
+}
+
+/* Media Query for 1920px screen size - All headings font-size 80px and p tags 24px */
+@media screen and (min-width: 1921px) {
+  h2,    .section-title, .main-title, .subtitle,
+  .livinghub10 h2, #living-hub .living-hub-content h2, #livinghub16 .webinar-header h2 {
+    font-size: 80px !important;
+  }
+
+  #living-hub .living-hub-description, #livinghub3 .card-description, #livinghub4 .feature-description,
+  #livinghub5 .card-description, #livinghub6 .card-description, .sglelivinghubiconsec p,
+  .livinghub9contsec p, .sglediscovercontentsec p, .livinghubrytcontpnl p, .livinghub13contarea p,
+  #livinghub15 .section-description,  #livinghub2 .feature-card p, .livinghub14contbg p {
+    font-size: 24px !important;
+  }
+}
+
+/* Media Query for 1366px screen size */
+@media screen and (max-width: 1366px) {
+  #livinghub16 .container {
+    max-width: 1200px;
+  }
+
+  #livinghub16 {
+    background: rgba(130, 26, 82, 1) !important;
+  }
+}
+
+/* Media Query for 1322px screen size - All headings font-size 60px and p tags 18px */
+@media screen and (max-width: 1920px) {
+  h2,  .section-title, .main-title, .subtitle,
+  .livinghub10 h2, #living-hub .living-hub-content h2, #livinghub16 .webinar-header h2 {
+    font-size: 60px !important;
+  }
+
+  #living-hub .living-hub-description, #livinghub3 .card-description, #livinghub4 .feature-description,
+  #livinghub5 .card-description, #livinghub6 .card-description, .sglelivinghubiconsec p,
+  .livinghub9contsec p, .sglediscovercontentsec p, .livinghubrytcontpnl p, .livinghub13contarea p,
+  #livinghub15 .section-description,  #livinghub2 .feature-card p ,.livinghub14contbg p {
+    font-size: 18px !important;
+  }
+
+  #livinghub16 {
+    background: rgba(130, 26, 82, 1) !important;
+  }
+}
+
+
+
+.only-mobile {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .only-mobile {
+        display: block !important;
+    }
+}
+
+
+.only-desktop {
+    display: block;
+}
+
+@media (max-width: 767.98px) {
+    .only-desktop {
+        display: none !important;
+    }
+}
+
+/* Mobile Devices - Consolidated */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 98% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 10px !important;
+  }
+
+  h1 {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+  }
+
+  h2, .section-title, .main-title, .subtitle,
+  .livinghub10 h2, #living-hub .living-hub-content h2, #livinghub16 .webinar-header h2 {
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+  }
+
+  #living-hub .living-hub-description, #livinghub3 .card-description, #livinghub4 .feature-description,
+  #livinghub5 .card-description, #livinghub6 .card-description, .sglelivinghubiconsec p,
+  .livinghub9contsec p, .sglediscovercontentsec p, .livinghubrytcontpnl p, .livinghub13contarea p,
+  #livinghub15 .section-description, #livinghub2 .feature-card p, .livinghub14contbg {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  small {
+    font-size: 12px !important;
+  }
+
+  /* Additional mobile fixes */
+  #livinghub16 .container {
+    /* padding: 20px 20px !important; */
+  }
+
+  #livinghub16 .webinar-cards {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  #livinghub16 .webinar-card {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+
+  .livinghub8contsec h2 .cursiveicon {
+    display: none !important;
+  }
+
+  #livinghub16 .webinar-header .supstart {
+    display: none !important;
+  }
+
+  /* Living Hub Section Mobile Fix */
+  #living-hub .box1 {
+    width: 95% !important;
+    margin: 0 auto !important;
+    padding: 30px 15px !important;
+    border-radius: 25px !important;
+    background-color: rgba(245, 245, 245, 1) !important;
+  }
+
+  #living-hub .living-hub-content {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  #living-hub .living-hub-images {
+    width: 100% !important;
+    margin-top: 20px !important;
+  }
+
+  #living-hub .living-hub-images img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 15px !important;
+  }
+}
+
+
+@media screen and (min-width: 1536px) {
+  
+#living-hub .arrow-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 300px;
+    left: -320px;
+    width: 40%;
+    height: 30%;
+    background-image: url(../img/livinghub/icon/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+
+}
+}
+@media screen and (min-width: 1536px){
+.livinghub8contsec h2 .cursiveicon {
+    position: absolute;
+    top: 65px;
+    right: 730px;
+    width: 230px;
+    height: 180px;
+    z-index: 999;
+}
+}
+@media screen and (min-width: 1536px){
+.livinghubcont11 h2 .star-icon {
+    position: absolute;
+    top: -20px;
+    right: 830px;
+    width: 200px;
+    height: 150px;
+    z-index: 10;
+}
+}
+
+
+@media screen and (min-width: 1536px){
+#livinghub16 .webinar-header .supstart {
+    position: absolute;
+    top: -20px;
+    right: 999px;
+    width: 80px;
+    height: 80px;
+    z-index: 999;
+}
 }
