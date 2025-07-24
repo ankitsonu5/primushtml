@@ -202,7 +202,7 @@
   width: 360px;
   min-width: 360px;
   height: 500px;
-  border-radius: 24px;
+  border-radius: 50px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   flex-shrink: 0;
@@ -499,19 +499,15 @@
   justify-content: center;
   cursor: pointer;
 }
-
-
-.talkusrow {background: #E7C7CF;
-     border-radius: 55px;
-     display: flex;
-    
-}              
-
-
-
-
+.talkusrow {
+  background: #E7C7CF;
+  border-radius: 55px;
+  display: flex;  
+}
+.talkus-mobile-img {
+  width: 100% !important;
+}
 /* media screen  */
-
 @media (max-width: 768px) {
   .lifestyle-section {
     padding: 20px 0 20px 100px;
@@ -628,14 +624,17 @@
     width: 150px !important;
     right: 120px;
 }
-.learn-button {
-    padding: 12px 64px !important;
-}
 .hear-it-from-container .hear-it-from-cirlce-img {
     position: absolute;
     top: 164px;
     left: 0;
 }
+.hear-it-from-container .hear-it-from-cirlce-img {
+        position: absolute;
+        top: 176px !important;
+        left: 12px !important;
+        width: 76%;
+    }
 .hear-it-from-head {
     font-size: 70px;
 }
@@ -769,6 +768,58 @@
     margin-bottom: 0;
     width: 40%;
   }
+}
+@media screen and (max-width: 1366px) {
+  .our-celebration-categories-section {
+    display: flex;
+    gap: 18px;
+    position: relative;
+    margin-top: 96px;
+}
+.everyday-enjoy-col-one img, .everyday-enjoy-col-two img {
+    height: 550px;
+}
+.everyday-enjoy-col-two .everyday-enjoy-heading {
+    font-size: 48px;
+}
+.everyday-enjoy-col-two .everyday-img-one {
+    position: absolute;
+    top: 116px;
+    right: 148px;
+}
+.everyday-enjoy-col-two .everyday-img-three {
+    position: absolute;
+    height: 224px;
+}
+.everyday-enjoy-col-two .everyday-img-two {
+    position: absolute;
+    bottom: 48px;
+    left: 64px;
+    width: 64px;
+    height: 64px;
+}
+.everyday-enjoy-col-two {
+    padding: 56px !important;
+    position: relative;
+}
+.everyday-enjoy-section-row {
+    justify-content: center !important;
+    gap: 24px;
+}
+.talktous-para {
+    padding: 24px;
+}
+.talktous-para p {
+    margin-bottom: 48px;
+    font-size: 18px !important;
+    padding-right: 36px !important;
+    margin-top: 36px !important;
+}
+.hear-it-from-container .hear-it-from-cirlce-img {
+    position: absolute;
+    top: 0;
+    left: 55%;
+}
 }
 @media screen and (min-width: 1536px) {
   .main-slider {
