@@ -1089,7 +1089,7 @@ margin-right: 30px;
     right: 60px;
     width: 40px;
     height: 40px;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>') no-repeat center;
+    background: url('../../assets/img/livinghub/icon/supstart.png') no-repeat center;
     background-size: contain;
     opacity: 0.3;
 }
@@ -1245,7 +1245,7 @@ margin-right: 30px;
 }
 
 #livinghub6 .card-description {
-    font-size: 18px;
+    font-size: 24px !important;
     color: #282727;
     line-height: 1.4;
     font-weight: 400;
@@ -1985,7 +1985,7 @@ a.button
 {
     width: 100%;
     overflow: hidden;
-    padding: 100px 0 0;
+    padding: 80px 0 0;
 }
 .livinghub13contarea
 {
@@ -2617,12 +2617,13 @@ a.button
 
   #livinghub4 .features-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 25px;
   }
 
   #livinghub4 .feature-item {
     flex-direction: column;
     text-align: center;
+    padding: 20px 15px;
   }
 
   #livinghub4 .feature-item:nth-child(3) {
@@ -2634,6 +2635,30 @@ a.button
     text-align: left;
   }
 
+  #livinghub4 .feature-icon {
+    width: 70px !important;
+    height: 70px !important;
+    margin-bottom: 15px;
+  }
+
+  #livinghub4 .feature-icon img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  #livinghub4 .feature-title {
+    font-size: 28px !important;
+    margin-bottom: 15px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+  }
+
+  #livinghub4 .feature-description {
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+    color: #666 !important;
+  }
+
   #livinghub4 .image-section {
     padding-top: 20px;
   }
@@ -2642,6 +2667,25 @@ a.button
 @media (max-width: 480px) {
   #livinghub4 .section-title {
     font-size: 45px;
+  }
+
+  #livinghub4 .feature-icon {
+    width: 65px !important;
+    height: 65px !important;
+  }
+
+  #livinghub4 .feature-icon img {
+    width: 45px !important;
+    height: 45px !important;
+  }
+
+  #livinghub4 .feature-title {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+  }
+
+  #livinghub4 .feature-description {
+    font-size: 18px !important;
   }
 
   #livinghub5 .work-for-all-icon {
@@ -3126,7 +3170,7 @@ a.button
 /* Mobile styles for livinghub11 - Find What Matters section */
 @media (max-width: 767px) {
   .livinghub11 {
-    padding: 40px 0 60px !important;
+    padding: 0 0 40px !important;
     overflow: visible !important;
   }
 
@@ -3809,6 +3853,9 @@ a.button
         margin: 0;
         background: transparent;
         margin-top: 30px;
+    }
+    .livinghub13{
+      padding-top: 40px!important;
     }
 
     #livinghub5-mobile .section-title {
