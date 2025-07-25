@@ -271,9 +271,7 @@
   margin-top: 61px;
   position: relative;
 }
-#talktous {
-  margin: 55px 0 96px 0;
-}
+ 
 .talkusrow {
   background: #e7c7cf;
   border-radius: 48px;
@@ -350,8 +348,8 @@
 }
 .everyday-enjoy-col-two .everyday-img-one {
   position: absolute;
-  top: 148px;
-  right: 120px;
+  top: 100px;
+  right: 200px;
   width: 48px;
   height: 48px;
 }
@@ -460,8 +458,7 @@
 .hear-it-from-container .hear-it-from-cirlce-img {
   position: absolute;
   top: 0;
-  left: 55
-  %;
+  left: 55%;
 }
 
 .video-section {
@@ -516,8 +513,10 @@
 /* media screen  */
 
 @media (max-width: 768px) {
-
-  
+.book-a-visit-section {
+  margin-bottom: 30px;
+}
+  .book-a-visit-section .container {--bs-gutter-x: 0.5rem;}
   .everyday-enjoy-section {
     background: rgb(239, 223, 223);
     margin-bottom: 20px;
@@ -608,9 +607,10 @@
     display: flex;
     flex-direction: column;
     height: auto !important;
+    width: 100% !important;
 }
 .everyday-enjoy-col-one div img{
-    
+    width: 100% !important;
     height: auto !important;
     margin-left: 0;
 }
@@ -776,8 +776,12 @@
 }
 @media screen and (min-width: 1180px) {
   .main-slider {
-    padding: 60px 22px 0;
+    padding: 20px 22px 0;
   }
+
+ 
+
+
   .main-slider .container {
     padding-left: 0px;
     padding-right: 0px;
@@ -803,7 +807,7 @@
   .main-slider .carousel .carousel-item .carousel-caption h1 span {
     font-family: Unbounded;
     font-weight: 300;
-    font-size: 60px;
+    font-size: 54px;
     text-align: left;
     color: rgb(239, 223, 223);
   }
@@ -817,24 +821,68 @@
     width: 40%;
   }
 }
+
+@media screen and (max-width: 1366px) {
+
+    .lifestyle-section {
+    width: 100%;
+    padding: 40px 0 40px 10px;
+}
+
+.everyday-enjoy-section {
+    background: rgb(239, 223, 223);
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+  
+}
+
 @media screen and (min-width: 1366px) {
+
+
+
+   .primus-section h1 {
+  color: #821a52;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Unbounded", sans-serif;
+  margin-top: 82px;
+}
+
+.titlefont {
+  font-family: "Unbounded", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  margin-top: 72px;
+}
+
+
+
+.primus-section-description p {
+  font-family: "Unbounded", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
   .our-celebration-categories-section {
     display: flex;
     gap: 18px;
     position: relative;
     margin-top: 96px;
 }
+
+
 .everyday-enjoy-col-one img, .everyday-enjoy-col-two img {
     height: 550px;
 }
 .everyday-enjoy-col-two .everyday-enjoy-heading {
     font-size: 48px;
 }
-.everyday-enjoy-col-two .everyday-img-one {
-    position: absolute;
-    top: 116px;
-    right: 148px;
-}
+
 .everyday-enjoy-col-two .everyday-img-three {
     position: absolute;
     height: 224px;
@@ -868,6 +916,14 @@
 }
 }
 @media screen and (min-width: 1536px) {
+
+  .everyday-enjoy-col-two .everyday-img-one {
+  position: absolute;
+  top: 100px;
+  right: 590px;
+  width: 48px;
+  height: 48px;
+}
   .main-slider {
     padding: 121.34px 0 0;
   }
