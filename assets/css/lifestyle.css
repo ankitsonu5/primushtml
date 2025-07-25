@@ -413,6 +413,7 @@
   display: flex;
   gap: 36px;
   align-items: center;
+  min-height: 80px;
 }
 .our-clebration-div .para-div p {
   color: #ffffff;
@@ -459,7 +460,8 @@
 .hear-it-from-container .hear-it-from-cirlce-img {
   position: absolute;
   top: 0;
-  left: 55%;
+  left: 55
+  %;
 }
 
 .video-section {
@@ -514,6 +516,48 @@
 /* media screen  */
 
 @media (max-width: 768px) {
+
+  
+  .everyday-enjoy-section {
+    background: rgb(239, 223, 223);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.everyday-enjoy-col-two {
+        padding: 16px !important;
+        position: relative;
+    }
+
+.learn-button  {padding: 10px 10px; font-size: 13px;}
+
+#talktous {
+    margin: 55px 0 20px 0;
+}
+ 
+ .primus-section h1 {
+ 
+    margin-top: 42px;
+}
+.talktous-para{padding: 0px!important;}
+
+.talktous-para p {
+        
+        font-size: 16px !important;
+       padding-right: 0px !important;
+        margin-top: 16px !important;
+        padding: 0px !important;
+    }
+
+
+
+ .titlefont {
+    font-family: "Unbounded", sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+   
+}
+ 
   .lifestyle-section {
     padding: 20px 0 20px 100px;
   }
@@ -526,10 +570,11 @@
     gap: 15px;
   }
   .talktous-para {
-    padding: 24px !important;
+    padding: 0px 20px !important;
   }
   .talktous-para p {
-    margin-bottom: 32px !important;                                  
+    margin-bottom: 32px !important;   
+    padding-right: 0px !important;                               
   }
   .everyday-enjoy-section-row {
   flex-direction: column-reverse;
@@ -542,8 +587,8 @@
 }
 .everyday-enjoy-col-two .everyday-img-one {
   position: absolute;
-  top: 100px !important;
-  right: 76px !important;
+  top: 80px !important;
+  right: 107px !important;
   width: 48px;
   height: 48px;
 }
@@ -557,7 +602,7 @@
   padding-right: 24px !important;
 }
 .everyday-enjoy-col-two .everyday-enjoy-heading {
-    font-size: 48px !important;
+    font-size: 42px !important;
 }
 .everyday-enjoy-col-one {
     display: flex;
@@ -565,7 +610,7 @@
     height: auto !important;
 }
 .everyday-enjoy-col-one div img{
-    width: 400px !important;
+    
     height: auto !important;
     margin-left: 0;
 }
@@ -574,30 +619,31 @@
 }
 .lifestyle-section {
     width: 100%;
-    padding: 40px 0 40px 24px;
+    padding: 40px 0px 0px 7px;
 }
 .primus-section h1 {
-    font-size: 56px !important;
+    font-size: 42px !important;
 }
 .primus-section-description p {
     font-size: 22px !important;
     font-weight: 300 !important;
     margin-bottom: 10px !important;
-    margin-top: 48px !important;
+    margin-top: 34px !important;
 }
 .our-celebration-section .our-celebration-section-container {
     padding: 24px !important;
     padding-bottom: 220px !important;
+    width:95% !important;
 }
 .our-celebration-head-section h1 {
     font-size: 36px !important;
 }
 .our-celebration-head-section h1 span {
-    font-size: 44px !important;
+    font-size: 34px !important;
 }
 .our-celebration-head-section img {
     top: 64px !important;
-    left: 350px !important;
+    left: 264px !important;
 }
 .our-celebration-categories-section {
     display: grid !important;
@@ -606,9 +652,11 @@
 }
 .our-clebration-div {
     display: flex !important;
+    flex-direction: column !important;
     gap: 10px !important;
-    align-items: center;
-    align-items: center !important;
+   min-width: 125px;
+   
+
 }
 .our-clebration-div div img {
   width: 48px !important;
@@ -629,9 +677,7 @@
     width: 150px !important;
     right: 120px;
 }
-.learn-button {
-    padding: 12px 64px !important;
-}
+  
 .hear-it-from-container .hear-it-from-cirlce-img {
     position: absolute;
     top: 164px;
@@ -771,7 +817,7 @@
     width: 40%;
   }
 }
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 1366px) {
   .our-celebration-categories-section {
     display: flex;
     gap: 18px;
@@ -808,13 +854,11 @@
     justify-content: center !important;
     gap: 24px;
 }
-.talktous-para {
-    padding: 24px !important;
-}
+ 
 .talktous-para p {
     margin-bottom: 48px;
     font-size: 18px !important;
-    padding-right: 36px !important;
+    
     margin-top: 36px !important;
 }
 .hear-it-from-container .hear-it-from-cirlce-img {
@@ -866,4 +910,11 @@
     margin-bottom: 0;
     width: 34%;
   }
+
+
+  .hear-it-from-container .hear-it-from-cirlce-img {
+    position: absolute;
+    top: 0;
+    left: 44%;
+}
 }
