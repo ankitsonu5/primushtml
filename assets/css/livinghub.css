@@ -1,6 +1,7 @@
 
- 
-
+ .mybg{background-color: #fff; border-radius: 55px; padding: 50px; display: flex; align-items: start; }
+.arrow {position: absolute; top:195px; left:468px}
+.myrelative {position: relative;}
 /***
 01) Banner Section
 ***/
@@ -51,6 +52,10 @@
   .main-slider .carousel .carousel-item .carousel-caption {
     width: 50%;
   }
+
+  
+
+
 }
 @media screen and (min-width: 767px) and (max-width: 1179px) {
   .main-slider .container {
@@ -93,6 +98,27 @@
     width: 40%;
   }
 }
+
+@media (max-width: 1366px) {
+ #livinghub3 .section-title {
+     
+    font-size: 60px!important;
+}
+
+#livinghub2 .main-title {
+  
+    font-size: 60px!important;
+}
+
+ .dropdown-selected {
+ 
+    font-size: 12px;
+}
+
+
+
+}
+
 @media screen and (min-width: 1180px) {
   .main-slider {
     padding: 60px 22px 0;
@@ -137,6 +163,8 @@
   }
 }
 @media screen and (min-width: 1536px) {
+
+
   .main-slider {
     padding: 121.34px 0 0;
   }
@@ -153,6 +181,7 @@
     right: 0%;
     padding-top: 0;
     padding-bottom: 0;
+    width: 100%;
   }
   .main-slider .carousel .carousel-item .carousel-caption h1 {
     font-family: Unbounded;
@@ -233,19 +262,7 @@
 #living-hub .arrow-wrapper {
   position: relative;
 }
-
-#living-hub .arrow-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 180px;     /* ⬅️ Arrow ko upar uthao second image se */
-  left: -260px;    /* ⬅️ Arrow ko left side lao text ki taraf */
-  width: 40%;
-  height: 30%;
-  background-image: url('../img/livinghub/icon/arrow.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 1;
-}
+ 
 
 
 
@@ -256,7 +273,7 @@ line-height: 100%;
 
 #living-hub .living-hub-title {
     font-family: "Unbounded", sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 700;
 
     line-height: 100px;
@@ -267,7 +284,7 @@ line-height: 100%;
 }
 #living-hub .living-hub-title span {
     font-family: "Unbounded", sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 300;
     margin-bottom: 30px;
     line-height: 1.2;
@@ -276,6 +293,7 @@ line-height: 100%;
 }
 #living-hub .fp{
     margin-bottom: 90px;
+    width: 60%;
 }
 
 #living-hub .living-hub-title .highlight-text {
@@ -320,6 +338,8 @@ line-height: 100%;
     #living-hub .living-hub-title {
         font-size: 30px;
     }
+
+  
 }
 
 @media (max-width: 991px) {
@@ -349,6 +369,9 @@ line-height: 100%;
 }
 
 @media (max-width: 767px) {
+
+
+
     #living-hub {
         padding: 20px 5px !important;
         border-radius: 25px;
@@ -549,6 +572,7 @@ line-height: 100%;
     line-height: 1.2;
     margin-bottom: 10px;
      color: #821A52;
+     font-size: 80px
 }
 
 #livinghub2 .main-title .highlight {
@@ -765,6 +789,7 @@ line-height: 100%;
     margin-bottom: 60px;
     line-height: 1.1;
     padding-top: 40px;
+    font-size: 80px;
 }
 
 #livinghub3 .section-title .light {
@@ -878,6 +903,7 @@ line-height: 100%;
     color:black;
     margin-bottom: 40px;
     line-height: 1.2;
+    font-size: 80px!important;
 }
 
 #livinghub4 .section-title .highlight {
@@ -2766,6 +2792,13 @@ a.button
 /* Media Query for 1366px screen size */
 @media screen and (max-width: 1366px) {
  
+      #living-hub .fp {
+    margin-bottom: 90px;
+    width: 100%;
+} 
+
+.arrow {position: absolute; top:165px; left:390px }
+.arrow img {width: 250px; height: auto;}
 
   #livinghub16 {
     background: rgba(130, 26, 82, 1) !important;
@@ -2773,17 +2806,21 @@ a.button
 }
 
 /* Media Query for 1322px screen size - All headings font-size 60px and p tags 18px */
-@media screen and (max-width: 1920px) {
+@media (min-width: 1920px) {
   h2,  .section-title, .main-title, .subtitle,
   .livinghub10 h2, #living-hub .living-hub-content h2, #livinghub16 .webinar-header h2 {
     font-size: 60px !important;
   }
 
+    #living-hub .living-hub-content h2 {
+   font-size: 80px !important;
+}
+
   #living-hub .living-hub-description, #livinghub3 .card-description, #livinghub4 .feature-description,
   #livinghub5 .card-description, #livinghub6 .card-description, .sglelivinghubiconsec p,
   .livinghub9contsec p, .sglediscovercontentsec p, .livinghubrytcontpnl p, .livinghub13contarea p,
   #livinghub15 .section-description,  #livinghub2 .feature-card p ,.livinghub14contbg p {
-    font-size: 18px !important;
+    font-size: 24px !important;
   }
 
   #livinghub16 {
@@ -3465,21 +3502,11 @@ a.button
 
 @media screen and (min-width: 1536px) {
   
-#living-hub .arrow-wrapper::before {
-    content: '';
-    position: absolute;
-    top: 300px;
-    left: -320px;
-    width: 40%;
-    height: 30%;
-    background-image: url(../img/livinghub/icon/arrow.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 1;
-
-}
+ 
 }
 @media screen and (min-width: 1536px){
+
+
 .livinghub8contsec h2 .cursiveicon {
     position: absolute;
     top: 65px;
@@ -3980,6 +4007,8 @@ a.button
     .mobile-only {
         display: none !important;
     }
+
+    
 
     .desktop-only {
         display: block !important;
