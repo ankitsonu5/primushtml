@@ -2667,9 +2667,7 @@ a.button
 
 /* Media Query for 1366px screen size */
 @media screen and (max-width: 1366px) {
-  #livinghub16 .container {
-    max-width: 1200px;
-  }
+ 
 
   #livinghub16 {
     background: rgba(130, 26, 82, 1) !important;
@@ -3524,7 +3522,7 @@ a.button
     right: -100px;
     width: 200px;
     height: 200px;
-    background-image: url('../img/livinghub/mobile/halfstar.png');
+    /* background-image: url('../img/livinghub/mobile/halfstar.png'); */
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 10;
