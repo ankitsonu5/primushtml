@@ -676,18 +676,6 @@
     color: #ffffff;
     font-size: 14px !important;
 }
-.our-celebration-center-bg {
-    bottom: -324px !important;
-    width: 200px !important;
-    left: 50% !important;
-    transform: translate(-50%, 0);
-}
-.our-celebration-bg {
-    position: absolute;
-    bottom: -114px !important;
-    width: 150px !important;
-    right: 120px;
-}
   
 .hear-it-from-container .hear-it-from-cirlce-img {
     position: absolute;
@@ -1015,7 +1003,18 @@
 
 }  
 @media (max-width: 768px)        { 
-
+  .our-celebration-center-bg {
+    bottom: -100px !important;
+    width: 200px !important;
+    left: 50% !important;
+    transform: translate(-50%, 0);
+}
+.our-celebration-bg {
+    position: absolute;
+    bottom: 128px !important;
+    width: 150px !important;
+    right: 36px !important;
+}
   .celebrations-wrapper {
     background: #821A52;
     color: white;
