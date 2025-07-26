@@ -1,5 +1,20 @@
 
  
+ 
+ .mybg{background-color: #fff; border-radius: 55px; padding: 50px; display: flex; align-items: start; }
+.arrow {position: absolute; top:195px; left:468px}
+.myrelative {position: relative;}
+
+.starsupstart {position: absolute; top: -40px; left: 965px;   z-index: 999;}
+
+.threeset {position: absolute; top: 46px; left: 1120px;   z-index: 999;}
+
+.smatarrow {position: absolute; top: 122px; left: 750px;  z-index: 999;}
+
+.livinghubrytcontpnl p {font-size: 20px!important;}
+
+.checkbox-container {margin-top: 40px; font-size: 14px;
+  text-align: center;}
 
 /***
 01) Banner Section
@@ -51,6 +66,10 @@
   .main-slider .carousel .carousel-item .carousel-caption {
     width: 50%;
   }
+
+  
+
+
 }
 @media screen and (min-width: 767px) and (max-width: 1179px) {
   .main-slider .container {
@@ -93,6 +112,27 @@
     width: 40%;
   }
 }
+
+@media (max-width: 1366px) {
+ #livinghub3 .section-title {
+     
+    font-size: 60px!important;
+}
+
+#livinghub2 .main-title {
+  
+    font-size: 60px!important;
+}
+
+ .dropdown-selected {
+ 
+    font-size: 12px;
+}
+
+
+
+}
+
 @media screen and (min-width: 1180px) {
   .main-slider {
     padding: 60px 22px 0;
@@ -137,6 +177,8 @@
   }
 }
 @media screen and (min-width: 1536px) {
+
+
   .main-slider {
     padding: 121.34px 0 0;
   }
@@ -153,6 +195,7 @@
     right: 0%;
     padding-top: 0;
     padding-bottom: 0;
+    width: 100%;
   }
   .main-slider .carousel .carousel-item .carousel-caption h1 {
     font-family: Unbounded;
@@ -233,19 +276,7 @@
 #living-hub .arrow-wrapper {
   position: relative;
 }
-
-#living-hub .arrow-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 180px;     /* ⬅️ Arrow ko upar uthao second image se */
-  left: -260px;    /* ⬅️ Arrow ko left side lao text ki taraf */
-  width: 40%;
-  height: 30%;
-  background-image: url('../img/livinghub/icon/arrow.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 1;
-}
+ 
 
 
 
@@ -256,7 +287,7 @@ line-height: 100%;
 
 #living-hub .living-hub-title {
     font-family: "Unbounded", sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 700;
 
     line-height: 100px;
@@ -267,7 +298,7 @@ line-height: 100%;
 }
 #living-hub .living-hub-title span {
     font-family: "Unbounded", sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 300;
     margin-bottom: 30px;
     line-height: 1.2;
@@ -276,6 +307,7 @@ line-height: 100%;
 }
 #living-hub .fp{
     margin-bottom: 90px;
+    width: 60%;
 }
 
 #living-hub .living-hub-title .highlight-text {
@@ -287,7 +319,7 @@ line-height: 100%;
     font-weight: 300;
     line-height: 1.6;
     margin-bottom: 30px;
-    color: #212121;
+    color: #000;
     max-width: 100%;
 }
 
@@ -320,6 +352,8 @@ line-height: 100%;
     #living-hub .living-hub-title {
         font-size: 30px;
     }
+
+  
 }
 
 @media (max-width: 991px) {
@@ -349,15 +383,23 @@ line-height: 100%;
 }
 
 @media (max-width: 767px) {
-    #living-hub {
-        padding: 20px 15px !important;
-        border-radius: 25px;
-    }
 
-    #living-hub .container {
-        width: 100% !important;
-        padding: 0 !important;
+
+.mybg {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex
+;
+    align-items: start;
+}
+    
+
+.starsupstart img {
+       
+        width: 50px;
     }
+  
 
     #living-hub .box1 {
         width: 100% !important;
@@ -447,9 +489,10 @@ line-height: 100%;
 
 @media (max-width: 480px) {
     #living-hub {
-        padding: 20px 15px;
+        padding: 10px 10px;
         border-radius: 20px;
         margin-top: 30px;
+        
     }
 
  
@@ -549,6 +592,7 @@ line-height: 100%;
     line-height: 1.2;
     margin-bottom: 10px;
      color: #821A52;
+     font-size: 80px
 }
 
 #livinghub2 .main-title .highlight {
@@ -596,6 +640,7 @@ line-height: 100%;
     padding: 30px;
     display: flex;
     flex-direction: column;
+    margin: 10px;
     
     
    
@@ -664,15 +709,15 @@ line-height: 100%;
 }
 
 #livinghub2 .center-star-icon:nth-of-type(3) {
-    top: 10%; /* Between first and second row */
+    top: 11.5%; /* Between first and second row */
 }
 
 #livinghub2 .center-star-icon:nth-of-type(6) {
-    top: 36%; /* Between second and third row */
+    top: 37.2%; /* Between second and third row */
 }
 
 #livinghub2 .center-star-icon:nth-of-type(9) {
-    top: 62%; /* Between third and fourth row */
+    top: 63%; /* Between third and fourth row */
 }
 
 #livinghub2 .center-star-icon img {
@@ -748,13 +793,11 @@ line-height: 100%;
 
     border-radius: 55px;
   
-    margin: 40px auto;
+    margin: 8px auto;
     position: relative;
     overflow: hidden;
-  
-  padding-left:40px;
-  padding-right:40px;
-    margin-top: 80px;
+    padding: 40px;
+    
 }
 
 #livinghub3 .section-title {
@@ -765,6 +808,7 @@ line-height: 100%;
     margin-bottom: 60px;
     line-height: 1.1;
     padding-top: 40px;
+    font-size: 80px;
 }
 
 #livinghub3 .section-title .light {
@@ -839,6 +883,7 @@ line-height: 100%;
 
     position: relative;
     overflow: hidden;
+    margin-top: 130px;
 }
 
  
@@ -862,7 +907,7 @@ line-height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 60px;
+   
 }
 
 #livinghub4 .image-section img {
@@ -878,6 +923,7 @@ line-height: 100%;
     color:black;
     margin-bottom: 40px;
     line-height: 1.2;
+    font-size: 80px!important;
 }
 
 #livinghub4 .section-title .highlight {
@@ -985,7 +1031,7 @@ margin-right: 30px;
 
 #livinghub5 .section-title {
     font-family: "Unbounded", sans-serif;
-    font-size: 48px;
+    font-size: 80px;
     font-weight: 300;
     color: rgba(130, 26, 82, 1);
     line-height: 1.2;
@@ -1003,19 +1049,13 @@ margin-right: 30px;
 /* Work For All Icon */
 #livinghub5 .work-for-all-icon {
     position: absolute;
-    top: -20px;
-    left:230px;
-    width:1000px;
-    height: 100px;
+    top: -30px;
+    left:603px;
+    
+     
     z-index: 10;
 }
-
-#livinghub5 .work-for-all-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
+ 
 #livinghub5 .cards-container {
     display: flex;
     justify-content: space-between;
@@ -1081,19 +1121,7 @@ margin-right: 30px;
      
 }
 
-/* Decorative Elements */
-#livinghub3 .container::before {
-    content: '';
-    position: absolute;
-    top: 30px;
-    right: 60px;
-    width: 40px;
-    height: 40px;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>') no-repeat center;
-    background-size: contain;
-    opacity: 0.3;
-}
-
+ 
 /* Responsive Styles for Move Freely Section */
 @media (max-width: 1199px) {
     #livinghub3 .section-title {
@@ -1128,10 +1156,11 @@ margin-right: 30px;
     }
 
     #livinghub3 .section-title {
-        font-size: 32px;
+        font-size: 36px !important;
         margin-bottom: 30px;
-        text-align: center;
+        text-align: left;
         line-height: 1.1;
+        padding-left: 20px;
     }
 
     #livinghub3 .card-content {
@@ -1147,7 +1176,7 @@ margin-right: 30px;
     }
 
     #livinghub3 .card-image {
-        height: 150px;
+        min-height: 150px;
     }
 }
 
@@ -1202,8 +1231,8 @@ margin-right: 30px;
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+    
+    margin: 0 80px;
 }
 
 #livinghub6 .feature-card {
@@ -1244,7 +1273,7 @@ margin-right: 30px;
 }
 
 #livinghub6 .card-description {
-    font-size: 18px;
+    font-size: 24px !important;
     color: #282727;
     line-height: 1.4;
     font-weight: 400;
@@ -1523,7 +1552,7 @@ a.button
 
 
 .sglediscovercontentsec{
-  height:670px;
+  min-height:815px;
 }
 
  
@@ -1531,7 +1560,7 @@ a.button
 /* For screen width around 1920px */
 @media screen and (min-width: 1367px) and (max-width: 1920px) {
   .sglediscovercontentsec {
-    height: 670px;
+    min-height: 815px;
   }
 }
 
@@ -1550,7 +1579,7 @@ a.button
 }
 
 .discreption{
-    padding: 20px;
+    padding: 40px;
 }
 
 .sglediscovercontentsec.discreption{
@@ -1589,8 +1618,9 @@ a.button
 .livinghub11
 {
     width: 100%;
-    overflow: hidden;
-    padding: 100px 0 0;
+    overflow: visible;
+    padding: 100px 0 80px;
+    position: relative;
 }
 .livinghubcont11
 {
@@ -1599,6 +1629,8 @@ a.button
     -moz-border-radius: 70px;
     -webkit-border-radius: 70px;
     padding: 90px;
+    overflow: visible;
+    position: relative;
 }
 .livinghubcont11 h2
 {
@@ -1614,22 +1646,16 @@ a.button
     font-weight: bold;
     display: inline;
 }
-.livinghubcont11 h2 .star-icon
+ .star-icon
 {
     position: absolute;
-    top: -20px;
-    right: 500px;
-    width: 200px;
-    height: 100px;
+    top: 55px;
+    left: 728px;
+    
     z-index: 10;
 }
 
-.livinghubcont11 h2 .star-icon img
-{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+ 
 .selectfield
 {
     background: #EFDFDF;
@@ -1737,19 +1763,26 @@ a.button
 .custom-dropdown {
     position: relative;
     width: 100%;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.custom-dropdown.active {
+    z-index: 1000;
+    overflow: visible;
 }
 
 .dropdown-selected {
     background: #EFDFDF;
     border-radius: 80px;
     width: 100%;
-    height: 100px;
+   
     
     font-weight: 500;
     color: #000;
     border: 0;
     outline: 0;
-    padding: 0 30px;
+    padding: 25px 40px;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
@@ -1773,20 +1806,48 @@ a.button
     background: #E5D0D0;
 }
 
+/* Proper inline dropdown */
 .dropdown-options {
     position: absolute;
-    top: 110px;
+    top: calc(100% + 8px);
     left: 0;
     right: 0;
-    background: transparent;
+    width: 100%;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease;
-    z-index: 1000000;
-    padding: 10px;
+    z-index: 1000;
+    padding: 0;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: none;
+    background: transparent;
+    box-sizing: border-box;
+
+    /* Custom scrollbar styling */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,0,0,0.2) transparent;
+}
+
+/* Webkit scrollbar styling */
+.dropdown-options::-webkit-scrollbar {
+    width: 4px;
+}
+
+.dropdown-options::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.dropdown-options::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+
+.dropdown-options::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.3);
 }
 
 
@@ -1795,6 +1856,7 @@ a.button
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    pointer-events: auto;
 }
 
 .custom-dropdown.active .dropdown-selected::after {
@@ -1802,20 +1864,33 @@ a.button
 }
 
 .dropdown-option {
-    background: #EFDFDF;
-    border-radius: 50px;
-    padding: 20px 65px;
-    margin: 5px 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000;
+    background: #E5D0D0;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin: 2px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    border: 1px solid #e9ecef;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .dropdown-option:hover {
-    background: #E5D0D0;
-    transform: scale(1.02);
+    background: #D5C0C0;
+    transform: translateX(3px);
+    border-color: #C5B0B0;
+}
+
+.dropdown-option.active {
+    background: #EFDFDF;
+    color: #000;
+    border-color: #E5D0D0;
 }
 
 /* .dropdown-option.active {
@@ -1827,7 +1902,8 @@ a.button
 {
     background: #53103C;
     border-radius: 80px;
-    height: 100px;
+   padding-top:20px;
+   padding-bottom:20px;
     font-size: 24px;
     font-weight: 500;
     color: #fff;
@@ -1852,7 +1928,7 @@ a.button
 {
     width:100%;
     overflow:hidden;
-    padding: 100px 0 0;
+    padding:  0 0;
 }
 .livinghub12whtebg
 {
@@ -1906,7 +1982,7 @@ a.button
     width: 100%;
     height: 100px;
     background: #EFDFDF;
-    padding: 0 30px;
+    padding: 0 50px;
     font-size: 20px;
     font-weight: normal;
     border: 0;
@@ -1931,7 +2007,7 @@ a.button
 {
     width: 100%;
     overflow: hidden;
-    padding: 100px 0 0;
+    padding: 80px 0 0;
 }
 .livinghub13contarea
 {
@@ -1966,9 +2042,9 @@ a.button
 }
 .livinghub13 img
 {
-    height: 100%;
+     
     width: 100%;
-    object-fit: cover;
+     
     border-radius: 57px;
 }
 .livinghub14
@@ -2026,7 +2102,7 @@ a.button
   cursor: pointer;
   padding: 10px 50px;
   transition: 0.3s;
-  line-height: 50px;
+  line-height: 40px;
   font-size: 18px;
   font-weight: 500;
   color: #fff;
@@ -2211,7 +2287,7 @@ a.button
     align-items: stretch;
 }
 
-#livinghub16 .col-md-6 {
+#livinghub16 .col-md-6 .col-xl-6{
     
     flex: 0 0 50%;
     min-width: 50%;
@@ -2507,14 +2583,18 @@ a.button
     padding-left: 12px;
 }
 #livinghub15 .main-image {
-    object-fit: none;
-    border-radius: 0 36px 36px 0 !important;
+     
+    
     display: block;
-    width: 65%;
-    height: 650px;
+    
+    
     margin: 0 !important;
     padding: 0 !important;
 }
+
+
+
+
 .livinghub14contbg {
     background: rgba(245, 245, 245, 1);
     padding: 16px !important;
@@ -2540,7 +2620,7 @@ a.button
   #livinghub4 .row {
     flex-direction: column !important;
     flex-wrap: wrap !important;
-    gap: 40px;
+    gap: 20px;
     
   }
 
@@ -2563,12 +2643,13 @@ a.button
 
   #livinghub4 .features-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 25px;
   }
 
   #livinghub4 .feature-item {
     flex-direction: column;
     text-align: center;
+    padding: 20px 15px;
   }
 
   #livinghub4 .feature-item:nth-child(3) {
@@ -2580,6 +2661,30 @@ a.button
     text-align: left;
   }
 
+  #livinghub4 .feature-icon {
+    width: 70px !important;
+    height: 70px !important;
+    margin-bottom: 15px;
+  }
+
+  #livinghub4 .feature-icon img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  #livinghub4 .feature-title {
+    font-size: 28px !important;
+    margin-bottom: 15px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+  }
+
+  #livinghub4 .feature-description {
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+    color: #666 !important;
+  }
+
   #livinghub4 .image-section {
     padding-top: 20px;
   }
@@ -2588,6 +2693,25 @@ a.button
 @media (max-width: 480px) {
   #livinghub4 .section-title {
     font-size: 45px;
+  }
+
+  #livinghub4 .feature-icon {
+    width: 65px !important;
+    height: 65px !important;
+  }
+
+  #livinghub4 .feature-icon img {
+    width: 45px !important;
+    height: 45px !important;
+  }
+
+  #livinghub4 .feature-title {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+  }
+
+  #livinghub4 .feature-description {
+    font-size: 18px !important;
   }
 
   #livinghub5 .work-for-all-icon {
@@ -2668,6 +2792,13 @@ a.button
 /* Media Query for 1366px screen size */
 @media screen and (max-width: 1366px) {
  
+      #living-hub .fp {
+    margin-bottom: 90px;
+    width: 100%;
+} 
+
+.arrow {position: absolute; top:165px; left:390px }
+.arrow img {width: 250px; height: auto;}
 
   #livinghub16 {
     background: rgba(130, 26, 82, 1) !important;
@@ -2675,17 +2806,21 @@ a.button
 }
 
 /* Media Query for 1322px screen size - All headings font-size 60px and p tags 18px */
-@media screen and (max-width: 1920px) {
+@media (min-width: 1920px) {
   h2,  .section-title, .main-title, .subtitle,
   .livinghub10 h2, #living-hub .living-hub-content h2, #livinghub16 .webinar-header h2 {
-    font-size: 60px !important;
+    font-size: 80px !important;
   }
+
+    #living-hub .living-hub-content h2 {
+   font-size: 80px !important;
+}
 
   #living-hub .living-hub-description, #livinghub3 .card-description, #livinghub4 .feature-description,
   #livinghub5 .card-description, #livinghub6 .card-description, .sglelivinghubiconsec p,
-  .livinghub9contsec p, .sglediscovercontentsec p, .livinghubrytcontpnl p, .livinghub13contarea p,
+  .livinghub9contsec p, .sglediscovercontentsec p,    
   #livinghub15 .section-description,  #livinghub2 .feature-card p ,.livinghub14contbg p {
-    font-size: 18px !important;
+    font-size: 24px !important;
   }
 
   #livinghub16 {
@@ -2796,7 +2931,7 @@ a.button
   }
 
   .livinghub8 .container {
-    padding: 0 10px !important;
+    padding: 0 5px !important;
     max-width: 100% !important;
   }
 
@@ -2868,7 +3003,7 @@ a.button
   }
 
   .livinghub9-mobile .container {
-    padding: 0 15px !important;
+    padding: 0 5px !important;
     max-width: 100% !important;
   }
 
@@ -3072,7 +3207,8 @@ a.button
 /* Mobile styles for livinghub11 - Find What Matters section */
 @media (max-width: 767px) {
   .livinghub11 {
-    padding: 40px 0 !important;
+    padding: 0 0 40px !important;
+    overflow: visible !important;
   }
 
   .livinghubcont11 {
@@ -3080,6 +3216,8 @@ a.button
     border-radius: 25px !important;
     padding: 30px 20px !important;
     margin: 0 0px !important;
+    overflow: visible !important;
+    position: relative !important;
   }
 
   .livinghubcont11 h2 {
@@ -3097,7 +3235,7 @@ a.button
     display: block !important;
   }
 
-  .livinghubcont11 h2 .star-icon {
+  .star-icon {
     position: absolute !important;
     top: 90px !important;
     right: 20px !important;
@@ -3136,11 +3274,7 @@ a.button
     align-items: center !important;
     cursor: pointer !important;
     position: relative !important;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e") !important;
-    background-repeat: no-repeat !important;
-    background-position: right 15px center !important;
-    background-size: 16px !important;
-  }
+   }
 
   .searchbut {
     background: #000 !important;
@@ -3364,25 +3498,15 @@ a.button
 
 @media screen and (min-width: 1536px) {
   
-#living-hub .arrow-wrapper::before {
-    content: '';
-    position: absolute;
-    top: 300px;
-    left: -320px;
-    width: 40%;
-    height: 30%;
-    background-image: url(../img/livinghub/icon/arrow.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 1;
-
-}
+ 
 }
 @media screen and (min-width: 1536px){
+
+
 .livinghub8contsec h2 .cursiveicon {
     position: absolute;
-    top: 65px;
-    right: 730px;
+    top: 113px;
+    right: 550px;
     width: 230px;
     height: 180px;
     z-index: 999;
@@ -3391,10 +3515,9 @@ a.button
 @media screen and (min-width: 1536px){
 .livinghubcont11 h2 .star-icon {
     position: absolute;
-    top: -20px;
-    right: 830px;
-    width: 200px;
-    height: 150px;
+    top: -30px;
+    left: 675px;
+    
     z-index: 10;
 }
 }
@@ -3404,7 +3527,7 @@ a.button
 #livinghub16 .webinar-header .supstart {
     position: absolute;
     top: -20px;
-    right: 999px;
+    right: 832px;
     width: 80px;
     height: 80px;
     z-index: 999;
@@ -3413,10 +3536,11 @@ a.button
 
 @media screen and (max-width: 768px) {
     #living-hub .living-hub-content , #living-hub .living-hub-content h2{
-        padding-right: 0;
+        padding-right: 5px!important;
+        padding-left: 5px!important;
         margin-bottom: 1px;
         text-align: left;
-        padding-bottom:20px;
+        padding-bottom:0px !important;
 
     }
 }
@@ -3438,7 +3562,7 @@ a.button
   #livinghub2 .container {
     width: 100% !important;
     max-width: 100% !important;
-    padding: 0 15px !important;
+    padding: 0 5px !important;
     overflow: hidden;
   }
 
@@ -3446,12 +3570,13 @@ a.button
     padding: 15px 0 !important;
     width: 100% !important;
     max-width: 100% !important;
+    margin-top:30px!important;
   }
 
   #livinghub2 .section-header {
     width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 !important;
+    min-width: 100% !important;
+    padding: 0 5px !important;
     margin-bottom: 20px !important;
     text-align: left !important;
   }
@@ -3502,7 +3627,7 @@ a.button
 
   .livinghub2-mobile-carousel .swiper {
     width: 100%;
-    padding: 10px 0 40px 0;
+    padding: 10px 0 20px 0;
     overflow: visible;
   }
 
@@ -3751,6 +3876,9 @@ a.button
         background: transparent;
         margin-top: 30px;
     }
+    .livinghub13{
+      padding-top: 40px!important;
+    }
 
     #livinghub5-mobile .section-title {
         font-family: "Unbounded", sans-serif;
@@ -3871,12 +3999,394 @@ a.button
 
 /* Desktop styles - hide mobile version */
 @media (min-width: 769px) {
+   
     .mobile-only {
         display: none !important;
     }
 
+    
+
     .desktop-only {
         display: block !important;
     }
+
+    .mybg {
+  background-color: #fff;
+  border-radius: 55px;
+  padding: 50px;
+  display: flex;
+  align-items: start;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 }
 
+
+@media (max-width: 320px)        { }  /* Very small devices*/
+@media (max-width: 375px)        {  }  /* Small phones*/
+@media (max-width: 480px)       
+
+{ 
+
+  .container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+
+    }
+  .sglediscovercontentsec {
+  min-height: 400px;  
+
+ 
+}  
+
+ .mbbg {width: 95%;
+    margin: 0 auto;}
+
+
+.livinghub10 {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 0px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#livinghub3   { padding-left: 10px !important;
+    padding-right: 10px !important;}
+
+   #livinghub4 {
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+#livinghub4 .section-title {
+        
+        margin-bottom: 20px;
+       
+    }
+
+    #livinghub4 .feature-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px 15px;
+    }
+
+    #livinghub4 .featureL {
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+#livinghub4 .featureL p {
+    margin-bottom: 0px;
+}
+
+  #livinghub5-mobile {
+      padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .mobile-kitchen-content {
+        padding-left: 20px;
+        text-align: left;
+        background: rgba(231, 199, 207, 1);
+        border-radius: 0 0 20px 20px;
+        min-height: 250px;
+        display: flex
+;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .livinghub14contbg p {
+    line-height: 36px;
+    color: #000;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#livinghub15 .container {
+        margin: 0 auto;
+        border-radius: 30px !important;
+        padding-top: 20px !important;
+    }
+
+    .livinghub14 {
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0 0;
+}
+
+.livinghub13contarea {
+    background: #E7C7CF;
+    padding: 60px;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    
+}
+
+    .livinghub14contbg {
+        background: rgba(245, 245, 245, 1);
+        padding: 16px !important;
+        border-radius: 30px;
+    }
+
+    #livinghub15 {
+    padding-top: 40px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+    #livinghub15 .main-image {
+        
+        border-radius: 0 30px 30px 0 !important;
+        display: block;
+        width: 100%;
+        
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+
+    .star-icon img {width: 9cqb;}
+    .star-icon {
+        position: absolute !important;
+        top: 90px !important;
+       left: 20px !important;
+        
+        z-index: 10 !important;
+    }
+
+    .sglelivinghubiconsec {
+        /* padding: 15px 0 !important; */
+        margin-bottom: 0px !important;
+        /* gap: 10px !important;
+        text-align: left !important; */
+    }
+
+
+    #livinghub2 .main-title {
+        font-size: 42px !important;
+        line-height: 1.0 !important;
+        margin-bottom: 0 !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: left !important;
+        font-family: "Unbounded", sans-serif !important;
+        font-weight: 300 !important;
+        color: rgba(130, 26, 82, 1) !important;
+    }
+
+    #livinghub2 .main-title .highlight {
+        color: rgba(130, 26, 82, 1) !important;
+        font-size: 42px !important;
+        font-weight: 700 !important;
+    }
+
+    #livinghub2 .main-title:first-child .highlight:after {
+        content: "";
+        display: inline-block;
+        width: 9%;
+        height: 9%;
+    }
+
+    #living-hub .living-hub-content, #living-hub .living-hub-content h2 {
+       font-size: 42px;
+    }
+
+} 
+
+
+
+
+/*  Phones*/
+@media (max-width: 768px)        {  } /* Tablets / small devices*/
+@media (max-width: 991px)        {  }  /* Medium devices*/
+@media (max-width: 1199px)       
+
+{  .center-star-icon {display: none!important;}
+
+#livinghub6 .cards-grid {
+  
+  margin: 0 10px;
+}
+
+.star-icon {
+    position: absolute !important;
+   top: 140px !important;
+        left: 240px !important;
+     
+    z-index: 10 !important;
+  }
+}
+
+ 
+
+
+
+/* Large tablets/laptops*/
+@media (max-width: 1366px)       
+
+{ 
+  
+   .container {
+    max-width: 1266px;
+      
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .starsupstart {
+	position: absolute;
+	top: -72px;
+	left: calc(50% + 90px);
+	z-index: 999;
+
+  
+}
+
+.smatarrow {
+    position: absolute;
+    top: 122px;
+    left: 500px;
+    z-index: 999;
+}
+
+#livinghub4 .section-title {
+    font-weight: 300;
+    color: black;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    font-size: 60px !important;
+}
+
+.threeset {
+  position: absolute;
+  top: 46px;
+  left: 839px;
+  z-index: 999;
+}
+
+#livinghub5 .section-title {
+  font-family: "Unbounded", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  color: rgba(130, 26, 82, 1);
+  line-height: 1.2;
+  margin: 0;
+}
+
+#livinghub6 .section-title {
+    font-size: 60px ;
+}
+
+.livinghub8contsec h2 {
+    font-weight: 300;
+    font-size: 60px;
+    color: #821A52;
+    position: relative;
+}
+  
+  #livinghub2 .center-star-icon:nth-of-type(3)
+ 
+ {
+    top: 12.5%;
+} 
+
+#livinghub2 .center-star-icon:nth-of-type(6) {
+    top: 39.5%;
+}
+
+
+
+    .work-for-all-icon img {width:550px ;}
+
+#livinghub5 .work-for-all-icon {
+  position: absolute;
+  top: -30px;
+  left: 470px;
+
+   z-index: 1000000;
+  z-index: 1000000;
+}
+
+.livinghub9contsec h2 {
+    font-weight: 300;
+    font-size:60px;
+    color: #821A52;
+     
+
+
+} 
+
+ #livinghub16 .card-content h3 {
+    color: rgba(130, 26, 82, 1);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 25px 0;
+    margin-top: 0px;
+    line-height: 1.2;
+    margin-top: 0;
+  } 
+
+   #livinghub16 .card-content p {
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 25px 0;
+    font-weight: 400;
+    padding: 0;
+  }
+
+    #livinghub16 .date-info {
+    color: rgba(130, 26, 82, 1);
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.3;
+    font-weight: 500;
+  }
+
+}
+
+
+/* Standard desktops*/
+@media (min-width: 1367px) and (max-width: 1920px) {  } /*  Full HD screens*/
+@media (min-width: 1921px)       { }  /* Big screens*/
+@media (min-width: 1536px)       
+
+{  #livinghub16 .card-content h3 {
+    color: rgba(130, 26, 82, 1);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 45px 0;
+    margin-top: 0px;
+    line-height: 1.2;
+    margin-top: 0;
+  } 
+
+   #livinghub16 .card-content p {
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 45px 0;
+    font-weight: 400;
+    padding: 0;
+  }
+
+    #livinghub16 .date-info {
+    color: rgba(130, 26, 82, 1);
+    font-size: 14px;
+    margin-bottom: 45px;
+    line-height: 1.3;
+    font-weight: 500;
+  }
+
+  #livinghub3 {margin-top: 100px;}
+
+}  /* Ultra-wide screens*/
